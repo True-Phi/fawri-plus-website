@@ -115,5 +115,9 @@ sections:
       subtitle:
         textAlign: center
     type: PricingSection
+    badge:
+      type: Badge
+      label: 'This is a badge dsf '
+      color: text-primary
 type: PageLayout
 ---
