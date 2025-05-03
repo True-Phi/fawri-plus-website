@@ -9,7 +9,8 @@
                 "icon": "arrowRight",
                 "iconPosition": "right",
                 "style": "secondary",
-                "type": "Link"
+                "type": "Link",
+                "altText": "Pricing page"
             },
             {
                 "label": "Features",
