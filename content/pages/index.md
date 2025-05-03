@@ -176,8 +176,8 @@ sections:
         title: PLUS
         subtitle: Tailored Add-On Services
         text: >
-          Choose from add-ons like proof of delivery, buy-on-behalf, or
-          refrigerated transport, designed to suit your business requirements.
+          Choose from add-ons like proof of delivery, buy-on-behalf, or chilled
+          transport, designed to suit your business needs.
         image:
           type: ImageBlock
           altText: Placeholder text
