@@ -150,7 +150,7 @@ sections:
             textAlign: left
       - type: FeaturedItem
         title: PLUS
-        subtitle: Numbers Done
+        subtitle: Tailored Add-On Services
         text: >-
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
