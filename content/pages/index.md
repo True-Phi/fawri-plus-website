@@ -40,9 +40,9 @@ sections:
         title: Unbeatable Pricing
         subtitle: 'Lowest Rates, Fixed Price'
         text: >
-          We offer the most competitive delivery rates in Bahrain — with a fixed
-          price across all zones and 0% commission, keeping your logistics
-          simple and predictable.
+          We offer the most competitive delivery rates in Bahrain, with no
+          hidden commissions and a fixed price for all distances across the
+          country.
         actions: []
         colors: bg-neutralAlt-fg-dark
         styles:
