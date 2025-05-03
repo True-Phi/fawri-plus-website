@@ -61,6 +61,13 @@
             "url": "https://www.instagram.com/fawri_plus/",
             "icon": "instagram",
             "elementId": ""
+        },
+        {
+            "type": "Social",
+            "altText": "Facebook link",
+            "url": "https://facebook.com/fawriplus",
+            "icon": "facebook",
+            "elementId": ""
         }
     ],
     "legalLinks": [
