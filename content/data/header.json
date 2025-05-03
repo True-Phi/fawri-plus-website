@@ -33,7 +33,7 @@
         },
         {
             "type": "Link",
-            "label": "See Tutorials",
+            "label": "Contact Us",
             "altText": "",
             "url": "/contact",
             "showIcon": false,
