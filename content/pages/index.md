@@ -38,7 +38,7 @@ sections:
     items:
       - type: FeaturedItem
         title: Unbeatable Pricing
-        subtitle: Flat Rate. No Surprises.
+        subtitle: 'Lowest Rates, Fixed Price'
         text: >
           We offer the most competitive delivery rates in Bahrain — with a fixed
           price across all zones and 0% commission, keeping your logistics
