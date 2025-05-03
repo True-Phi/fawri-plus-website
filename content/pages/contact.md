@@ -39,7 +39,7 @@ sections:
           width: full
         - type: TextFormControl
           name: Mobile Number
-          label: Name
+          label: Mobile Number
           hideLabel: true
           placeholder: Your mobile number
           isRequired: true
