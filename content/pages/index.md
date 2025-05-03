@@ -59,10 +59,9 @@ sections:
       - type: FeaturedItem
         title: Simple Ordering
         subtitle: Seamless Ordering via WhatsApp
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        text: >
+          Place and manage orders directly through WhatsApp. No apps, no portals
+          — instant communication and dedicated support whenever you need it.
         image:
           type: ImageBlock
           altText: Featured icon two
