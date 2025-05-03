@@ -129,9 +129,8 @@ sections:
         title: Loyalty Rewards
         subtitle: 'Order More, Save More'
         text: >
-          Earn points and perks through our loyalty program. From bonus
-          deliveries to discounted rates, your continued trust is rewarded with
-          real benefits.
+          Our loyalty program offers bonus deliveries, discounted rates, and
+          exclusive perks to reward your ongoing trust and support.
         image:
           type: ImageBlock
           altText: Placeholder text
