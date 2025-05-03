@@ -8,11 +8,10 @@ sections:
       text: let's talk a little
       color: text-dark
     subtitle: Section with a form subtitle
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+    text: >
+      Have questions? Send us a message through our website, email us or give us
+      a call. We’ll answer all your questions and would be happy to discuss all
+      your options with Fawri+
     actions: []
     media:
       type: FormBlock
