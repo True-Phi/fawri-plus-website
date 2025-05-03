@@ -124,10 +124,10 @@ sections:
       - type: FeaturedItem
         title: Loyalty Rewards
         subtitle: 'Order More, Save More'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        text: >
+          Earn points and perks through our loyalty program. From bonus
+          deliveries to discounted rates, your continued trust is rewarded with
+          real benefits.
         image:
           type: ImageBlock
           altText: Placeholder text
