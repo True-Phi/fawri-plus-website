@@ -1,8 +1,8 @@
 {
-    "favicon": "/images/favicon.svg",
+    "favicon": "/images/design 1.png",
     "footer": "content/data/footer.json",
-    "titleSuffix": "Theme Demo",
-    "defaultSocialImage": "/images/main-hero.jpg",
+    "titleSuffix": "Fawri+ Delivery",
+    "defaultSocialImage": "/images/design 1.png",
     "type": "Config",
     "header": "content/data/header.json"
 }
