@@ -22,7 +22,7 @@ sections:
           label: Name
           hideLabel: true
           placeholder: Your name
-          isRequired: false
+          isRequired: true
           width: full
         - type: TextFormControl
           name: Mobile Number
