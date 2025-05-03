@@ -7,21 +7,13 @@ sections:
       type: TitleBlock
       text: let's talk a little
       color: text-dark
-    subtitle: Section with a form subtitle
+    subtitle: ''
     text: >
-      Have questions? Send us a message through our website, email us or give us
-      a call. We’ll answer all your questions and would be happy to discuss all
-      your options with Fawri+
+      Your suggestions, feedback, and questions are important to us. We will
+      gladly respond to any inquiries you may have.
 
 
-
-
-
-
-      Call: +973 6676 1322
-
-
-      Email: info\@fawri-plus.com
+      We’re happy to discuss your options with Fawri+
     actions: []
     media:
       type: FormBlock
