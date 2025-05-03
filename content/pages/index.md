@@ -9,7 +9,7 @@ sections:
       color: text-light
       styles:
         self:
-          textAlign: center
+          textAlign: left
     subtitle: ''
     text: ''
     actions: []
