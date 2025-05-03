@@ -40,9 +40,8 @@ sections:
         title: Unbeatable Pricing
         subtitle: 'Lowest Rates, Fixed Price'
         text: >
-          We offer the most competitive delivery rates in Bahrain, with no
-          hidden commissions and a fixed price for all distances across the
-          country.
+          We offer the most competitive delivery rates in Bahrain. No hidden
+          commissions. Fixed price for all distances across the country.
         actions: []
         colors: bg-neutralAlt-fg-dark
         styles:
