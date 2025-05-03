@@ -12,14 +12,7 @@ sections:
           textAlign: right
     subtitle: ''
     text: ''
-    actions:
-      - type: Link
-        label: See Tutorials
-        url: /
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
-        style: primary
+    actions: []
     colors: bg-light-fg-dark
     styles:
       self:
