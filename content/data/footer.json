@@ -51,7 +51,7 @@
     "socialLinks": [
         {
             "altText": "Email link",
-            "url": "/",
+            "url": "https://mailto:info@fawri-plus.com",
             "icon": "mail",
             "type": "Social"
         }
