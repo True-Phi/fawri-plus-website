@@ -58,7 +58,7 @@ sections:
             textAlign: left
       - type: FeaturedItem
         title: Real-Time Tracking
-        subtitle: Numbers Done
+        subtitle: Stay Updated on Your Order
         text: >-
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
