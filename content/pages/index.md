@@ -34,7 +34,7 @@ sections:
       styles:
         self:
           textAlign: center
-    subtitle: Subtitle goes here
+    subtitle: You will love it!!
     items:
       - type: FeaturedItem
         title: 500k
