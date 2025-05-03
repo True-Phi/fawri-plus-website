@@ -5,7 +5,7 @@ sections:
   - type: GenericSection
     title:
       type: TitleBlock
-      text: Your Reliable Delivery Partner in Bahrain
+      text: Your Reliable Delivery Partner
       color: text-light
       styles:
         self:
