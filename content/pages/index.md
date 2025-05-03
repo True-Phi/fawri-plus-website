@@ -36,7 +36,7 @@ sections:
         flexDirection: row-reverse
     backgroundImage:
       type: BackgroundImage
-      altText: altText of the image
+      altText: Fawri+ van
       backgroundSize: auto
       backgroundPosition: center
       backgroundRepeat: no-repeat
