@@ -24,7 +24,7 @@
         {
             "type": "Link",
             "label": "Features",
-            "altText": "",
+            "altText": "Features page",
             "url": "/features",
             "showIcon": false,
             "icon": "arrowRight",
