@@ -29,7 +29,7 @@ sections:
   - type: FeaturedItemsSection
     title:
       type: TitleBlock
-      text: Key Benefits
+      text: Why Choose Fawri+
       color: text-dark
       styles:
         self:
