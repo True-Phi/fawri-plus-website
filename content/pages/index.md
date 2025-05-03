@@ -60,9 +60,8 @@ sections:
         title: Reliable Deliveries
         subtitle: Free 2nd Attempt
         text: >
-          Track every order live from pickup to delivery. If it fails the first
-          time, we’ll reattempt a second delivery at no extra cost to ensure it
-          gets there.
+          We’ll make a second delivery attempt at no extra cost if your first
+          attempt fails, ensuring your customers get their orders promptly.
         image:
           type: ImageBlock
           altText: Featured icon three
