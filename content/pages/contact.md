@@ -5,7 +5,7 @@ sections:
   - type: GenericSection
     title:
       type: TitleBlock
-      text: let's talk a little
+      text: Let's talk a little
       color: text-dark
     subtitle: We’re happy to discuss your options with Fawri+
     text: >+
