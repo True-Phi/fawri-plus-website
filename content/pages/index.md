@@ -36,7 +36,7 @@ sections:
         flexDirection: row-reverse
     backgroundImage:
       type: BackgroundImage
-      altText: Fawri+ van
+      altText: Fawri+ Delivery Van
       backgroundSize: auto
       backgroundPosition: center
       backgroundRepeat: no-repeat
