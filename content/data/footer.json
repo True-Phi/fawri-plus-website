@@ -50,12 +50,6 @@
     },
     "socialLinks": [
         {
-            "altText": "Email link",
-            "url": "https://mailto:info@fawri-plus.com",
-            "icon": "mail",
-            "type": "Social"
-        },
-        {
             "type": "Social",
             "altText": "Instagram link",
             "url": "https://www.instagram.com/fawri_plus/",
@@ -68,6 +62,12 @@
             "url": "https://facebook.com/fawriplus",
             "icon": "facebook",
             "elementId": ""
+        },
+        {
+            "altText": "Email link",
+            "url": "https://mailto:info@fawri-plus.com",
+            "icon": "mail",
+            "type": "Social"
         }
     ],
     "legalLinks": [
