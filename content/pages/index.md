@@ -106,7 +106,7 @@ sections:
         title: Simple Ordering
         subtitle: Seamless Ordering via WhatsApp
         text: >
-          Easily place your order via WhatsApp, with quick and clear
+          Easily place and manage your orders via WhatsApp, with quick and clear
           communication for a hassle-free experience.
         image:
           type: ImageBlock
