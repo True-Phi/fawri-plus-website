@@ -151,10 +151,9 @@ sections:
       - type: FeaturedItem
         title: PLUS
         subtitle: Tailored Add-On Services
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        text: >
+          Need proof of delivery? buy-on-behalf service? refrigerated transport?
+          Choose from flexible add-ons designed to adapt to your business needs.
         image:
           type: ImageBlock
           altText: Placeholder text
