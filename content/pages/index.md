@@ -7,6 +7,9 @@ sections:
       type: TitleBlock
       text: Your Reliable Delivery Partner in Bahrain
       color: text-light
+      styles:
+        self:
+          textAlign: right
     subtitle: Be in good company
     text: >
       A service that provides advice and guidance to startups and small
