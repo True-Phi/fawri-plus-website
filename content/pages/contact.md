@@ -8,7 +8,12 @@ sections:
       text: let's talk a little
       color: text-dark
     subtitle: ''
-    text: ''
+    text: >+
+      Your suggestions, feedback, and questions are important to us. We will
+      gladly respond to any inquiries you may have.
+
+
+
     actions: []
     media:
       type: FormBlock
