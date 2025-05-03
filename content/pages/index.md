@@ -104,7 +104,7 @@ sections:
     actions:
       - type: Button
         label: Order Now
-        altText: ''
+        altText: Order Now
         url: /
         showIcon: false
         icon: arrowRight
