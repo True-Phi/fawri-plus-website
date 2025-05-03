@@ -8,16 +8,21 @@ sections:
       text: let's talk a little
       color: text-dark
     subtitle: Section with a form subtitle
-    text: >
+    text: >+
       Have questions? Send us a message through our website, email us or give us
       a call. We’ll answer all your questions and would be happy to discuss all
       your options with Fawri+
 
 
-      <i class="fa-solid fa-phone"></i> sdasdad
 
 
-      ✉️
+
+
+      Call: +973 6676 1322
+
+
+      Email: info\@fawri-plus.com
+
     actions: []
     media:
       type: FormBlock
