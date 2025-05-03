@@ -15,4 +15,5 @@ sections:
 type: PageLayout
 seo:
   type: Seo
+  metaTitle: Fawri+ Delivery
 ---
