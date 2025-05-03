@@ -47,7 +47,7 @@
         {
             "label": "Order Now",
             "altText": "Order Now",
-            "url": "https://app.netlify.com/signup",
+            "url": "https://store.fawri-plus.com",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
