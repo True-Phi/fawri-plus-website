@@ -82,10 +82,10 @@ sections:
       - type: FeaturedItem
         title: Reliable Deliveries
         subtitle: Tracking & Free 2nd Attempt
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        text: >
+          Track every order live from pickup to delivery. If it fails the first
+          time, we’ll reattempt a second delivery at no extra cost to ensure it
+          gets there.
         image:
           type: ImageBlock
           altText: Featured icon three
