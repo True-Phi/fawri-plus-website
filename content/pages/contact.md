@@ -8,15 +8,12 @@ sections:
       text: let's talk a little
       color: text-dark
     subtitle: ''
-    text: |+
-      Your suggestions, feedback, and questions are important to us.
-
-      We will gladly respond to any inquiries you may have.
-
+    text: >
+      Your suggestions, feedback, and questions are important to us. We will
+      gladly respond to any inquiries you may have.
 
 
       We’re happy to discuss your options with Fawri+
-
     actions: []
     media:
       type: FormBlock
