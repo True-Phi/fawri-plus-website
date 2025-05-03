@@ -105,7 +105,7 @@ sections:
       - type: Button
         label: Order Now
         altText: Order Now
-        url: /
+        url: 'https://store.fawri-plus.com'
         showIcon: false
         icon: arrowRight
         iconPosition: right
