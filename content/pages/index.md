@@ -5,7 +5,7 @@ sections:
   - type: GenericSection
     title:
       type: TitleBlock
-      text: Business Consulting
+      text: Your Reliable Delivery Partner in Bahrain
       color: text-light
     subtitle: Be in good company
     text: >
