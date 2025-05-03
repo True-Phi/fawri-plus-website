@@ -14,7 +14,7 @@
             {
                 "label": "Features",
                 "altText": "",
-                "url": "/",
+                "url": "/features",
                 "icon": "arrowRight",
                 "iconPosition": "right",
                 "style": "secondary",
