@@ -5,14 +5,23 @@ sections:
   - type: GenericSection
     title:
       type: TitleBlock
-      text: Generic Section With A Form
+      text: let's talk a little
       color: text-dark
     subtitle: Section with a form subtitle
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+    text: >
+      Have questions? Send us a message through our website, email us or give us
+      a call. We’ll answer all your questions and would be happy to discuss all
+      your options with Fawri+
+
+
+
+
+
+
+      Call: +973 6676 1322
+
+
+      Email: info\@fawri-plus.com
     actions: []
     media:
       type: FormBlock
@@ -22,6 +31,13 @@ sections:
           label: Name
           hideLabel: true
           placeholder: Your name
+          isRequired: true
+          width: full
+        - type: TextFormControl
+          name: Mobile Number
+          label: Mobile Number
+          hideLabel: true
+          placeholder: Your mobile number
           isRequired: true
           width: full
         - type: EmailFormControl
