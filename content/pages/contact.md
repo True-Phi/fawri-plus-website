@@ -18,11 +18,10 @@ sections:
 
 
 
-      <sup>Call: +973 6676 1322</sup>
+      Call: +973 6676 1322
 
 
-      <sup>Email:
-      </sup>[<sup>info@fawri-plus.com</sup>](mailto:info@fawri-plus.com)
+      Email: info\@fawri-plus.com
     actions: []
     media:
       type: FormBlock
