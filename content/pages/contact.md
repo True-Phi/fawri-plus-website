@@ -7,8 +7,13 @@ sections:
       type: TitleBlock
       text: let's talk a little
       color: text-dark
-    subtitle: ''
-    text: ''
+    subtitle: We’re happy to discuss your options with Fawri+
+    text: >+
+      Your suggestions, feedback, and questions are important to us. We will
+      gladly respond to any inquiries you may have.
+
+
+
     actions: []
     media:
       type: FormBlock
