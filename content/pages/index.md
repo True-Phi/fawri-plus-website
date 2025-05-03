@@ -25,10 +25,6 @@ sections:
         icon: arrowRight
         iconPosition: right
         style: primary
-    media:
-      type: ImageBlock
-      url: /images/hero3.svg
-      altText: Dope design preview
     badge:
       type: Badge
       label: This is a badge
