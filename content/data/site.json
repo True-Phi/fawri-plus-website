@@ -2,7 +2,7 @@
     "favicon": "/images/favicon.svg",
     "footer": "content/data/footer.json",
     "titleSuffix": "Fawri+ Delivery",
-    "defaultSocialImage": "/images/main-hero.jpg",
+    "defaultSocialImage": "/images/design 2 dark.png",
     "type": "Config",
     "header": "content/data/header.json"
 }
