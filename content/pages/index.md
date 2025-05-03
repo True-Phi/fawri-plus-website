@@ -65,7 +65,6 @@ sections:
           explicabo.
         image:
           type: ImageBlock
-          url: /images/icon2.svg
           altText: Featured icon two
           elementId: ''
         actions: []
