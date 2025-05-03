@@ -7,7 +7,7 @@ sections:
       type: TitleBlock
       text: let's talk a little
       color: text-dark
-    subtitle: Section with a form subtitle
+    subtitle: ''
     text: |+
       Your suggestions, feedback, and questions are important to us.
 
