@@ -104,10 +104,10 @@ sections:
       - type: FeaturedItem
         title: Payments Options
         subtitle: Options That Fit You
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        text: >
+          We support various payment methods, including BenefitPay, card, and
+          cash — giving you and your customers the flexibility to pay the way
+          that works best.
         actions: []
         colors: bg-neutralAlt-fg-dark
         styles:
