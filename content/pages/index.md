@@ -59,10 +59,9 @@ sections:
       - type: FeaturedItem
         title: Real-Time Tracking
         subtitle: Stay Updated on Your Order
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        text: >
+          Track your deliveries in real-time with our easy-to-use tracking
+          system, keeping you informed every step of the way.
         image:
           type: ImageBlock
           altText: Placeholder text
