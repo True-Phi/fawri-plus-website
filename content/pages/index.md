@@ -103,7 +103,7 @@ sections:
             flexDirection: row
     actions:
       - type: Button
-        label: Get started
+        label: Order Now
         altText: ''
         url: /
         showIcon: false
