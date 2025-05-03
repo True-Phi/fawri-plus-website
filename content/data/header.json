@@ -22,7 +22,7 @@
         },
         {
             "type": "Link",
-            "label": "See Tutorials",
+            "label": "Features",
             "altText": "",
             "url": "/features",
             "showIcon": false,
