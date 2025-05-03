@@ -81,7 +81,7 @@ sections:
             justifyContent: center
       - type: FeaturedItem
         title: Reliable Deliveries
-        subtitle: Faster
+        subtitle: Tracking & Free 2nd Attempt
         text: >-
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
