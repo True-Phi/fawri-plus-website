@@ -126,26 +126,6 @@ sections:
             textAlign: left
             justifyContent: center
       - type: FeaturedItem
-        title: Payments Options
-        subtitle: Options That Fit You
-        text: >
-          We support various payment methods, including BenefitPay, card, and
-          cash — giving you and your customers the flexibility to pay the way
-          that works best.
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: row
-            justifyContent: center
-            textAlign: left
-      - type: FeaturedItem
         title: Loyalty Rewards
         subtitle: 'Order More, Save More'
         text: >
