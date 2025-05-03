@@ -41,7 +41,7 @@ sections:
           name: Mobile Number
           label: Name
           hideLabel: true
-          placeholder: Your name
+          placeholder: Your mobile number
           isRequired: true
           width: full
       submitButton:
