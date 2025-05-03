@@ -58,7 +58,7 @@ sections:
             textAlign: left
       - type: FeaturedItem
         title: Reliable Deliveries
-        subtitle: Tracking & Free 2nd Attempt
+        subtitle: Free 2nd Attempt
         text: >
           Track every order live from pickup to delivery. If it fails the first
           time, we’ll reattempt a second delivery at no extra cost to ensure it
