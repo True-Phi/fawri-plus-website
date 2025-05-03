@@ -106,8 +106,8 @@ sections:
         title: Simple Ordering
         subtitle: Seamless Ordering via WhatsApp
         text: >
-          Place and manage orders directly through WhatsApp. No apps, no portals
-          — instant communication and dedicated support whenever you need it.
+          Easily place your order via WhatsApp, with quick and clear
+          communication for a hassle-free experience.
         image:
           type: ImageBlock
           altText: Featured icon two
