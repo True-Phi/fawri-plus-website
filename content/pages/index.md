@@ -57,6 +57,28 @@ sections:
             justifyContent: center
             textAlign: left
       - type: FeaturedItem
+        title: Reliable Deliveries
+        subtitle: Tracking & Free 2nd Attempt
+        text: >
+          Track every order live from pickup to delivery. If it fails the first
+          time, we’ll reattempt a second delivery at no extra cost to ensure it
+          gets there.
+        image:
+          type: ImageBlock
+          altText: Featured icon three
+          elementId: ''
+        actions: []
+        colors: bg-neutralAlt-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: row
+      - type: FeaturedItem
         title: Real-Time Tracking
         subtitle: Stay Updated on Your Order
         text: >
@@ -105,28 +127,6 @@ sections:
             flexDirection: row
             textAlign: left
             justifyContent: center
-      - type: FeaturedItem
-        title: Reliable Deliveries
-        subtitle: Tracking & Free 2nd Attempt
-        text: >
-          Track every order live from pickup to delivery. If it fails the first
-          time, we’ll reattempt a second delivery at no extra cost to ensure it
-          gets there.
-        image:
-          type: ImageBlock
-          altText: Featured icon three
-          elementId: ''
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: row
       - type: FeaturedItem
         title: Payments Options
         subtitle: Options That Fit You
