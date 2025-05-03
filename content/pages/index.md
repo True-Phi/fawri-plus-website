@@ -123,7 +123,7 @@ sections:
             textAlign: left
       - type: FeaturedItem
         title: Loyalty Rewards
-        subtitle: Numbers Done
+        subtitle: 'Order More, Save More'
         text: >-
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
