@@ -14,29 +14,6 @@ sections:
           - pb-3
           - pr-3
   - type: FeaturedItemsSection
-    title:
-      type: TitleBlock
-      text: Features
-      color: text-primary
-      styles:
-        self:
-          textAlign: center
-    subtitle: Explore Our Powerful Features Designed to Support Your Business.
-    items: []
-    actions: []
-    variant: three-col-grid
-    colors: bg-neutral-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-16
-          - pl-8
-          - pb-16
-          - pr-8
-        justifyContent: center
-      subtitle:
-        textAlign: center
-  - type: FeaturedItemsSection
     subtitle: Explore Our Powerful Features Designed to Support Your Business.
     items:
       - type: FeaturedItem
