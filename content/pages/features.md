@@ -143,7 +143,7 @@ sections:
             borderRadius: x-large
             flexDirection: row
       - type: FeaturedItem
-        title: Cash on Delivery
+        title: Cash Collection Service
         tagline: 'Secure, Seamless Payment Collection'
         subtitle: Collect Payments on Delivery
         text: >
