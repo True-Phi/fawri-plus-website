@@ -48,8 +48,8 @@ sections:
         subtitle: 'One Extra Delivery, No Cost'
         text: >
           If a delivery fails, we reattempt at no cost. Subscribers receive a
-          third delivery attempt for free—ensuring customer satisfaction without
-          additional charges.
+          third delivery attempt for free - ensuring customer satisfaction
+          without additional charges.
         image:
           type: ImageBlock
           altText: Background alt text
