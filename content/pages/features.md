@@ -210,7 +210,7 @@ sections:
             flexDirection: row
       - type: FeaturedItem
         title: ''
-        tagline: This is the tagline
+        tagline: Order Now and Enjoy All Benefits
         subtitle: ''
         text: ''
         actions:
