@@ -195,7 +195,7 @@ sections:
       - type: FeaturedItem
         title: Proof of Delivery
         tagline: Confirmed Drops with Every Order
-        subtitle: This is the item subtitle
+        subtitle: Photo or Signature Confirmation
         text: |
           Follow the tutorial to build your first Netlify Create site.
         image:
