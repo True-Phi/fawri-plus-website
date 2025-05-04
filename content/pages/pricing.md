@@ -67,9 +67,9 @@ sections:
           - Free 3rd Delivery Attempt
           - Priority Dispatching & Scheduling
           - Dedicated Account Manager
+          - Staff Training for Internal Teams
           - Batch Orders Processing (CSV / Excel)
           - Recurring Pickups / Deliveries Setup
-          - Staff Training for Internal Teams
         image:
           altText: Pricing plan 2
           type: ImageBlock
