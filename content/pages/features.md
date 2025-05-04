@@ -194,7 +194,7 @@ sections:
             flexDirection: row
       - type: FeaturedItem
         title: Proof of Delivery
-        tagline: This is the tagline
+        tagline: Confirmed Drops with Every Order
         subtitle: This is the item subtitle
         text: |
           Follow the tutorial to build your first Netlify Create site.
