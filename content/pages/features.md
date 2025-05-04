@@ -121,8 +121,10 @@ sections:
         title: Loyalty Rewards
         tagline: 'More Deliveries, More Exclusive Benefits'
         subtitle: Bonus Drops & Special Offers
-        text: |
-          Follow the tutorial to build your first Netlify Create site.
+        text: >
+          Our loyalty program rewards your consistency. Earn points with every
+          order and unlock exclusive perks—bonus deliveries, priority service,
+          and cost-saving discounts.
         image:
           type: ImageBlock
           altText: Placeholder text
