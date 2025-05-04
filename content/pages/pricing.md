@@ -48,7 +48,7 @@ sections:
         type: PricingPlan
       - title: Business Saver
         price: 81.000 BD
-        details: per month
+        details: 100 Orders per week
         description: >-
           Sed ut perspiciatis unde omnis, iste natus error sit voluptatem
           accusantium doloremque.
