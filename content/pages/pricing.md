@@ -54,8 +54,8 @@ sections:
         features:
           - Everything in Pay As You Go
           - Free 3rd Delivery Attempt
-          - Dedicated Account Manager
           - Priority Dispatching & Scheduling
+          - Dedicated Account Manager
           - Batch Orders Processing (CSV / Excel)
         image:
           url: /images/abstract-feature2.svg
