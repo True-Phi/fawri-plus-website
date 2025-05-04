@@ -81,9 +81,8 @@ sections:
       - title: Customised
         price: Custom
         details: 300+ Orders per Week
-        description: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam.
+        description: |
+          Tailored for franchises, marketplaces, or logistics-heavy operations
         features:
           - Feature one
           - Feature two
