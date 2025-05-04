@@ -21,7 +21,7 @@ sections:
       styles:
         self:
           textAlign: center
-    subtitle: 'Discover the Benefits of Fawri+ Delivery: Tailored to Your Needs.'
+    subtitle: Explore Our Powerful Features Designed to Support Your Business.
     items:
       - type: FeaturedItem
         title: Unbeatable Pricing
