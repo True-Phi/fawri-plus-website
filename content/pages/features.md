@@ -250,8 +250,10 @@ sections:
         title: Third Delivery Attempt
         tagline: 'Affordable, Transparent, and Reliable Pricing'
         subtitle: 'One More Chance, On Us'
-        text: |
-          Follow the tutorial to build your first Netlify site.
+        text: >
+          Subscribers enjoy an additional third delivery attempt—free of charge.
+          It’s our way of helping you ensure deliveries succeed even after two
+          failed attempts.
         image:
           type: ImageBlock
           url: /images/abstract-feature1.svg
