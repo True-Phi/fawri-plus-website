@@ -59,8 +59,9 @@ sections:
       - title: Customised
         price: Custom
         details: 100 Orders per Week
-        description: |
-          For businesses with high delivery volume (100+ orders/week)
+        description: >
+          Tailored for growing businesses, franchises, or logistics-driven
+          operations
         features:
           - Everything in Pay As You Go
           - Free 3rd Delivery Attempt
