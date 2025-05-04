@@ -1,5 +1,5 @@
 ---
-title: /
+title: Delivery Serivce Provider in Bahrain
 slug: /
 sections:
   - type: GenericSection
@@ -225,5 +225,5 @@ sections:
 type: PageLayout
 seo:
   type: Seo
-  metaDescription: Your Reliable Delivery Partner in Bahrain
+  socialImage: /images/logo-website-social-seo.png
 ---

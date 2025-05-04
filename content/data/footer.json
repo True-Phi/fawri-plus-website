@@ -51,6 +51,13 @@
     "socialLinks": [
         {
             "type": "Social",
+            "altText": "WhatsApp link",
+            "url": "https://wa.me/97366761322",
+            "icon": "whatsapp",
+            "elementId": ""
+        },
+        {
+            "type": "Social",
             "altText": "Instagram link",
             "url": "https://www.instagram.com/fawri_plus/",
             "icon": "instagram",
