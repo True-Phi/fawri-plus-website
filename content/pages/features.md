@@ -14,30 +14,7 @@ sections:
           - pb-3
           - pr-3
   - type: FeaturedItemsSection
-    title:
-      type: TitleBlock
-      text: Features
-      color: text-primary
-      styles:
-        self:
-          textAlign: center
     subtitle: Explore Our Powerful Features Designed to Support Your Business.
-    items: []
-    actions: []
-    variant: three-col-grid
-    colors: bg-neutral-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-16
-          - pl-8
-          - pb-16
-          - pr-8
-        justifyContent: center
-      subtitle:
-        textAlign: center
-  - type: FeaturedItemsSection
-    subtitle: ''
     items:
       - type: FeaturedItem
         title: Unbeatable Pricing
@@ -61,11 +38,11 @@ sections:
       - type: FeaturedItem
         title: Free Delivery Attempts
         tagline: 'Maximize Success, Minimize Delivery Costs'
-        subtitle: Second Attempt at No Extra Cost
+        subtitle: 'One Extra Delivery, No Cost'
         text: >
-          If a delivery fails, we reattempt it once at no charge. It’s our way
-          of ensuring reliability and giving your deliveries a second chance
-          without adding extra fees.
+          If a delivery fails, we reattempt at no cost. Subscribers receive a
+          third delivery attempt for free - ensuring customer satisfaction
+          without additional charges.
         image:
           type: ImageBlock
           altText: Background alt text
@@ -89,8 +66,8 @@ sections:
         subtitle: Live Updates Direct to Your Email
         text: >
           Gain full visibility with real-time tracking and automatic email
-          updates. Keep your team and customers informed every step of the way,
-          enhancing trust and control.
+          updates. Keep your team and customers informed at every step,
+          enhancing trust and operational control.
         image:
           type: ImageBlock
           altText: Background alt text
@@ -186,11 +163,11 @@ sections:
       - type: FeaturedItem
         title: Express Support
         tagline: 'Professional Support - Always, Anytime'
-        subtitle: 24/7 WhatsApp Customer Support
+        subtitle: 'Round-the-Clock, Personal Assistance'
         text: >
-          Reach us any time, day or night. Our support team is available via
-          WhatsApp 24/7 to assist with delivery updates, questions, or urgent
-          issues—whenever you need help.
+          Get expert support whenever you need it via WhatsApp, day or night.
+          Subscribers also benefit from a dedicated account manager for
+          proactive, business-focused assistance.
         image:
           type: ImageBlock
           altText: Placeholder text
@@ -208,7 +185,97 @@ sections:
               - pr-8
             borderRadius: x-large
             flexDirection: row
-    actions: []
+      - type: FeaturedItem
+        title: Proof of Delivery*
+        tagline: Confirmed Drops with Every Order
+        subtitle: Photo or Signature Confirmation
+        text: >
+          Gain peace of mind with proof of delivery - choose photo or signature
+          confirmation. It’s a simple way to ensure accountability, trust, and
+          professionalism on every delivery.
+        image:
+          type: ImageBlock
+          altText: Placeholder text
+          styles:
+            self:
+              borderRadius: x-large
+        actions: []
+        colors: bg-neutralAlt-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: row
+      - type: FeaturedItem
+        title: Buy on Behalf Service*
+        tagline: 'Purchase, Deliver, and Save Time'
+        subtitle: 'We Shop, You Stay Focused'
+        text: >
+          Let us buy items for your customers and deliver directly. Save
+          valuable time while expanding your service offering with seamless
+          purchase-and-drop convenience.
+        image:
+          type: ImageBlock
+          altText: Placeholder text
+          styles:
+            self:
+              borderRadius: x-large
+        actions: []
+        colors: bg-neutralAlt-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: row
+      - type: FeaturedItem
+        title: Refrigerated Delivery*
+        tagline: 'Freshness Delivered, Always Protected'
+        subtitle: Chilled Transport for Fresh Goods
+        text: >
+          Deliver perishable items with confidence. Our refrigerated vehicles
+          keep your food or temperature-sensitive products cool and secure
+          throughout the journey - fresh at every stop.
+        image:
+          type: ImageBlock
+          altText: Placeholder text
+          styles:
+            self:
+              borderRadius: x-large
+        actions: []
+        colors: bg-neutralAlt-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: row
+    actions:
+      - type: Link
+        label: >-
+          * Available as optional add-on services to enhance your delivery
+          experience.
+        altText: ''
+        url: ''
+        showIcon: false
+        icon: arrowRight
+        iconPosition: right
+        style: secondary
+        elementId: ''
+    badge:
+      type: Badge
+      label: ''
+      color: text-primary
     variant: two-col-grid
     colors: bg-neutral-fg-dark
     styles:
@@ -221,118 +288,13 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
-    badge:
-      type: Badge
-      label: Core Features (For All Customers)
-      color: text-primary
-  - type: DividerSection
-    title: Divider
-    elementId: ''
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-3
-          - pl-3
-          - pb-3
-          - pr-3
-  - type: FeaturedItemsSection
     title:
       type: TitleBlock
-      text: List of features here
+      text: Features
       color: text-primary
       styles:
         self:
           textAlign: center
-    subtitle: Featured items section subtitle
-    items:
-      - type: FeaturedItem
-        title: Third Delivery Attempt
-        tagline: 'Affordable, Transparent, and Reliable Pricing'
-        subtitle: 'One More Chance, On Us'
-        text: >
-          Subscribers enjoy an additional third delivery attempt - free of
-          charge. It’s our way of helping you ensure deliveries succeed even
-          after two failed attempts.
-        image:
-          type: ImageBlock
-          url: /images/abstract-feature1.svg
-          altText: Placeholder image
-          styles:
-            self:
-              borderRadius: x-large
-        actions: []
-        colors: bg-light-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: col
-      - type: FeaturedItem
-        title: Feature Item Two
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
-        text: |
-          Follow the tutorial to build your first awesome Netlify site.
-        image:
-          type: ImageBlock
-          url: /images/abstract-feature2.svg
-          altText: Placeholder image
-          styles:
-            self:
-              borderRadius: x-large
-        actions: []
-        colors: bg-light-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: col
-      - type: FeaturedItem
-        title: Feature Item Three
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
-        text: |
-          Learn from the tutorial and build your first awesome Netlify site.
-        image:
-          type: ImageBlock
-          url: /images/abstract-feature3.svg
-          altText: Placeholder image
-          styles:
-            self:
-              borderRadius: x-large
-        actions: []
-        colors: bg-light-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: col
-    actions: []
-    variant: three-col-grid
-    colors: bg-neutral-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-16
-          - pl-8
-          - pb-16
-          - pr-8
-        justifyContent: center
-      subtitle:
-        textAlign: center
   - type: DividerSection
     title: Divider
     elementId: ''
