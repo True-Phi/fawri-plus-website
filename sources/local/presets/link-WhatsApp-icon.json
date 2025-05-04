@@ -1,0 +1,19 @@
+{
+  "model": "Link",
+  "presets": [
+    {
+      "label": "WhatsApp icon",
+      "thumbnail": "images/link-WhatsApp-icon-23a5.png",
+      "data": {
+        "label": null,
+        "altText": "",
+        "url": "/",
+        "showIcon": true,
+        "icon": "WhatsApp",
+        "iconPosition": "right",
+        "style": "secondary",
+        "elementId": ""
+      }
+    }
+  ]
+}
