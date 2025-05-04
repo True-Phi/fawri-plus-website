@@ -226,7 +226,7 @@ sections:
       label: Core Features (For All Customers)
       color: text-primary
   - type: FeaturedItemsSection
-    subtitle: Featured items section subtitle
+    subtitle: ''
     items:
       - type: FeaturedItem
         title: Third Delivery Attempt
