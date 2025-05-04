@@ -27,8 +27,9 @@ sections:
         title: Unbeatable Pricing
         tagline: Pricing
         subtitle: 'Lowest Rates, Fixed Price'
-        text: |
-          Follow the tutorial to build your first Netlify Create site.
+        text: >
+          We offer the most competitive delivery rates in Bahrain. No hidden
+          commissions. Fixed price for all distances across the country.
         actions: []
         colors: bg-light-fg-dark
         styles:
