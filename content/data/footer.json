@@ -68,6 +68,13 @@
             "url": "https://mailto:info@fawri-plus.com",
             "icon": "mail",
             "type": "Social"
+        },
+        {
+            "type": "Social",
+            "altText": "WhatsApp link",
+            "url": "/",
+            "icon": "WhatsApp",
+            "elementId": ""
         }
     ],
     "legalLinks": [
