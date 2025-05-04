@@ -146,8 +146,10 @@ sections:
         title: Cash on Delivery
         tagline: 'Secure, Seamless Payment Collection'
         subtitle: Collect Payments on Delivery
-        text: |
-          Follow the tutorial to build your first Netlify Create site.
+        text: >
+          Let us handle cash payments at the door. A convenient, secure
+          cash-on-delivery solution that improves your collection process and
+          enhances your customer experience.
         image:
           type: ImageBlock
           altText: Placeholder text
