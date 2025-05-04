@@ -209,7 +209,7 @@ sections:
             borderRadius: x-large
             flexDirection: row
       - type: FeaturedItem
-        title: Order Now and Enjoy All Benefits
+        title: ''
         tagline: This is the tagline
         subtitle: ''
         text: ''
