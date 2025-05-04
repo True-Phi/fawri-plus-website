@@ -119,7 +119,7 @@ sections:
             flexDirection: row
       - type: FeaturedItem
         title: Loyalty Rewards
-        tagline: This is the tagline
+        tagline: 'More Deliveries, More Exclusive Benefits'
         subtitle: This is the item subtitle
         text: |
           Follow the tutorial to build your first Netlify Create site.
