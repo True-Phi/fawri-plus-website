@@ -25,7 +25,7 @@ sections:
         style: secondary
         elementId: ''
       - type: Link
-        label: Instagram
+        label: ''
         altText: Instagram
         url: /
         showIcon: true
