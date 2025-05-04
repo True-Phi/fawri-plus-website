@@ -63,7 +63,7 @@ sections:
           type: ImageBlock
         actions:
           - label: Contact Us
-            url: /
+            url: /contact
             icon: arrowRight
             iconPosition: right
             style: secondary
