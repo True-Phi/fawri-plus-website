@@ -37,7 +37,7 @@ sections:
       subtitle:
         textAlign: center
   - type: FeaturedItemsSection
-    subtitle: Explore Our Powerful Features Designed to Support Your Business.
+    subtitle: ''
     items:
       - type: FeaturedItem
         title: Unbeatable Pricing
