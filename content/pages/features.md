@@ -214,7 +214,16 @@ sections:
         subtitle: This is the item subtitle
         text: |
           Follow the tutorial to build your first Netlify Create site.
-        actions: []
+        actions:
+          - type: Button
+            label: Get started
+            altText: ''
+            url: 'https://store.fawri-plus.com'
+            showIcon: false
+            icon: arrowRight
+            iconPosition: right
+            style: primary
+            elementId: ''
         colors: bg-light-fg-dark
         styles:
           self:
