@@ -10,8 +10,8 @@ sections:
           textAlign: center
       type: TitleBlock
     subtitle: >-
-      Our competitive pricing is designed to suit businesses with any on-demand
-      delivery requirements
+      Our competitive pricing is designed to suit individuals and businesses
+      with any on-demand delivery requirements
     plans:
       - title: Developers
         price: Free
