@@ -25,7 +25,7 @@ sections:
     items:
       - type: FeaturedItem
         title: Unbeatable Pricing
-        tagline: Pricing
+        tagline: 'Affordable, Transparent, and Reliable Pricing'
         subtitle: Fixed Rates for All Distances
         text: >
           We offer the most competitive prices in Bahrain, with no hidden
