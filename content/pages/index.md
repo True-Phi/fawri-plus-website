@@ -225,7 +225,6 @@ sections:
 type: PageLayout
 seo:
   type: Seo
-  metaTitle: Fawri+ Delivery
   metaDescription: Your Reliable Delivery Partner in Bahrain
   socialImage: /images/logo email signature.png
 ---
