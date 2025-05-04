@@ -45,7 +45,7 @@ sections:
               - pr-6
             borderRadius: large
         type: PricingPlan
-      - title: Professional
+      - title: Business Saver
         price: 81.000 BD
         details: per month
         description: >-
