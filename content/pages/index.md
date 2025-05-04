@@ -1,5 +1,5 @@
 ---
-title: /
+title: Fawri+
 slug: /
 sections:
   - type: GenericSection
