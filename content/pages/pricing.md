@@ -55,7 +55,7 @@ sections:
           - Everything in Pay As You Go
           - Dedicated Account Manager
           - Priority Dispatching & Scheduling
-          - Batch order uploads (CSV / Excel)
+          - Batch Orders Processing (CSV / Excel)
         image:
           url: /images/abstract-feature2.svg
           altText: Pricing plan 2
