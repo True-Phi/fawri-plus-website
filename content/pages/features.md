@@ -243,7 +243,7 @@ sections:
             borderRadius: x-large
             flexDirection: row
       - type: FeaturedItem
-        title: Refrigerated Delivery
+        title: Refrigerated Delivery*
         tagline: 'Freshness Delivered, Always Protected'
         subtitle: Chilled Transport for Fresh Goods
         text: >
