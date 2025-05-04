@@ -22,7 +22,7 @@ import ShoppingBag from './shopping-bag';
 import Twitter from './twitter';
 import Vimeo from './vimeo';
 import YouTube from './youtube';
-import WhatsApp from './WhatsApp';
+import WhatsApp from './whatsapp';
 
 export const iconMap = {
     arrowDown: ArrowDown,
