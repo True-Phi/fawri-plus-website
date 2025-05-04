@@ -193,7 +193,7 @@ sections:
             borderRadius: x-large
             flexDirection: row
       - type: FeaturedItem
-        title: Proof of Delivery
+        title: Proof of Delivery*
         tagline: Confirmed Drops with Every Order
         subtitle: Photo or Signature Confirmation
         text: >
