@@ -322,6 +322,6 @@ sections:
           - pl-3
           - pb-3
           - pr-3
-slug: duplicate-features
+slug: features
 isDraft: false
 ---
