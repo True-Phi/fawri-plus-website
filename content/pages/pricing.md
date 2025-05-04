@@ -56,53 +56,25 @@ sections:
               - pr-6
             borderRadius: large
         type: PricingPlan
-      - title: Business Saver
-        price: 81.000 BHD
-        details: 100 Orders per Week
-        description: |
-          For businesses with high delivery volume (100+ orders/week)
+      - title: Customised
+        price: Custom
+        details: 100+ Orders per Week
+        description: >
+          Tailored for growing businesses, franchises, or logistics-driven
+          operations
         features:
           - Everything in Pay As You Go
           - Free 3rd Delivery Attempt
           - Priority Dispatching & Scheduling
           - Dedicated Account Manager
+          - Staff Training for Internal Teams
           - Batch Orders Processing (CSV / Excel)
+          - Recurring Pickups / Deliveries Setup
         image:
           altText: Pricing plan 2
           type: ImageBlock
         actions:
           - label: Contact Us
-            url: /contact
-            icon: arrowRight
-            iconPosition: right
-            style: secondary
-            type: Button
-        colors: bg-neutral-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-6
-              - pb-10
-              - pl-6
-              - pr-6
-            borderRadius: large
-        type: PricingPlan
-      - title: Customised
-        price: Custom
-        details: 300+ Orders per Week
-        description: >
-          Tailored for growing businesses, franchises, or logistics-driven
-          operations
-        features:
-          - Everything in Business Saver
-          - Recurring Pickups/Deliveries Setup
-          - Staff Training for Internal Teams
-          - '& Much More!'
-        image:
-          altText: Pricing plan 3
-          type: ImageBlock
-        actions:
-          - label: Contact us
             url: /contact
             icon: arrowRight
             iconPosition: right
