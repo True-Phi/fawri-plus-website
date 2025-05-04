@@ -221,8 +221,10 @@ sections:
         title: Buy on Behalf Service*
         tagline: 'Purchase, Deliver, and Save Time'
         subtitle: 'We Shop, You Stay Focused'
-        text: |
-          Follow the tutorial to build your first Netlify Create site.
+        text: >
+          Let us buy items for your customers and deliver directly. Save
+          valuable time while expanding your service offering with seamless
+          purchase-and-drop convenience.
         image:
           type: ImageBlock
           altText: Placeholder text
