@@ -49,9 +49,8 @@ sections:
       - title: Business Saver
         price: 81.000 BD
         details: 100 Orders per week
-        description: >-
-          Sed ut perspiciatis unde omnis, iste natus error sit voluptatem
-          accusantium doloremque.
+        description: |
+          For businesses with high delivery volume (100+ orders/week)
         features:
           - Feature one
           - Feature two
