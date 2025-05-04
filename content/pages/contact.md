@@ -27,7 +27,7 @@ sections:
       - type: Link
         label: Send Email
         altText: Send an Email
-        url: /
+        url: 'https://mailto:info@fawri-plus.com'
         showIcon: true
         icon: mail
         iconPosition: left
