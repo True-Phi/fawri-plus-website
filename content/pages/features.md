@@ -220,7 +220,7 @@ sections:
       - type: FeaturedItem
         title: Buy on Behalf Service*
         tagline: 'Purchase, Deliver, and Save Time'
-        subtitle: This is the item subtitle
+        subtitle: 'We Shop, You Stay Focused'
         text: |
           Follow the tutorial to build your first Netlify Create site.
         image:
