@@ -14,7 +14,7 @@ sections:
       with any on-demand delivery requirements
     plans:
       - title: Individuals
-        price: Free
+        price: 0.900 BD
         details: No credit card required
         description: >-
           Sed ut perspiciatis unde omnis, iste natus error sit voluptatem
