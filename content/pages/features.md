@@ -270,7 +270,7 @@ sections:
     actions:
       - type: Link
         label: >-
-          Available as optional add-on services to enhance your delivery
+          * Available as optional add-on services to enhance your delivery
           experience.
         altText: ''
         url: ''
