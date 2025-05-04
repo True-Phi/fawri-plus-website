@@ -53,8 +53,8 @@ sections:
           For businesses with high delivery volume (100+ orders/week)
         features:
           - Everything in Pay As You Go
-          - Dedicated Account Manager
           - Free 3rd Delivery Attempt
+          - Dedicated Account Manager
           - Priority Dispatching & Scheduling
           - Batch Orders Processing (CSV / Excel)
         image:
