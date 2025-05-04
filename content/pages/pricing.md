@@ -19,7 +19,7 @@ sections:
         description: |
           Perfect for individuals or businesses needing a single delivery
         features:
-          - Feature one
+          - Live Order Tracking
           - Feature two
           - Feature three
           - Feature four
