@@ -20,7 +20,7 @@ sections:
           Perfect for individuals or businesses needing a single delivery
         features:
           - ✅ Real-Time Order Tracking
-          - ✅ Free 2nd Delivery Attempt
+          - Free 2nd Delivery Attempt
           - Cash Collection
           - Loayalty Rewards
           - 24/7 WhatsApp Support
