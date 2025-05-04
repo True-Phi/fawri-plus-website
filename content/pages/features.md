@@ -244,7 +244,7 @@ sections:
             flexDirection: row
       - type: FeaturedItem
         title: Refrigerated Delivery
-        tagline: This is the tagline
+        tagline: 'Freshness Delivered, Always Protected'
         subtitle: This is the item subtitle
         text: |
           Follow the tutorial to build your first Netlify Create site.
