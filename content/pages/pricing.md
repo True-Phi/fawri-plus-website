@@ -14,7 +14,7 @@ sections:
       with any on-demand delivery requirements
     plans:
       - title: Pay As You Go
-        price: 0.900 BD
+        price: 0.900 BHD
         details: 1 Single Order
         description: |
           Perfect for individuals or businesses needing a single delivery
