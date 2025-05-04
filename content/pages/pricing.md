@@ -54,7 +54,7 @@ sections:
         features:
           - Everything in Pay As You Go
           - Dedicated Account Manager
-          - Feature three
+          - Priority Dispatching & Scheduling
           - Feature four
         image:
           url: /images/abstract-feature2.svg
