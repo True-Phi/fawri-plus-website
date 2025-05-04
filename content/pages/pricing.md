@@ -58,7 +58,6 @@ sections:
           - Dedicated Account Manager
           - Batch Orders Processing (CSV / Excel)
         image:
-          url: /images/abstract-feature2.svg
           altText: Pricing plan 2
           type: ImageBlock
         actions:
