@@ -14,15 +14,7 @@ sections:
 
 
 
-    actions:
-      - type: Link
-        altText: ''
-        url: /
-        showIcon: true
-        icon: whatsapp
-        iconPosition: right
-        style: secondary
-        elementId: ''
+    actions: []
     media:
       type: FormBlock
       fields:
