@@ -23,7 +23,7 @@ sections:
         iconPosition: left
         style: secondary
         elementId: ''
-        label: Message Us on WhatsApp
+        label: Message on WhatsApp
       - type: Link
         label: Send Email
         altText: Send an Email
