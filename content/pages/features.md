@@ -209,7 +209,7 @@ sections:
             borderRadius: x-large
             flexDirection: row
       - type: FeaturedItem
-        title: ''
+        title: Try Us!
         tagline: ''
         subtitle: ''
         text: ''
