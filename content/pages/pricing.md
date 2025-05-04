@@ -20,7 +20,7 @@ sections:
           Perfect for individuals or businesses needing a single delivery
         features:
           - Order Tracking
-          - Feature two
+          - Free 2nd Delivery Attempt
           - Feature three
           - Feature four
         image:
