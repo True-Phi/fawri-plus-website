@@ -22,7 +22,7 @@ sections:
           - ✅ Real-Time Order Tracking
           - ✅ Free 2nd Delivery Attempt
           - ✅ Cash Collection
-          - ✅ Loayalty Rewards
+          - Loayalty Rewards
           - 24/7 WhatsApp Support
           - Custom Add-Ons
         image:
