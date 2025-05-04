@@ -48,7 +48,7 @@ sections:
         type: PricingPlan
       - title: Business Saver
         price: 81.000 BD
-        details: 100 Orders per week
+        details: 100 Orders per Week
         description: |
           For businesses with high delivery volume (100+ orders/week)
         features:
