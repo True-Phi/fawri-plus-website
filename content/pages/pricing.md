@@ -15,7 +15,7 @@ sections:
     plans:
       - title: Individuals
         price: 0.900 BD
-        details: No credit card required
+        details: 1 single order
         description: >-
           Sed ut perspiciatis unde omnis, iste natus error sit voluptatem
           accusantium doloremque.
