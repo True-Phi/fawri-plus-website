@@ -225,4 +225,5 @@ sections:
 type: PageLayout
 seo:
   type: Seo
+  metaDescription: Your Reliable Delivery Partner in Bahrain
 ---
