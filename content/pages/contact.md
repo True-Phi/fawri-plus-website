@@ -16,15 +16,6 @@ sections:
 
     actions:
       - type: Link
-        label: Send email
-        altText: Play
-        url: /
-        showIcon: true
-        icon: mail
-        iconPosition: right
-        style: secondary
-        elementId: ''
-      - type: Link
         altText: ''
         url: /
         showIcon: true
