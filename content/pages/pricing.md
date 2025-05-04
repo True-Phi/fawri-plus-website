@@ -14,7 +14,7 @@ sections:
           - pb-3
           - pr-3
   - title:
-      text: Unbeatable Pricing
+      text: Pricing Plans
       color: text-dark
       styles:
         self:
