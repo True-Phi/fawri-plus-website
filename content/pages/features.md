@@ -314,6 +314,10 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
+    badge:
+      type: Badge
+      label: Core Features (For All Customers)
+      color: text-primary
   - type: DividerSection
     title: Divider
     elementId: ''
