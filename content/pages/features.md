@@ -251,9 +251,9 @@ sections:
         tagline: 'Affordable, Transparent, and Reliable Pricing'
         subtitle: 'One More Chance, On Us'
         text: >
-          Subscribers enjoy an additional third delivery attempt—free of charge.
-          It’s our way of helping you ensure deliveries succeed even after two
-          failed attempts.
+          Subscribers enjoy an additional third delivery attempt - free of
+          charge. It’s our way of helping you ensure deliveries succeed even
+          after two failed attempts.
         image:
           type: ImageBlock
           url: /images/abstract-feature1.svg
