@@ -89,7 +89,6 @@ sections:
           - Recurring Pickups/Deliveries Setup
           - Staff Training for Internal Teams
           - '& Much More!'
-          - Feature five
         image:
           url: /images/abstract-feature3.svg
           altText: Pricing plan 3
