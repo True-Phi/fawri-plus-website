@@ -72,8 +72,9 @@ sections:
         tagline: 'Stay in the Loop, Every Step of the Way'
         subtitle: Live Updates Direct to Your Email
         text: >
-          Track your deliveries in real-time and receive updates directly to
-          your email, keeping you informed at every step of the way.
+          Stay informed with our real-time tracking system. You’ll receive live
+          updates directly to your email, keeping you in the loop at every stage
+          of your delivery for complete peace of mind.
         image:
           type: ImageBlock
           altText: Background alt text
