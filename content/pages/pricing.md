@@ -69,7 +69,7 @@ sections:
           - Dedicated Account Manager
           - Batch Orders Processing (CSV / Excel)
           - Recurring Pickups / Deliveries Setup
-          - ''
+          - Staff Training for Internal Teams
         image:
           altText: Pricing plan 2
           type: ImageBlock
