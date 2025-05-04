@@ -46,8 +46,10 @@ sections:
         title: Free Re-Delivery
         tagline: More Chances for Successful Deliveries
         subtitle: 'One Extra Delivery, No Cost'
-        text: |
-          Follow the tutorial to build your first awesome Netlify Create site.
+        text: >
+          If a delivery fails, we’ll make one free reattempt to ensure it
+          reaches its destination. Subscribers even get a third free delivery
+          attempt, with no extra charges.
         image:
           type: ImageBlock
           altText: Background alt text
