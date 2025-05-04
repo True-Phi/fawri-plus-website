@@ -25,15 +25,6 @@ sections:
         style: secondary
         elementId: ''
       - type: Link
-        label: ''
-        altText: Instagram
-        url: /
-        showIcon: true
-        icon: instagram
-        iconPosition: left
-        style: primary
-        elementId: ''
-      - type: Link
         altText: Facebook
         url: /
         showIcon: true
