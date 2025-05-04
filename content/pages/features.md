@@ -226,13 +226,6 @@ sections:
       label: Core Features (For All Customers)
       color: text-primary
   - type: FeaturedItemsSection
-    title:
-      type: TitleBlock
-      text: List of features here
-      color: text-primary
-      styles:
-        self:
-          textAlign: center
     subtitle: Featured items section subtitle
     items:
       - type: FeaturedItem
