@@ -20,7 +20,7 @@ sections:
         url: 'https://wa.me/97366761322'
         showIcon: true
         icon: whatsapp
-        iconPosition: right
+        iconPosition: left
         style: secondary
         elementId: ''
         label: Message Us on WhatsApp
