@@ -21,7 +21,7 @@ sections:
       styles:
         self:
           textAlign: center
-    subtitle: Featured items section subtitle
+    subtitle: What makes us different
     items:
       - type: FeaturedItem
         title: Feature Item One
