@@ -188,9 +188,9 @@ sections:
         tagline: 'Professional Support - Always, Anytime'
         subtitle: 24/7 WhatsApp Customer Support
         text: >
-          Get expert support whenever you need it via WhatsApp, day or night.
-          Subscribers also benefit from a dedicated account manager for
-          proactive, business-focused assistance.
+          Reach us any time, day or night. Our support team is available via
+          WhatsApp 24/7 to assist with delivery updates, questions, or urgent
+          issues—whenever you need help.
         image:
           type: ImageBlock
           altText: Placeholder text
