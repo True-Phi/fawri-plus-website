@@ -63,9 +63,9 @@ sections:
         tagline: 'Maximize Success, Minimize Delivery Costs'
         subtitle: Second Attempt at No Extra Cost
         text: >
-          If a delivery fails, we reattempt at no cost. Subscribers receive a
-          third delivery attempt for free - ensuring customer satisfaction
-          without additional charges.
+          If a delivery fails, we reattempt it once at no charge. It’s our way
+          of ensuring reliability and giving your deliveries a second chance
+          without adding extra fees.
         image:
           type: ImageBlock
           altText: Background alt text
