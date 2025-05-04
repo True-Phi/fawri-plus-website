@@ -70,7 +70,7 @@ sections:
       - type: FeaturedItem
         title: Real-Time Tracking
         tagline: 'Stay in the Loop, Every Step of the Way'
-        subtitle: This is the item subtitle
+        subtitle: Live Updates Direct to Your Email
         text: |
           Learn from the tutorial and build your first awesome Netlify site.
         image:
