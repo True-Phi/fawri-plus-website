@@ -297,7 +297,7 @@ sections:
         elementId: ''
     badge:
       type: Badge
-      label: Core Features (For All Customers)
+      label: ''
       color: text-primary
     variant: two-col-grid
     colors: bg-neutral-fg-dark
