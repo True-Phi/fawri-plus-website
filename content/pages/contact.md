@@ -31,7 +31,7 @@ sections:
         showIcon: true
         icon: instagram
         iconPosition: left
-        style: secondary
+        style: primary
         elementId: ''
       - type: Link
         altText: Facebook
