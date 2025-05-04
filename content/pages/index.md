@@ -10,6 +10,11 @@ sections:
       styles:
         self:
           textAlign: right
+            padding:
+          - pt-0
+          - pl-0
+          - pb-3
+          - pr-0
     subtitle: ''
     text: ''
     actions: []
