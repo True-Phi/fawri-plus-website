@@ -101,7 +101,7 @@
     "logo": {
         "type": "ImageBlock",
         "url": "/images/website footer - logo white - black bg.png",
-        "altText": "Image alt text placeholder",
+        "altText": "Logo white footer",
         "elementId": "",
         "styles": {
             "self": {
