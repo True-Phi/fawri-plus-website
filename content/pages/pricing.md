@@ -69,6 +69,7 @@ sections:
           - Dedicated Account Manager
           - Batch Orders Processing (CSV / Excel)
           - Recurring Pickups / Deliveries Setup
+          - ''
         image:
           altText: Pricing plan 2
           type: ImageBlock
