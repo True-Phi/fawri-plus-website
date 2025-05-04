@@ -218,7 +218,7 @@ sections:
             borderRadius: x-large
             flexDirection: row
       - type: FeaturedItem
-        title: Buy on Behalf Service
+        title: Buy on Behalf Service*
         tagline: This is the tagline
         subtitle: This is the item subtitle
         text: |
