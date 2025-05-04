@@ -144,7 +144,7 @@ sections:
             flexDirection: row
       - type: FeaturedItem
         title: Cash on Delivery
-        tagline: This is the tagline
+        tagline: 'Secure, Seamless Payment Collection'
         subtitle: This is the item subtitle
         text: |
           Follow the tutorial to build your first Netlify Create site.
