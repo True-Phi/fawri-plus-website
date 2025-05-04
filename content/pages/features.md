@@ -120,7 +120,7 @@ sections:
       - type: FeaturedItem
         title: Loyalty Rewards
         tagline: 'More Deliveries, More Exclusive Benefits'
-        subtitle: This is the item subtitle
+        subtitle: Bonus Drops & Special Offers
         text: |
           Follow the tutorial to build your first Netlify Create site.
         image:
