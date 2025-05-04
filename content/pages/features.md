@@ -247,7 +247,7 @@ sections:
     subtitle: Featured items section subtitle
     items:
       - type: FeaturedItem
-        title: Feature Item One
+        title: Third Delivery Attempt
         tagline: 'Affordable, Transparent, and Reliable Pricing'
         subtitle: This is the item subtitle
         text: |
