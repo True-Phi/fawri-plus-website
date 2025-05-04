@@ -13,7 +13,7 @@ sections:
       Our competitive pricing is designed to suit individuals and businesses
       with any on-demand delivery requirements
     plans:
-      - title: Individuals
+      - title: Pay As You Go
         price: 0.900 BD
         details: 1 single order
         description: >-
