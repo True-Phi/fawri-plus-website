@@ -22,6 +22,7 @@ import ShoppingBag from './shopping-bag';
 import Twitter from './twitter';
 import Vimeo from './vimeo';
 import YouTube from './youtube';
+import WhatsApp from './whatsapp';
 
 export const iconMap = {
     arrowDown: ArrowDown,
@@ -48,4 +49,5 @@ export const iconMap = {
     twitter: Twitter,
     vimeo: Vimeo,
     youtube: YouTube
+    whatsapp: WhatsApp
 };
