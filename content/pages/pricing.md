@@ -58,7 +58,7 @@ sections:
         type: PricingPlan
       - title: Customised
         price: Custom
-        details: 100 Orders per Week
+        details: 100+ Orders per Week
         description: >
           Tailored for growing businesses, franchises, or logistics-driven
           operations
