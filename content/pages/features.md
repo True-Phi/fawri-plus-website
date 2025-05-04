@@ -49,7 +49,7 @@ sections:
         text: >
           If a delivery fails, we reattempt at no cost. Subscribers receive a
           third delivery attempt for free—ensuring customer satisfaction without
-          additional fees
+          additional charges.
         image:
           type: ImageBlock
           altText: Background alt text
