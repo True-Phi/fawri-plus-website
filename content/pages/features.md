@@ -118,7 +118,7 @@ sections:
             borderRadius: x-large
             flexDirection: row
       - type: FeaturedItem
-        title: Easy Ordering Anytime
+        title: Loyalty Rewards
         tagline: This is the tagline
         subtitle: This is the item subtitle
         text: |
