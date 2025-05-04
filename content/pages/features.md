@@ -43,7 +43,7 @@ sections:
             borderRadius: x-large
             flexDirection: row
       - type: FeaturedItem
-        title: Free Re-Delivery
+        title: Free Delivery Attempts
         tagline: 'Maximize Success, Minimize Delivery Costs'
         subtitle: 'One Extra Delivery, No Cost'
         text: >
