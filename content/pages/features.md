@@ -245,7 +245,7 @@ sections:
       - type: FeaturedItem
         title: Refrigerated Delivery
         tagline: 'Freshness Delivered, Always Protected'
-        subtitle: This is the item subtitle
+        subtitle: Chilled Transport for Fresh Goods
         text: |
           Follow the tutorial to build your first Netlify Create site.
         image:
