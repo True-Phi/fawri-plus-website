@@ -19,7 +19,7 @@ sections:
         description: |
           Perfect for individuals or businesses needing a single delivery
         features:
-          - Order Tracking
+          - Real-Time Order Tracking
           - Free 2nd Delivery Attempt
           - Feature three
           - Feature four
