@@ -56,7 +56,7 @@ sections:
               - pr-6
             borderRadius: large
         type: PricingPlan
-      - title: Business Saver
+      - title: Customised
         price: 85.500 BHD
         details: 100 Orders per Week
         description: |
