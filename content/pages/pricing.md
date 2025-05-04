@@ -68,6 +68,7 @@ sections:
           - Priority Dispatching & Scheduling
           - Dedicated Account Manager
           - Batch Orders Processing (CSV / Excel)
+          - ''
         image:
           altText: Pricing plan 2
           type: ImageBlock
