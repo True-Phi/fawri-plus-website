@@ -249,7 +249,7 @@ sections:
       - type: FeaturedItem
         title: Third Delivery Attempt
         tagline: 'Affordable, Transparent, and Reliable Pricing'
-        subtitle: This is the item subtitle
+        subtitle: 'One More Chance, On Us'
         text: |
           Follow the tutorial to build your first Netlify site.
         image:
