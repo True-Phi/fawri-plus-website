@@ -2,7 +2,6 @@
     "favicon": "/images/Asset 148large.jpg",
     "footer": "content/data/footer.json",
     "titleSuffix": "Fawri+ Delivery",
-    "defaultSocialImage": "/images/logo email signature.png",
     "type": "Config",
     "header": "content/data/header.json"
 }
