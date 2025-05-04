@@ -37,13 +37,6 @@ sections:
       subtitle:
         textAlign: center
   - type: FeaturedItemsSection
-    title:
-      type: TitleBlock
-      text: Features
-      color: text-primary
-      styles:
-        self:
-          textAlign: center
     subtitle: Explore Our Powerful Features Designed to Support Your Business.
     items:
       - type: FeaturedItem
