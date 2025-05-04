@@ -72,9 +72,9 @@ sections:
         tagline: Visibility from Dispatch to Doorstep
         subtitle: Live Updates Direct to Your Email
         text: >
-          Stay informed with our real-time tracking system. You’ll receive live
-          updates directly to your email, keeping you in the loop at every stage
-          of your delivery for complete peace of mind.
+          Gain full visibility with real-time tracking and automatic email
+          updates. Keep your team and customers informed at every step,
+          enhancing trust and operational control.
         image:
           type: ImageBlock
           altText: Background alt text
