@@ -23,7 +23,7 @@ sections:
           - ✅ Free 2nd Delivery Attempt
           - ✅ Cash Collection
           - ✅ Loayalty Rewards
-          - 24/7 WhatsApp Support
+          - ✅ 24/7 WhatsApp Support
           - Custom Add-Ons
         image:
           url: /images/abstract-feature1.svg
