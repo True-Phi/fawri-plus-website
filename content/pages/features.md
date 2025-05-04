@@ -246,8 +246,10 @@ sections:
         title: Refrigerated Delivery
         tagline: 'Freshness Delivered, Always Protected'
         subtitle: Chilled Transport for Fresh Goods
-        text: |
-          Follow the tutorial to build your first Netlify Create site.
+        text: >
+          Deliver perishable items with confidence. Our refrigerated vehicles
+          keep your food or temperature-sensitive products cool and secure
+          throughout the journey - fresh at every stop.
         image:
           type: ImageBlock
           altText: Placeholder text
