@@ -96,8 +96,10 @@ sections:
         title: Simple Ordering & Scheduling
         tagline: Fast Ordering with Flexible Time Options
         subtitle: WhatsApp Orders. Simple Scheduling
-        text: |
-          Follow the tutorial to build your first Netlify Create site.
+        text: >
+          Place orders instantly via WhatsApp and select preferred delivery time
+          slots. Enjoy effortless communication and reliable scheduling tailored
+          to your business needs.
         image:
           type: ImageBlock
           altText: Placeholder text
