@@ -44,7 +44,7 @@ sections:
             flexDirection: row
       - type: FeaturedItem
         title: Free Re-Delivery
-        tagline: More Chances for Successful Deliveries
+        tagline: 'Maximize Success, Minimize Delivery Costs'
         subtitle: 'One Extra Delivery, No Cost'
         text: >
           If a delivery fails, we’ll make one free reattempt to ensure your
