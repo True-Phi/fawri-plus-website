@@ -145,7 +145,7 @@ sections:
       - type: FeaturedItem
         title: Cash on Delivery
         tagline: 'Secure, Seamless Payment Collection'
-        subtitle: This is the item subtitle
+        subtitle: Collect Payments on Delivery
         text: |
           Follow the tutorial to build your first Netlify Create site.
         image:
