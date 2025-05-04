@@ -25,14 +25,6 @@ sections:
         style: secondary
         elementId: ''
       - type: Link
-        altText: Facebook
-        url: /
-        showIcon: true
-        icon: facebook
-        iconPosition: left
-        style: secondary
-        elementId: ''
-      - type: Link
         altText: ''
         url: /
         showIcon: true
