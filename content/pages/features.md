@@ -21,7 +21,7 @@ sections:
       styles:
         self:
           textAlign: center
-    subtitle: What makes us different
+    subtitle: What makes us better
     items:
       - type: FeaturedItem
         title: Feature Item One
