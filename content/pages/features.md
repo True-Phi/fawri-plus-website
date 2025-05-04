@@ -26,7 +26,7 @@ sections:
       - type: FeaturedItem
         title: Unbeatable Pricing
         tagline: Pricing
-        subtitle: 'Lowest Rates, Fixed Price'
+        subtitle: Fixed Rates for All Distances
         text: >
           We offer the most competitive delivery rates in Bahrain. No hidden
           commissions. Fixed price for all distances across the country.
