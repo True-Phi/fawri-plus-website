@@ -81,11 +81,9 @@ sections:
       - title: Customised
         price: Custom
         details: 300+ Orders per Week
-        description: >+
-
+        description: >
           Tailored for growing businesses, franchises, or logistics-driven
-          operations needing more customization
-
+          operations
         features:
           - Feature one
           - Feature two
