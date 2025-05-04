@@ -169,7 +169,7 @@ sections:
             flexDirection: row
       - type: FeaturedItem
         title: Round-the-Clock Support
-        tagline: This is the tagline
+        tagline: 'Dedicated Support - Always, Anytime'
         subtitle: This is the item subtitle
         text: |
           Follow the tutorial to build your first Netlify Create site.
