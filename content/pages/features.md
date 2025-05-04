@@ -290,7 +290,7 @@ sections:
       - type: Link
         label: See Tutorials
         altText: ''
-        url: '-'
+        url: ''
         showIcon: false
         icon: arrowRight
         iconPosition: right
