@@ -24,6 +24,15 @@ sections:
         iconPosition: right
         style: secondary
         elementId: ''
+      - type: Link
+        label: Instagram
+        altText: Instagram
+        url: /
+        showIcon: true
+        icon: instagram
+        iconPosition: left
+        style: secondary
+        elementId: ''
     media:
       type: FormBlock
       fields:
