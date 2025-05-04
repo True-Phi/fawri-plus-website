@@ -57,7 +57,7 @@ sections:
             borderRadius: large
         type: PricingPlan
       - title: Customised
-        price: 85.500 BHD
+        price: Custom
         details: 100 Orders per Week
         description: |
           For businesses with high delivery volume (100+ orders/week)
