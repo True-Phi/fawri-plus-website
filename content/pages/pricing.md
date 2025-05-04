@@ -85,9 +85,9 @@ sections:
           Tailored for growing businesses, franchises, or logistics-driven
           operations
         features:
+          - Everything in Business Saver
           - Recurring Pickups/Deliveries Setup
           - Staff Training for Internal Teams
-          - Everything in Business Saver
           - Feature four
           - Feature five
         image:
