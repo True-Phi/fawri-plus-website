@@ -162,7 +162,7 @@ sections:
             flexDirection: row
       - type: FeaturedItem
         title: Express Support
-        tagline: 'Dedicated Support - Always, Anytime'
+        tagline: 'Professional Support - Always, Anytime'
         subtitle: 'Round-the-Clock, Personal Assistance'
         text: >
           Get expert support whenever you need it via WhatsApp, day or night.
