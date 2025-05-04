@@ -13,7 +13,7 @@ sections:
       Our competitive pricing is designed to suit individuals and businesses
       with any on-demand delivery requirements
     plans:
-      - title: Developers
+      - title: Individuals
         price: Free
         details: No credit card required
         description: >-
