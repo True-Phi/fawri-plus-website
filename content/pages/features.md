@@ -269,7 +269,9 @@ sections:
             flexDirection: row
     actions:
       - type: Link
-        label: '* Paid Add-On Services'
+        label: >-
+          Available as optional add-on services to enhance your delivery
+          experience.
         altText: ''
         url: ''
         showIcon: false
