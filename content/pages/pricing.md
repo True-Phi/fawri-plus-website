@@ -21,7 +21,7 @@ sections:
         features:
           - Real-Time Order Tracking
           - Free 2nd Delivery Attempt
-          - WhatsApp Support
+          - Cash Collection
           - Feature four
         image:
           url: /images/abstract-feature1.svg
