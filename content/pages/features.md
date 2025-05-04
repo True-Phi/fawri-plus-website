@@ -168,7 +168,7 @@ sections:
             borderRadius: x-large
             flexDirection: row
       - type: FeaturedItem
-        title: Round-the-Clock Support
+        title: 24/7 Support
         tagline: 'Dedicated Support - Always, Anytime'
         subtitle: 'Round-the-Clock, Personal Assistance'
         text: |
