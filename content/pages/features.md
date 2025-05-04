@@ -311,10 +311,6 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
-    title:
-      type: TitleBlock
-      text: Features
-      color: text-dark
   - type: DividerSection
     title: Divider
     elementId: ''
