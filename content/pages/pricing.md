@@ -52,7 +52,7 @@ sections:
         description: |
           For businesses with high delivery volume (100+ orders/week)
         features:
-          - Feature one
+          - Everything in Pay As You Go
           - Feature two
           - Feature three
           - Feature four
