@@ -71,8 +71,9 @@ sections:
         title: Real-Time Tracking
         tagline: 'Stay in the Loop, Every Step of the Way'
         subtitle: Live Updates Direct to Your Email
-        text: |
-          Learn from the tutorial and build your first awesome Netlify site.
+        text: >
+          Track your deliveries in real-time and receive updates directly to
+          your email, keeping you informed at every step of the way.
         image:
           type: ImageBlock
           altText: Background alt text
