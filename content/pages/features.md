@@ -94,7 +94,7 @@ sections:
             flexDirection: row
       - type: FeaturedItem
         title: Loyalty Program
-        tagline: This is the tagline
+        tagline: Fast Ordering with Flexible Time Options
         subtitle: This is the item subtitle
         text: |
           Follow the tutorial to build your first Netlify Create site.
