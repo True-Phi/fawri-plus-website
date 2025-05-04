@@ -26,7 +26,6 @@ sections:
           - 24/7 WhatsApp Support
           - Custom Add-Ons
         image:
-          url: /images/abstract-feature1.svg
           altText: Pricing plan 1
           type: ImageBlock
         actions:
