@@ -61,7 +61,7 @@ sections:
       - type: FeaturedItem
         title: Free Delivery Attempts
         tagline: 'Maximize Success, Minimize Delivery Costs'
-        subtitle: 'One Extra Delivery, No Cost'
+        subtitle: Second Attempt at No Extra Cost
         text: >
           If a delivery fails, we reattempt at no cost. Subscribers receive a
           third delivery attempt for free - ensuring customer satisfaction
