@@ -1,5 +1,5 @@
 ---
-title: Fawri+
+title: Delivery Serivce Provider in Bahrain
 slug: /
 sections:
   - type: GenericSection
