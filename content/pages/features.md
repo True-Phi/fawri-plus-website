@@ -219,7 +219,7 @@ sections:
             flexDirection: row
       - type: FeaturedItem
         title: Buy on Behalf Service*
-        tagline: This is the tagline
+        tagline: 'Purchase, Deliver, and Save Time'
         subtitle: This is the item subtitle
         text: |
           Follow the tutorial to build your first Netlify Create site.
