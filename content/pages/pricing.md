@@ -56,7 +56,7 @@ sections:
           - Dedicated Account Manager
           - Priority Dispatching & Scheduling
           - Batch Orders Processing (CSV / Excel)
-          - ''
+          - Free 3rd Delivery Attempt
         image:
           url: /images/abstract-feature2.svg
           altText: Pricing plan 2
