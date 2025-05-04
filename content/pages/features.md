@@ -26,7 +26,7 @@ sections:
       - type: FeaturedItem
         title: Unbeatable Pricing
         tagline: Pricing
-        subtitle: This is the item subtitle
+        subtitle: 'Lowest Rates, Fixed Price'
         text: |
           Follow the tutorial to build your first Netlify Create site.
         actions: []
