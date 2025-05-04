@@ -23,6 +23,7 @@ sections:
         iconPosition: right
         style: secondary
         elementId: ''
+        label: Message Us on WhatsApp
     media:
       type: FormBlock
       fields:
