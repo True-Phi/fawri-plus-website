@@ -69,7 +69,7 @@ sections:
             flexDirection: row
       - type: FeaturedItem
         title: Real-Time Tracking
-        tagline: 'Stay in the Loop, Every Step of the Way'
+        tagline: Visibility from Dispatch to Doorstep
         subtitle: Live Updates Direct to Your Email
         text: >
           Stay informed with our real-time tracking system. You’ll receive live
