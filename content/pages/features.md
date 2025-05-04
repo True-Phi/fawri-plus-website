@@ -208,31 +208,6 @@ sections:
               - pr-8
             borderRadius: x-large
             flexDirection: row
-      - type: FeaturedItem
-        title: Refrigerated Delivery*
-        tagline: 'Freshness Delivered, Always Protected'
-        subtitle: Chilled Transport for Fresh Goods
-        text: >
-          Deliver perishable items with confidence. Our refrigerated vehicles
-          keep your food or temperature-sensitive products cool and secure
-          throughout the journey - fresh at every stop.
-        image:
-          type: ImageBlock
-          altText: Placeholder text
-          styles:
-            self:
-              borderRadius: x-large
-        actions: []
-        colors: bg-light-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: row
     actions: []
     variant: two-col-grid
     colors: bg-neutral-fg-dark
