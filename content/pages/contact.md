@@ -2,6 +2,17 @@
 type: PageLayout
 title: 'Contact Us '
 sections:
+  - type: DividerSection
+    title: Divider
+    elementId: ''
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        padding:
+          - pt-3
+          - pl-3
+          - pb-3
+          - pr-3
   - type: GenericSection
     title:
       type: TitleBlock
@@ -14,7 +25,25 @@ sections:
 
 
 
-    actions: []
+    actions:
+      - type: Link
+        altText: Message on WhatsApp
+        url: 'https://wa.me/97366761322'
+        showIcon: true
+        icon: whatsapp
+        iconPosition: left
+        style: secondary
+        elementId: ''
+        label: Message on WhatsApp
+      - type: Link
+        label: Send Email
+        altText: Send an Email
+        url: 'https://mailto:info@fawri-plus.com'
+        showIcon: true
+        icon: mail
+        iconPosition: left
+        style: secondary
+        elementId: ''
     media:
       type: FormBlock
       fields:
@@ -68,6 +97,17 @@ sections:
       label: Contact Us
       color: text-primary
     colors: bg-light-fg-dark
+  - type: DividerSection
+    title: Divider
+    elementId: ''
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        padding:
+          - pt-3
+          - pl-3
+          - pb-3
+          - pr-3
 slug: contact
 isDraft: false
 ---
