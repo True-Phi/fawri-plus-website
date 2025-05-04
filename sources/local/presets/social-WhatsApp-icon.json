@@ -1,0 +1,15 @@
+{
+  "model": "Social",
+  "presets": [
+    {
+      "label": "WhatsApp icon",
+      "thumbnail": "images/social-WhatsApp-icon-1278.png",
+      "data": {
+        "altText": "WhatsApp link",
+        "url": "/",
+        "icon": "WhatsApp",
+        "elementId": ""
+      }
+    }
+  ]
+}
