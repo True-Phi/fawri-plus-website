@@ -44,7 +44,7 @@ sections:
             flexDirection: row
       - type: FeaturedItem
         title: Free Re-Delivery
-        tagline: This is the tagline
+        tagline: More Chances for Successful Deliveries
         subtitle: This is the item subtitle
         text: |
           Follow the tutorial to build your first awesome Netlify Create site.
