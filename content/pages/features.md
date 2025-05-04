@@ -212,8 +212,7 @@ sections:
         title: Order Now and Enjoy All Benefits
         tagline: This is the tagline
         subtitle: This is the item subtitle
-        text: |
-          Follow the tutorial to build your first Netlify Create site.
+        text: ''
         actions:
           - type: Button
             label: Get started
