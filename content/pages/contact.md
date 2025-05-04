@@ -16,7 +16,7 @@ sections:
 
     actions:
       - type: Link
-        altText: ''
+        altText: Message Us on WhatsApp
         url: 'https://wa.me/97366761322'
         showIcon: true
         icon: whatsapp
