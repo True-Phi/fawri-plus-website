@@ -21,7 +21,7 @@ sections:
       styles:
         self:
           textAlign: center
-    subtitle: Featured items section subtitle
+    subtitle: Explore Our Powerful Features Designed to Support Your Business.
     items:
       - type: FeaturedItem
         title: Feature Item One
