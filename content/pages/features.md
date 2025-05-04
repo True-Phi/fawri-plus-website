@@ -47,9 +47,9 @@ sections:
         tagline: More Chances for Successful Deliveries
         subtitle: 'One Extra Delivery, No Cost'
         text: >
-          If a delivery fails, we’ll make one free reattempt to ensure it
-          reaches its destination. Subscribers even get a third free delivery
-          attempt, with no extra charges.
+          If a delivery fails, we’ll make one free reattempt to ensure your
+          package reaches its destination. Subscribers even get a third free
+          delivery attempt, with no additional charges.
         image:
           type: ImageBlock
           altText: Background alt text
