@@ -313,8 +313,11 @@ sections:
         textAlign: center
     title:
       type: TitleBlock
-      text: fesas
-      color: text-dark
+      text: Features
+      color: text-primary
+      styles:
+        self:
+          textAlign: center
   - type: DividerSection
     title: Divider
     elementId: ''
