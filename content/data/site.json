@@ -3,5 +3,6 @@
     "footer": "content/data/footer.json",
     "titleSuffix": "Fawri+ Delivery",
     "type": "Config",
-    "header": "content/data/header.json"
+    "header": "content/data/header.json",
+    "defaultSocialImage": "/images/logo email signature.png"
 }
