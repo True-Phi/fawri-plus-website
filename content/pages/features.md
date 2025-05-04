@@ -286,7 +286,16 @@ sections:
               - pr-8
             borderRadius: x-large
             flexDirection: row
-    actions: []
+    actions:
+      - type: Link
+        label: See Tutorials
+        altText: ''
+        url: '-'
+        showIcon: false
+        icon: arrowRight
+        iconPosition: right
+        style: secondary
+        elementId: ''
     variant: two-col-grid
     colors: bg-neutral-fg-dark
     styles:
