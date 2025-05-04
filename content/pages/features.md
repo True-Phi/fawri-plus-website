@@ -291,6 +291,10 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
+    badge:
+      type: Badge
+      label: included
+      color: text-primary
   - type: DividerSection
     title: Divider
     elementId: ''
