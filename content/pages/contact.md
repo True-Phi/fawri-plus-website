@@ -24,6 +24,15 @@ sections:
         style: secondary
         elementId: ''
         label: Message Us on WhatsApp
+      - type: Link
+        label: Send email
+        altText: Play
+        url: /
+        showIcon: true
+        icon: mail
+        iconPosition: right
+        style: secondary
+        elementId: ''
     media:
       type: FormBlock
       fields:
