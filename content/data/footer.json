@@ -64,17 +64,17 @@
             "elementId": ""
         },
         {
-            "altText": "Email link",
-            "url": "https://mailto:info@fawri-plus.com",
-            "icon": "mail",
-            "type": "Social"
-        },
-        {
             "type": "Social",
             "altText": "WhatsApp link",
             "url": "https://wa.me/97366761322",
             "icon": "whatsapp",
             "elementId": ""
+        },
+        {
+            "altText": "Email link",
+            "url": "https://mailto:info@fawri-plus.com",
+            "icon": "mail",
+            "type": "Social"
         }
     ],
     "legalLinks": [
