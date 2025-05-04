@@ -259,7 +259,7 @@ sections:
               - pb-8
               - pr-8
             borderRadius: x-large
-            flexDirection: row
+            flexDirection: col
     actions:
       - type: Link
         label: >-
