@@ -31,7 +31,7 @@ sections:
           type: ImageBlock
         actions:
           - label: Order Now
-            url: /
+            url: 'https://store.fawri-plus.com'
             icon: arrowRight
             iconPosition: right
             style: secondary
