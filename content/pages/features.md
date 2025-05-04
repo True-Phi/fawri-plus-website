@@ -208,31 +208,6 @@ sections:
               - pr-8
             borderRadius: x-large
             flexDirection: row
-      - type: FeaturedItem
-        title: Try Us!
-        tagline: ''
-        subtitle: ''
-        text: ''
-        actions:
-          - type: Button
-            label: Get started
-            altText: ''
-            url: 'https://store.fawri-plus.com'
-            showIcon: false
-            icon: arrowRight
-            iconPosition: right
-            style: primary
-            elementId: ''
-        colors: bg-light-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: row
     actions: []
     variant: two-col-grid
     colors: bg-neutral-fg-dark
