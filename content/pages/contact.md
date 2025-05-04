@@ -30,7 +30,7 @@ sections:
         url: /
         showIcon: true
         icon: mail
-        iconPosition: right
+        iconPosition: left
         style: secondary
         elementId: ''
     media:
