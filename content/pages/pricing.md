@@ -54,9 +54,9 @@ sections:
         features:
           - Everything in Pay As You Go
           - Dedicated Account Manager
+          - Free 3rd Delivery Attempt
           - Priority Dispatching & Scheduling
           - Batch Orders Processing (CSV / Excel)
-          - Free 3rd Delivery Attempt
         image:
           url: /images/abstract-feature2.svg
           altText: Pricing plan 2
