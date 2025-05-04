@@ -85,7 +85,7 @@ sections:
           Tailored for growing businesses, franchises, or logistics-driven
           operations
         features:
-          - Feature one
+          - Recurring Pickups/Deliveries Setup
           - Feature two
           - Feature three
           - Feature four
