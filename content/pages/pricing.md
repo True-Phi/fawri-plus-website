@@ -22,7 +22,7 @@ sections:
           - Real-Time Order Tracking
           - Free 2nd Delivery Attempt
           - Cash Collection
-          - Feature four
+          - Loayalty Rewards
         image:
           url: /images/abstract-feature1.svg
           altText: Pricing plan 1
