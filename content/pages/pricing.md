@@ -86,7 +86,7 @@ sections:
           operations
         features:
           - Recurring Pickups/Deliveries Setup
-          - Feature two
+          - Staff Training for Internal Teams
           - Feature three
           - Feature four
           - Feature five
