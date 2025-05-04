@@ -2,6 +2,17 @@
 title: Pricing
 slug: pricing
 sections:
+  - type: DividerSection
+    title: Divider
+    elementId: ''
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        padding:
+          - pt-3
+          - pl-3
+          - pb-3
+          - pr-3
   - title:
       text: Unbeatable Pricing
       color: text-dark
@@ -9,26 +20,28 @@ sections:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: This is the subtitle for the pricing section
+    subtitle: >-
+      Our competitive pricing is designed to suit individuals and businesses
+      with any on-demand delivery requirements
     plans:
-      - title: Developers
-        price: Free
-        details: No credit card required
-        description: >-
-          Sed ut perspiciatis unde omnis, iste natus error sit voluptatem
-          accusantium doloremque.
+      - title: Pay As You Go
+        price: 0.900 BHD
+        details: 1 Single Order
+        description: |
+          Perfect for individuals or businesses needing a single delivery
         features:
-          - Feature one
-          - Feature two
-          - Feature three
-          - Feature four
+          - Real-Time Order Tracking
+          - Free 2nd Delivery Attempt
+          - Cash Collection
+          - Loayalty Rewards
+          - 24/7 WhatsApp Support
+          - Custom Add-Ons
         image:
-          url: /images/abstract-feature1.svg
           altText: Pricing plan 1
           type: ImageBlock
         actions:
-          - label: Try for free
-            url: /
+          - label: Order Now
+            url: 'https://store.fawri-plus.com'
             icon: arrowRight
             iconPosition: right
             style: secondary
@@ -43,24 +56,23 @@ sections:
               - pr-6
             borderRadius: large
         type: PricingPlan
-      - title: Professional
-        price: $99
-        details: per month
-        description: >-
-          Sed ut perspiciatis unde omnis, iste natus error sit voluptatem
-          accusantium doloremque.
+      - title: Business Saver
+        price: 81.000 BHD
+        details: 100 Orders per Week
+        description: |
+          For businesses with high delivery volume (100+ orders/week)
         features:
-          - Feature one
-          - Feature two
-          - Feature three
-          - Feature four
+          - Everything in Pay As You Go
+          - Free 3rd Delivery Attempt
+          - Priority Dispatching & Scheduling
+          - Dedicated Account Manager
+          - Batch Orders Processing (CSV / Excel)
         image:
-          url: /images/abstract-feature2.svg
           altText: Pricing plan 2
           type: ImageBlock
         actions:
-          - label: Try for free
-            url: /
+          - label: Contact Us
+            url: /contact
             icon: arrowRight
             iconPosition: right
             style: secondary
@@ -75,25 +87,23 @@ sections:
               - pr-6
             borderRadius: large
         type: PricingPlan
-      - title: Enterprise
+      - title: Customised
         price: Custom
-        details: per month
-        description: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam.
+        details: 300+ Orders per Week
+        description: >
+          Tailored for growing businesses, franchises, or logistics-driven
+          operations
         features:
-          - Feature one
-          - Feature two
-          - Feature three
-          - Feature four
-          - Feature five
+          - Everything in Business Saver
+          - Recurring Pickups/Deliveries Setup
+          - Staff Training for Internal Teams
+          - '& Much More!'
         image:
-          url: /images/abstract-feature3.svg
           altText: Pricing plan 3
           type: ImageBlock
         actions:
           - label: Contact us
-            url: /
+            url: /contact
             icon: arrowRight
             iconPosition: right
             style: secondary
@@ -115,5 +125,16 @@ sections:
       subtitle:
         textAlign: center
     type: PricingSection
+  - type: DividerSection
+    title: Divider
+    elementId: ''
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        padding:
+          - pt-3
+          - pl-3
+          - pb-3
+          - pr-3
 type: PageLayout
 ---
