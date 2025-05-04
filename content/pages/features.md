@@ -186,7 +186,7 @@ sections:
       - type: FeaturedItem
         title: Express Support
         tagline: 'Professional Support - Always, Anytime'
-        subtitle: 'Round-the-Clock, Personal Assistance'
+        subtitle: 24/7 WhatsApp Customer Support
         text: >
           Get expert support whenever you need it via WhatsApp, day or night.
           Subscribers also benefit from a dedicated account manager for
