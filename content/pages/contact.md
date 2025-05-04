@@ -26,7 +26,7 @@ sections:
         label: Message Us on WhatsApp
       - type: Link
         label: Send Email
-        altText: Play
+        altText: Send an Email
         url: /
         showIcon: true
         icon: mail
