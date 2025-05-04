@@ -283,18 +283,7 @@ sections:
               - pr-8
             borderRadius: x-large
             flexDirection: row
-    actions:
-      - type: Link
-        label: >-
-          * Available as optional add-on services to enhance your delivery
-          experience.
-        altText: ''
-        url: ''
-        showIcon: false
-        icon: arrowRight
-        iconPosition: right
-        style: secondary
-        elementId: ''
+    actions: []
     variant: two-col-grid
     colors: bg-neutral-fg-dark
     styles:
