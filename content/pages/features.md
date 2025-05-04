@@ -288,7 +288,7 @@ sections:
             flexDirection: row
     actions:
       - type: Link
-        label: See Tutorials
+        label: '* Paid Add-On Services'
         altText: ''
         url: ''
         showIcon: false
