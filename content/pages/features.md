@@ -319,6 +319,10 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
+    badge:
+      type: Badge
+      label: Subscriber-Only Benefits
+      color: text-primary
   - type: DividerSection
     title: Divider
     elementId: ''
