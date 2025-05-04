@@ -29,8 +29,8 @@ sections:
         subtitle: Fixed Rates for All Distances
         text: >
           We offer Bahrain’s most competitive delivery rates with no commissions
-          or hidden charges. Enjoy a flat, transparent price for any
-          distance—fast, fair, and cost-effective.
+          or hidden charges. Enjoy a flat, transparent price for any distance -
+          fast, fair, and cost-effective.
         actions: []
         colors: bg-light-fg-dark
         styles:
