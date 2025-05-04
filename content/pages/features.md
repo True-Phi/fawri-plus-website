@@ -197,9 +197,9 @@ sections:
         tagline: Confirmed Drops with Every Order
         subtitle: Photo or Signature Confirmation
         text: >
-          Gain peace of mind with proof of delivery—choose photo or signature
-          confirmation. It’s a simple way to ensure accountability, trust, and
-          professionalism on every delivery.
+          Gain peace of mind with proof of delivery add-on service - choose
+          photo or signature confirmation. It’s a simple way to ensure
+          accountability, trust, and professionalism on every delivery.
         image:
           type: ImageBlock
           altText: Placeholder text
