@@ -95,7 +95,7 @@ sections:
       - type: FeaturedItem
         title: Simple Ordering & Scheduling
         tagline: Fast Ordering with Flexible Time Options
-        subtitle: This is the item subtitle
+        subtitle: WhatsApp Orders with Time Slots
         text: |
           Follow the tutorial to build your first Netlify Create site.
         image:
