@@ -45,7 +45,7 @@ sections:
       - type: FeaturedItem
         title: Free Re-Delivery
         tagline: More Chances for Successful Deliveries
-        subtitle: This is the item subtitle
+        subtitle: 'One Extra Delivery, No Cost'
         text: |
           Follow the tutorial to build your first awesome Netlify Create site.
         image:
