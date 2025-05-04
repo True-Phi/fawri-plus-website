@@ -26,6 +26,7 @@ sections:
           - 24/7 WhatsApp Support
           - 'Add-On: 3rd Delivery Attempt'
           - 'Add-On: Proof of Delivery'
+          - ''
         image:
           url: /images/abstract-feature1.svg
           altText: Pricing plan 1
