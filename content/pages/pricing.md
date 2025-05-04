@@ -88,7 +88,7 @@ sections:
           - Everything in Business Saver
           - Recurring Pickups/Deliveries Setup
           - Staff Training for Internal Teams
-          - Feature four
+          - '& Much More!'
           - Feature five
         image:
           url: /images/abstract-feature3.svg
