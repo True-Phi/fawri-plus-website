@@ -53,7 +53,7 @@ sections:
           For businesses with high delivery volume (100+ orders/week)
         features:
           - Everything in Pay As You Go
-          - Dedicated Account manager
+          - Dedicated Account Manager
           - Feature three
           - Feature four
         image:
