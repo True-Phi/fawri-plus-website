@@ -24,7 +24,7 @@ sections:
     subtitle: What makes us better
     items:
       - type: FeaturedItem
-        title: Feature Item One
+        title: Unbeatable Pricing
         tagline: Pricing
         subtitle: This is the item subtitle
         text: |
