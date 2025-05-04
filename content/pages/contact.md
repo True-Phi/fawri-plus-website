@@ -41,6 +41,14 @@ sections:
         iconPosition: left
         style: secondary
         elementId: ''
+      - type: Link
+        altText: ''
+        url: /
+        showIcon: true
+        icon: WhatsApp
+        iconPosition: right
+        style: secondary
+        elementId: ''
     media:
       type: FormBlock
       fields:
