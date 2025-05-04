@@ -88,7 +88,6 @@ sections:
           - Staff Training for Internal Teams
           - '& Much More!'
         image:
-          url: /images/abstract-feature3.svg
           altText: Pricing plan 3
           type: ImageBlock
         actions:
