@@ -57,7 +57,7 @@ sections:
             borderRadius: large
         type: PricingPlan
       - title: Business Saver
-        price: 81.000 BHD
+        price: 85.500 BHD
         details: 100 Orders per Week
         description: |
           For businesses with high delivery volume (100+ orders/week)
