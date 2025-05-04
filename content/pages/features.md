@@ -28,9 +28,9 @@ sections:
         tagline: 'Affordable, Transparent, and Reliable Pricing'
         subtitle: Fixed Rates for All Distances
         text: >
-          We offer the most competitive prices in Bahrain, with no hidden
-          commissions. Enjoy a fixed price for all deliveries, no matter the
-          distance, and get your delivery within 24 hours.
+          We offer the most competitive delivery prices in Bahrain, with no
+          hidden commissions and a fixed price for all distances, ensuring fast
+          and affordable service within 24 hours.
         actions: []
         colors: bg-light-fg-dark
         styles:
