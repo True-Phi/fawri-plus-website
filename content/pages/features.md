@@ -24,7 +24,7 @@ sections:
     subtitle: Explore Our Powerful Features Designed to Support Your Business.
     items:
       - type: FeaturedItem
-        title: Unbeatable Pricing
+        title: "\U0001F69A Unbeatable Pricing"
         tagline: 'Affordable, Transparent, and Reliable Pricing'
         subtitle: Fixed Rates for All Distances
         text: >
