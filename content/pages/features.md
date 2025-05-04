@@ -170,7 +170,7 @@ sections:
       - type: FeaturedItem
         title: Round-the-Clock Support
         tagline: 'Dedicated Support - Always, Anytime'
-        subtitle: This is the item subtitle
+        subtitle: 'Round-the-Clock, Personal Assistance'
         text: |
           Follow the tutorial to build your first Netlify Create site.
         image:
