@@ -69,7 +69,7 @@ sections:
             flexDirection: row
       - type: FeaturedItem
         title: Real-Time Tracking
-        tagline: This is the tagline
+        tagline: 'Stay in the Loop, Every Step of the Way'
         subtitle: This is the item subtitle
         text: |
           Learn from the tutorial and build your first awesome Netlify site.
