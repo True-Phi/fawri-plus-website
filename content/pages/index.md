@@ -225,4 +225,5 @@ sections:
 type: PageLayout
 seo:
   type: Seo
+  socialImage: /images/logo-website-social-seo.png
 ---
