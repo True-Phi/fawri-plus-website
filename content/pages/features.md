@@ -89,8 +89,8 @@ sections:
         subtitle: Live Updates Direct to Your Email
         text: >
           Gain full visibility with real-time tracking and automatic email
-          updates. Keep your team and customers informed at every step,
-          enhancing trust and operational control.
+          updates. Keep your team and customers informed every step of the way,
+          enhancing trust and control.
         image:
           type: ImageBlock
           altText: Background alt text
