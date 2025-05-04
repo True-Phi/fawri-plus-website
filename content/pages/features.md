@@ -123,7 +123,7 @@ sections:
         subtitle: Bonus Drops & Special Offers
         text: >
           Our loyalty program rewards your consistency. Earn points with every
-          order and unlock exclusive perks—bonus deliveries, priority service,
+          order and unlock exclusive perks - bonus deliveries, priority service,
           and cost-saving discounts.
         image:
           type: ImageBlock
