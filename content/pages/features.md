@@ -171,8 +171,10 @@ sections:
         title: 24/7 Support
         tagline: 'Dedicated Support - Always, Anytime'
         subtitle: 'Round-the-Clock, Personal Assistance'
-        text: |
-          Follow the tutorial to build your first Netlify Create site.
+        text: >
+          Get expert support whenever you need it via WhatsApp, day or night.
+          Subscribers also benefit from a dedicated account manager for
+          proactive, business-focused assistance.
         image:
           type: ImageBlock
           altText: Placeholder text
