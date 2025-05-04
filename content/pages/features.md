@@ -93,7 +93,7 @@ sections:
             borderRadius: x-large
             flexDirection: row
       - type: FeaturedItem
-        title: Loyalty Program
+        title: Simple Ordering & Scheduling
         tagline: Fast Ordering with Flexible Time Options
         subtitle: This is the item subtitle
         text: |
