@@ -211,7 +211,7 @@ sections:
       - type: FeaturedItem
         title: Order Now and Enjoy All Benefits
         tagline: This is the tagline
-        subtitle: This is the item subtitle
+        subtitle: ''
         text: ''
         actions:
           - type: Button
