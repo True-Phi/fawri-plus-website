@@ -80,7 +80,7 @@ sections:
         type: PricingPlan
       - title: Customised
         price: Custom
-        details: per month
+        details: 300+ Orders per Week
         description: >-
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam.
