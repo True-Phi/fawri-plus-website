@@ -78,7 +78,7 @@ sections:
               - pr-6
             borderRadius: large
         type: PricingPlan
-      - title: Elite
+      - title: Customised
         price: Custom
         details: per month
         description: >-
