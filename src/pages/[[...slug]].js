@@ -1,7 +1,8 @@
 // src/pages/[[...slug]].js
-import React from 'react';
+import React, { useEffect } from 'react';
 import Head from 'next/head';
 import { useTranslation } from 'react-i18next';
+import { useRouter } from 'next/router'; // Import useRouter
 import { allContent } from '../utils/local-content';
 import { getComponent } from '../components/components-registry';
 import { resolveStaticProps } from '../utils/static-props-resolvers';
@@ -10,59 +11,62 @@ import { seoGenerateTitle, seoGenerateMetaTags, seoGenerateMetaDescription } fro
 import LanguageSwitcher from '../components/LanguageSwitcher';
 
 function Header() {
-  return (
-    <header className="bg-gray-800 text-white p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <div>Logo</div>
-        <LanguageSwitcher />
-      </div>
-    </header>
-  );
+    return (
+        <header className="bg-gray-800 text-white p-4">
+            <div className="container mx-auto flex justify-between items-center">
+                <div>Logo</div>
+                <LanguageSwitcher />
+            </div>
+        </header>
+    );
 }
 
 function Footer() {
-  return (
-    <footer className="bg-gray-800 text-white p-4 mt-8">
-      <div className="container mx-auto flex justify-between items-center">
-        <div>&copy; 2025 Your Company</div>
-        <LanguageSwitcher />
-      </div>
-    </footer>
-  );
+    return (
+        <footer className="bg-gray-800 text-white p-4 mt-8">
+            <div className="container mx-auto flex justify-between items-center">
+                <div>© 2025 Your Company</div>
+                <LanguageSwitcher />
+            </div>
+        </footer>
+    );
 }
 
 function Page(props) {
     const { page, site } = props;
-    const { t } = useTranslation();
-    const router = useRouter(); // Add useRouter for dynamic path handling
-
-    // Determine language from URL and adjust content path
+    const { t, i18n } = useTranslation();
+    const router = useRouter();
     const isArabic = router.pathname.startsWith('/ar');
-    const contentPath = isArabic ? '/ar' + (router.pathname.replace('/ar', '') || '/index') : '/' + (router.pathname || '/index');
+
+    // Set language based on URL
+    useEffect(() => {
+        i18n.changeLanguage(isArabic ? 'ar' : 'en');
+    }, [isArabic, i18n]);
+
     const translatedPage = {
         ...page,
         title: page.title ? t(page.title) : page.title,
         sections: page.sections
             ? page.sections.map((section) => ({
-                ...section,
-                title: section.title && section.title.text ? { ...section.title, text: t(section.title.text) } : section.title,
-                subtitle: section.subtitle ? t(section.subtitle) : section.subtitle,
-                text: section.text ? t(section.text) : section.text,
-                items: section.items
-                    ? section.items.map((item) => ({
-                        ...item,
-                        title: item.title ? t(item.title) : item.title,
-                        subtitle: item.subtitle ? t(item.subtitle) : item.subtitle,
-                        text: item.text ? t(item.text) : item.text,
-                    }))
-                    : section.items,
-                actions: section.actions
-                    ? section.actions.map((action) => ({
-                        ...action,
-                        label: action.label ? t(action.label) : action.label,
-                    }))
-                    : section.actions,
-            }))
+                  ...section,
+                  title: section.title && section.title.text ? { ...section.title, text: t(section.title.text) } : section.title,
+                  subtitle: section.subtitle ? t(section.subtitle) : section.subtitle,
+                  text: section.text ? t(section.text) : section.text,
+                  items: section.items
+                      ? section.items.map((item) => ({
+                            ...item,
+                            title: item.title ? t(item.title) : item.title,
+                            subtitle: item.subtitle ? t(item.subtitle) : item.subtitle,
+                            text: item.text ? t(item.text) : item.text,
+                        }))
+                      : section.items,
+                  actions: section.actions
+                      ? section.actions.map((action) => ({
+                            ...action,
+                            label: action.label ? t(action.label) : action.label,
+                        }))
+                      : section.actions,
+              }))
             : page.sections,
     };
 
@@ -104,19 +108,13 @@ function Page(props) {
 export function getStaticPaths() {
     const data = allContent();
     const paths = resolveStaticPaths(data);
-    // Add Arabic paths
-    const arabicPaths = paths.map((path) => ({
-        ...path,
-        params: { slug: ['ar', ...path.params.slug] },
-    }));
-    return { paths: [...paths, ...arabicPaths], fallback: false };
+    return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }) {
     const data = allContent();
     const slug = params.slug || [];
-    const isArabic = slug[0] === 'ar';
-    const urlPath = '/' + (isArabic ? slug.slice(1).join('/') : slug.join('/'));
+    const urlPath = '/' + slug.join('/');
     const props = await resolveStaticProps(urlPath, data);
     return { props };
 }
