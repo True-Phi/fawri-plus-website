@@ -3,14 +3,13 @@
  */
 const nextConfig = {
     env: {
-        stackbitPreview: process.env.STACKBIT_PREVIEW,
+        stackbitPreview: process.env.STACKBIT_PREVIEW
     },
     trailingSlash: true,
     reactStrictMode: true,
     allowedDevOrigins: [
-        '192.168.1.84',
-    ],
-    output: 'export', // Add static export for Netlify Visual Editor compatibility
+        '192.168.1.84'
+    ]
 };
 
 module.exports = nextConfig;
