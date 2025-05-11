@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 import { Social, Action, Link } from '../../atoms';
 import ImageBlock from '../../blocks/ImageBlock';
+import LanguageSwitcher from '../../LanguageSwitcher'; // Import LanguageSwitcher
 
 export default function Footer(props) {
     const {
@@ -69,6 +70,9 @@ export default function Footer(props) {
                                     </li>
                                 ))}
                             </ul>
+                            <div className="mt-4">
+                                <LanguageSwitcher /> {/* Add LanguageSwitcher here */}
+                            </div>
                         </div>
                     )}
                 </div>
