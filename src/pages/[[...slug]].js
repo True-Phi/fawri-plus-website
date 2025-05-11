@@ -9,17 +9,17 @@ import { seoGenerateTitle, seoGenerateMetaTags, seoGenerateMetaDescription } fro
 function Page(props) {
     const { page, site } = props;
     const { modelName } = page.__metadata;
-        if (!modelName) {
+    if (!modelName) {
         throw new Error(`page has no type, page '${props.path}'`);
     }
-      const PageLayout = getComponent(modelName);
+    const PageLayout = getComponent(modelName);
     if (!PageLayout) {
         throw new Error(`no page layout matching the page model: ${modelName}`);
     }
     const title = seoGenerateTitle(page, site);
     const metaTags = seoGenerateMetaTags(page, site);
     const metaDescription = seoGenerateMetaDescription(page, site);
-        return (
+    return (
         <>
             <Head>
                 <title>{title}</title>
@@ -35,9 +35,10 @@ function Page(props) {
                 {site.favicon && <link rel="icon" href={site.favicon} />}
             </Head>
             <PageLayout page={page} site={site} />
-                            </>
+        </>
     );
 }
+
 export function getStaticPaths() {
     const data = allContent();
     const paths = resolveStaticPaths(data);
@@ -47,7 +48,8 @@ export function getStaticPaths() {
 export async function getStaticProps({ params }) {
     const data = allContent();
     const urlPath = '/' + (params.slug || []).join('/');
-        const props = await resolveStaticProps(urlPath, data);
+    const props = await resolveStaticProps(urlPath, data);
     return { props };
 }
+
 export default Page;
