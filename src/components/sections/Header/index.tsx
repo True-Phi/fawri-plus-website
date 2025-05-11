@@ -5,6 +5,7 @@ import classNames from 'classnames';
 
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 import { Link, Action } from '../../atoms';
+import { t } from '@/utils/locale';            /* NEW */
 import ImageBlock from '../../blocks/ImageBlock';
 import ChevronDownIcon from '../../svgs/chevron-down';
 import CloseIcon from '../../svgs/close';
@@ -266,16 +267,14 @@ function MobileMenu(props) {
 }
 
 function SiteLogoLink({ title, logo, enableAnnotations }) {
-    return (
-        <Link href="/" className="flex items-center">
-            {logo && <ImageBlock {...logo} {...(enableAnnotations && { 'data-sb-field-path': 'logo' })} />}
-            {title && (
-                <span className="h4" {...(enableAnnotations && { 'data-sb-field-path': 'title' })}>
-                    {title}
-                </span>
-            )}
-        </Link>
-    );
+  /* NEW – choose the logo by current locale */
+  const { locale } = useRouter();
+
+  return (
+    <Link href="/" className="flex items-center">
+      <ImageBlock url={t(locale, 'logo')} alt={title ?? 'logo'} />
+      …
+  );
 }
 
 function ListOfLinks(props) {
@@ -317,93 +316,128 @@ function ListOfLinks(props) {
     );
 }
 
+/* ------------------------------------------------------------------ */
+/* LinkWithSubnav (i18n-ready) + ListOfSubNavLinks                    */
+/* ------------------------------------------------------------------ */
+
+import { useRouter } from 'next/router';          // keep only one of these at top!
+import { t } from '../../../utils/locale';        // helper added earlier
+
 function LinkWithSubnav(props) {
-    const { link, colors, inMobileMenu = false } = props;
-    const [isSubNavOpen, setIsSubNavOpen] = useState(false);
-    const router = useRouter();
-    const fieldPath = props['data-sb-field-path'];
+  const { link, colors, inMobileMenu = false } = props;
+  const [isSubNavOpen, setIsSubNavOpen] = useState(false);
+  const router   = useRouter();
+  const locale   = router.locale || 'en';         /* NEW */
+  const fieldPath = props['data-sb-field-path'];
 
-    useEffect(() => {
-        const handleRouteChange = () => {
-            setIsSubNavOpen(false);
-            document.body.style.overflow = 'unset';
-        };
-        router.events.on('routeChangeStart', handleRouteChange);
+  /* Close dropdown on navigation ------------------------------------ */
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setIsSubNavOpen(false);
+      document.body.style.overflow = 'unset';
+    };
+    router.events.on('routeChangeStart', handleRouteChange);
+    return () => router.events.off('routeChangeStart', handleRouteChange);
+  }, [router.events]);
 
-        return () => {
-            router.events.off('routeChangeStart', handleRouteChange);
-        };
-    }, [router.events]);
+  return (
+    <li
+      className={classNames(
+        'relative',
+        inMobileMenu ? 'border-t py-3' : 'py-2 group'
+      )}
+      onMouseLeave={
+        !process.env.stackbitPreview && !inMobileMenu
+          ? () => setIsSubNavOpen(false)
+          : undefined
+      }
+      data-sb-field-path={fieldPath}
+    >
+      {/* ─── toggle button ─────────────────────────────────────────── */}
+      <button
+        aria-expanded={isSubNavOpen ? 'true' : 'false'}
+        onMouseOver={
+          !process.env.stackbitPreview && !inMobileMenu
+            ? () => setIsSubNavOpen(true)
+            : undefined
+        }
+        onClick={() => setIsSubNavOpen((prev) => !prev)}
+        className={classNames(
+          'sb-component sb-component-block sb-component-link',
+          link.labelStyle === 'secondary'
+            ? 'sb-component-link-secondary'
+            : 'sb-component-link-primary',
+          'inline-flex items-center',
+          inMobileMenu ? 'w-full' : 'text-sm',
+          {
+            'group-hover:no-underline hover:no-underline':
+              !inMobileMenu && (link.labelStyle ?? 'primary') === 'primary',
+            'group-hover:text-primary':
+              !inMobileMenu && link.labelStyle === 'secondary'
+          }
+        )}
+      >
+        {/* label translated on the fly */}
+        <span {...(fieldPath && { 'data-sb-field-path': '.label' })}>
+          {t(locale, `nav.${link.label}`)}
+        </span>
+        <ChevronDownIcon
+          className={classNames(
+            'fill-current shrink-0 h-4 w-4',
+            isSubNavOpen && 'rotate-180',
+            inMobileMenu ? 'ml-auto' : 'ml-1'
+          )}
+        />
+      </button>
 
-    return (
-        <li
-            className={classNames('relative', inMobileMenu ? 'border-t py-3' : 'py-2 group')}
-            onMouseLeave={
-                !process.env.stackbitPreview && !inMobileMenu
-                    ? () => {
-                          setIsSubNavOpen(false);
-                      }
-                    : undefined
-            }
-            data-sb-field-path={fieldPath}
+      {/* ─── dropdown items ────────────────────────────────────────── */}
+      {(link.links ?? []).length > 0 && (
+        <ul
+          className={classNames(
+            colors,
+            inMobileMenu
+              ? 'p-4 space-y-3'
+              : 'absolute top-full left-0 w-44 border-t border-primary shadow-header z-10 px-6 pt-5 pb-6 space-y-4',
+            isSubNavOpen ? 'block' : 'hidden'
+          )}
+          {...(fieldPath && { 'data-sb-field-path': '.links' })}
         >
-            <button
-                aria-expanded={isSubNavOpen ? 'true' : 'false'}
-                onMouseOver={
-                    !process.env.stackbitPreview && !inMobileMenu
-                        ? () => {
-                              setIsSubNavOpen(true);
-                          }
-                        : undefined
-                }
-                onClick={() => setIsSubNavOpen((prev) => !prev)}
-                className={classNames(
-                    'sb-component',
-                    'sb-component-block',
-                    'sb-component-link',
-                    link.labelStyle === 'secondary' ? 'sb-component-link-secondary' : 'sb-component-link-primary',
-                    'inline-flex',
-                    'items-center',
-                    inMobileMenu ? 'w-full' : 'text-sm',
-                    {
-                        'group-hover:no-underline hover:no-underline': !inMobileMenu && (link.labelStyle ?? 'primary') === 'primary',
-                        'group-hover:text-primary': !inMobileMenu && link.labelStyle === 'secondary'
-                    }
-                )}
-            >
-                <span {...(fieldPath && { 'data-sb-field-path': '.label' })}>{link.label}</span>
-                <ChevronDownIcon
-                    className={classNames('fill-current', 'shrink-0', 'h-4', 'w-4', isSubNavOpen && 'rotate-180', inMobileMenu ? 'ml-auto' : 'ml-1')}
-                />
-            </button>
-            {(link.links ?? []).length > 0 && (
-                <ul
-                    className={classNames(
-                        colors,
-                        inMobileMenu ? 'p-4 space-y-3' : 'absolute top-full left-0 w-44 border-t border-primary shadow-header z-10 px-6 pt-5 pb-6 space-y-4',
-                        isSubNavOpen ? 'block' : 'hidden'
-                    )}
-                    {...(fieldPath && { 'data-sb-field-path': '.links' })}
-                >
-                    <ListOfSubNavLinks links={link.links} hasAnnotations={!!fieldPath} inMobileMenu={inMobileMenu} />
-                </ul>
-            )}
-        </li>
-    );
+          <ListOfSubNavLinks
+            links={link.links}
+            hasAnnotations={!!fieldPath}
+            inMobileMenu={inMobileMenu}
+            locale={locale}            /* pass locale down */
+          />
+        </ul>
+      )}
+    </li>
+  );
 }
 
-function ListOfSubNavLinks({ links = [], hasAnnotations, inMobileMenu = false }) {
-    return (
-        <>
-            {links.map((link, index) => (
-                <li key={index}>
-                    <Action
-                        {...link}
-                        className={classNames(inMobileMenu ? 'w-full justify-start' : 'text-sm')}
-                        {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })}
-                    />
-                </li>
-            ))}
-        </>
-    );
+/* ------------------------------------------------------------------ */
+/* Items inside the dropdown                                          */
+/* ------------------------------------------------------------------ */
+function ListOfSubNavLinks({
+  links = [],
+  hasAnnotations,
+  inMobileMenu = false,
+  locale = 'en'
+}) {
+  return (
+    <>
+      {links.map((link, index) => (
+        <li key={index}>
+          <Action
+            {...link}
+            /* translate each sub-link label */
+            label={t(locale, `nav.${link.label}`)}
+            className={classNames(
+              inMobileMenu ? 'w-full justify-start' : 'text-sm'
+            )}
+            {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })}
+          />
+        </li>
+      ))}
+    </>
+  );
 }
