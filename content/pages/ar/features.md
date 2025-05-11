@@ -290,7 +290,7 @@ sections:
         textAlign: center
     title:
       type: TitleBlock
-      text: Features
+      text: Features عربي
       color: text-primary
       styles:
         self:
