@@ -1,109 +1,112 @@
 {
-    "type": "Footer",
-    "logo": {
-        "type": "ImageBlock",
-        "url": "/images/logo-white.svg",
-        "altText": "Logo light"
-    },
-    "text": "A description of your brand",
+    "text": "Your Reliable Delivery Partner\n",
     "primaryLinks": {
-        "type": "FooterLinksGroup",
-        "title": "Product",
+        "title": "Services",
         "links": [
             {
+                "label": "Pricing",
+                "url": "/pricing",
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
                 "type": "Link",
+                "altText": "Pricing page"
+            },
+            {
                 "label": "Features",
                 "altText": "Features page",
                 "url": "/features",
                 "icon": "arrowRight",
                 "iconPosition": "right",
-                "style": "secondary"
+                "style": "secondary",
+                "type": "Link"
             },
             {
-                "type": "Link",
-                "label": "Pricing",
-                "url": "/pricing",
+                "label": "Order Now",
+                "url": "https://store.fawri-plus.com",
                 "icon": "arrowRight",
                 "iconPosition": "right",
-                "style": "secondary"
-            },
-            {
+                "style": "secondary",
                 "type": "Link",
-                "label": "Documentation",
-                "url": "/",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary"
+                "altText": "Order Now"
             }
-        ]
+        ],
+        "type": "FooterLinksGroup"
     },
     "secondaryLinks": {
-        "type": "FooterLinksGroup",
-        "title": "Company",
+        "title": "Helpful Links",
         "links": [
             {
-                "type": "Link",
-                "label": "Careers",
-                "altText": "careers page",
-                "url": "/careers",
+                "label": "Contact Us",
+                "altText": "Contact Us page",
+                "url": "/contact",
                 "icon": "arrowRight",
                 "iconPosition": "right",
-                "style": "secondary"
-            },
-            {
-                "type": "Link",
-                "label": "Blog",
-                "url": "/blog",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary"
+                "style": "secondary",
+                "type": "Link"
             }
-        ]
+        ],
+        "type": "FooterLinksGroup"
     },
     "socialLinks": [
         {
             "type": "Social",
-            "altText": "GitHub link",
-            "url": "https://github.com/netlify",
-            "icon": "github"
+            "altText": "WhatsApp link",
+            "url": "https://wa.me/97366761322",
+            "icon": "whatsapp",
+            "elementId": ""
         },
         {
             "type": "Social",
-            "altText": "Twitter link",
-            "url": "https://twitter.com/netlify",
-            "icon": "twitter"
+            "altText": "Instagram link",
+            "url": "https://www.instagram.com/fawri_plus/",
+            "icon": "instagram",
+            "elementId": ""
         },
         {
             "type": "Social",
-            "altText": "LinkedIn link",
-            "url": "https://www.linkedin.com/company/netlify",
-            "icon": "linkedin"
+            "altText": "Facebook link",
+            "url": "https://facebook.com/fawriplus",
+            "icon": "facebook",
+            "elementId": ""
         },
         {
-            "type": "Social",
             "altText": "Email link",
-            "url": "/",
-            "icon": "mail"
+            "url": "https://mailto:info@fawri-plus.com",
+            "icon": "mail",
+            "type": "Social"
         }
     ],
     "legalLinks": [
         {
-            "type": "Link",
             "label": "Terms",
             "url": "/",
             "icon": "arrowRight",
             "iconPosition": "right",
-            "style": "secondary"
+            "style": "secondary",
+            "type": "Link"
         },
         {
-            "type": "Link",
             "label": "Privacy",
             "url": "/",
             "icon": "arrowRight",
             "iconPosition": "right",
-            "style": "secondary"
+            "style": "secondary",
+            "type": "Link"
         }
     ],
-    "copyrightText": "Powered by [Netlify](https://www.netlify.com/)",
-    "colors": "bg-dark-fg-light"
+    "copyrightText": "Fawri+ © 2025 All Rights Reserved\n",
+    "colors": "bg-dark-fg-light",
+    "type": "Footer",
+    "logo": {
+        "type": "ImageBlock",
+        "url": "/images/website footer - logo white - black bg.png",
+        "altText": "Logo white",
+        "elementId": "",
+        "styles": {
+            "self": {
+                "borderRadius": "medium"
+            }
+        }
+    }
 }
