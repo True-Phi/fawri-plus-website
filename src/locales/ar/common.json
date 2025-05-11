@@ -1,0 +1,11 @@
+{
+  "logo": "/images/website-header-logo-ar-yellow-black-bg.png",
+  "nav": {
+    "pricing":  "الأسعار",
+    "features": "المزايا",
+    "contact":  "اتصل بنا",
+    "order":    "اطلب الآن"
+  },
+  "footerLogo": "/images/website-footer-logo-ar-white-black-bg.png",
+  "tagLine":    "شريك التوصيل الموثوق بك"
+}

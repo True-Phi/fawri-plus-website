@@ -6,10 +6,10 @@ import { isArabicPath } from '../utils/locale';
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
+  /* tag <html> with the right lang attribute (SEO) */
   useEffect(() => {
-    // Keep LTR but still tag Arabic pages for SEO
     document.documentElement.lang = isArabicPath(router.asPath) ? 'ar' : 'en';
-    document.documentElement.dir  = 'ltr';
+    document.documentElement.dir  = 'ltr';        // we stay LTR
   }, [router.asPath]);
 
   return <Component {...pageProps} />;
