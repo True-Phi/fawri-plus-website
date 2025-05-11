@@ -40,7 +40,7 @@ sections:
   - type: FeaturedItemsSection
     title:
       type: TitleBlock
-      text: Why Choose Fawri+
+      text: Why Choose Fawri+ عربي
       color: text-dark
       styles:
         self:
