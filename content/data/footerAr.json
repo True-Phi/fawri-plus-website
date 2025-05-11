@@ -97,7 +97,7 @@
     ],
     "copyrightText": "Fawri+ © 2025 All Rights Reserved\n",
     "colors": "bg-dark-fg-light",
-    "type": "Footer",
+    "type": "FooterAr",
     "logo": {
         "type": "ImageBlock",
         "url": "/images/website footer - logo white - black bg.png",
