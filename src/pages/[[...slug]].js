@@ -1,3 +1,4 @@
+// src/pages/[[...slug]].js
 import React from 'react';
 import Head from 'next/head';
 import { useTranslation } from 'react-i18next';
@@ -6,12 +7,38 @@ import { getComponent } from '../components/components-registry';
 import { resolveStaticProps } from '../utils/static-props-resolvers';
 import { resolveStaticPaths } from '../utils/static-paths-resolvers';
 import { seoGenerateTitle, seoGenerateMetaTags, seoGenerateMetaDescription } from '../utils/seo-utils';
+import LanguageSwitcher from '../components/LanguageSwitcher';
+
+function Header() {
+  return (
+    <header className="bg-gray-800 text-white p-4">
+      <div className="container mx-auto flex justify-between items-center">
+        <div>Logo</div>
+        <LanguageSwitcher />
+      </div>
+    </header>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="bg-gray-800 text-white p-4 mt-8">
+      <div className="container mx-auto flex justify-between items-center">
+        <div>&copy; 2025 Your Company</div>
+        <LanguageSwitcher />
+      </div>
+    </footer>
+  );
+}
 
 function Page(props) {
     const { page, site } = props;
-    const { t } = useTranslation(); // Add i18next hook for translations
+    const { t } = useTranslation();
+    const router = useRouter(); // Add useRouter for dynamic path handling
 
-    // Translate page-level fields (e.g., page.title)
+    // Determine language from URL and adjust content path
+    const isArabic = router.pathname.startsWith('/ar');
+    const contentPath = isArabic ? '/ar' + (router.pathname.replace('/ar', '') || '/index') : '/' + (router.pathname || '/index');
     const translatedPage = {
         ...page,
         title: page.title ? t(page.title) : page.title,
@@ -49,7 +76,6 @@ function Page(props) {
         throw new Error(`no page layout matching the page model: ${modelName}`);
     }
 
-    // Use translated page data for SEO
     const title = seoGenerateTitle(translatedPage, site);
     const metaTags = seoGenerateMetaTags(translatedPage, site);
     const metaDescription = seoGenerateMetaDescription(translatedPage, site);
@@ -68,7 +94,9 @@ function Page(props) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 {site.favicon && <link rel="icon" href={site.favicon} />}
             </Head>
+            <Header />
             <PageLayout page={translatedPage} site={site} />
+            <Footer />
         </>
     );
 }
@@ -76,12 +104,19 @@ function Page(props) {
 export function getStaticPaths() {
     const data = allContent();
     const paths = resolveStaticPaths(data);
-    return { paths, fallback: false };
+    // Add Arabic paths
+    const arabicPaths = paths.map((path) => ({
+        ...path,
+        params: { slug: ['ar', ...path.params.slug] },
+    }));
+    return { paths: [...paths, ...arabicPaths], fallback: false };
 }
 
 export async function getStaticProps({ params }) {
     const data = allContent();
-    const urlPath = '/' + (params.slug || []).join('/');
+    const slug = params.slug || [];
+    const isArabic = slug[0] === 'ar';
+    const urlPath = '/' + (isArabic ? slug.slice(1).join('/') : slug.join('/'));
     const props = await resolveStaticProps(urlPath, data);
     return { props };
 }
