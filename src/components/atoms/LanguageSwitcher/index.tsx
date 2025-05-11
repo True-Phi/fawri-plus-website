@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { toggleLocalePath, isArabicPath } from '@/utils/locale';
+import { toggleLocalePath, isArabicPath } from '../../../utils/locale';
 
 export default function LanguageSwitcher() {
   const router = useRouter();
