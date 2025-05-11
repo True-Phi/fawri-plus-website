@@ -1,6 +1,6 @@
 {
     "logo": {
-        "url": "/images/logo website banner.png",
+        "url": "/images/website - header - logo ar yellow - black bg.png",
         "altText": "Logo dark",
         "styles": {
             "self": {
@@ -42,17 +42,6 @@
             "iconPosition": "right",
             "style": "secondary",
             "elementId": ""
-        },
-        {
-            "type": "Button",
-            "label": "Enlgish Header",
-            "altText": "",
-            "url": "/",
-            "showIcon": false,
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "elementId": ""
         }
     ],
     "secondaryLinks": [
@@ -68,5 +57,5 @@
     ],
     "variant": "logo-left-primary-nav-right",
     "colors": "bg-dark-fg-light",
-    "type": "Header"
+    "type": "HeaderAr"
 }
