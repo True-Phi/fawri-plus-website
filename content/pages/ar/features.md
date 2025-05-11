@@ -210,6 +210,7 @@ sections:
               - pr-8
             borderRadius: x-large
             flexDirection: row
+            textAlign: left
       - type: FeaturedItem
         title: Buy on Behalf Service*
         tagline: 'Purchase, Deliver, and Save Time'
