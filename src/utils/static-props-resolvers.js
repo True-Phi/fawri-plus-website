@@ -19,27 +19,36 @@ export function resolveStaticProps(urlPath, data) {
         (page) => page.__metadata.urlPath === rootUrlPath
     );
 
-    // ------------------------------------------------------------------
-    // pick the correct header & footer
-    // ------------------------------------------------------------------
-    const arabic = isArabicPath(urlPath);
-    const header = arabic ? data.props.headerAr ?? data.props.header : data.props.header;
-    const footer = arabic ? data.props.footerAr ?? data.props.footer : data.props.footer;
+// ── pick the correct header & footer (only if they exist) ─────────────
+const arabic = isArabicPath(urlPath);
 
-    const props = {
-        page: {
-            __metadata: {
-                ...__metadata,
-                // override urlPath in metadata with paged path: /blog → /blog/page/2
-                urlPath
-            },
-            ...rest
-        },
-        header,
-        footer,
-        // preserve any other global props
-        ...data.props
-    };
+const headerEn   = data.props.header   ?? null;
+const headerAr   = data.props.headerAr ?? null;
+const footerEn   = data.props.footer   ?? null;
+const footerAr   = data.props.footerAr ?? null;
+
+const header = arabic ? headerAr ?? headerEn : headerEn;
+const footer = arabic ? footerAr ?? footerEn : footerEn;
+
+
+const props = {
+  page: {
+    __metadata: {
+      ...__metadata,
+      // override urlPath in metadata with paged path: /blog → /blog/page/2
+      urlPath
+    },
+    ...rest
+  },
+
+  // keep every existing global prop first
+  ...data.props,
+
+  // add header/footer only if they exist (avoid undefined)
+  ...(header && { header }),
+  ...(footer && { footer })
+};
+
 
     return mapDeepAsync(
         props,
