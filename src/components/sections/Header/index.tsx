@@ -266,7 +266,7 @@ function ListOfLinks(props) {
                             link={link}
                             inMobileMenu={inMobileMenu}
                             colors={colors}
-                            {...(enableAnnotations && { 'data-sb-field-path': .${index} })}
+                            {...(enableAnnotations && { 'data-sb-field-path': `.${index}` })}
                         />
                     );
                 } else {
@@ -282,7 +282,7 @@ function ListOfLinks(props) {
                                 className={classNames('whitespace-nowrap', inMobileMenu ? 'w-full' : 'text-sm', {
                                     'justify-start py-3': inMobileMenu && link.__metadata.modelName === 'Link'
                                 })}
-                                {...(enableAnnotations && { 'data-sb-field-path': .${index} })}
+                                {...(enableAnnotations && { 'data-sb-field-path': `.${index}` })}
                             />
                         </li>
                     );
@@ -375,7 +375,7 @@ function ListOfSubNavLinks({ links = [], hasAnnotations, inMobileMenu = false })
                     <Action
                         {...link}
                         className={classNames(inMobileMenu ? 'w-full justify-start' : 'text-sm')}
-                        {...(hasAnnotations && { 'data-sb-field-path': .${index} })}
+                        {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })}
                     />
                 </li>
             ))}
