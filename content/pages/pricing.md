@@ -14,7 +14,7 @@ sections:
           - pb-3
           - pr-3
   - title:
-      text: عربيPricing Plans
+      text: Pricing Plans
       color: text-dark
       styles:
         self:

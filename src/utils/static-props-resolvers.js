@@ -1,3 +1,9 @@
+/**
+ * Stackbit → Next static-props resolver
+ *
+ * Adds paging, reference-resolution **and** language-aware header / footer.
+ */
+
 import {
     getRootPagePath,
     resolveReferences,
@@ -8,48 +14,59 @@ import {
     isPublished,
     mapDeepAsync
 } from './data-utils';
-import { isArabicPath } from './locale';
 
-/* ------------------------------------------------------------------ */
-/*  helpers                                                           */
-/* ------------------------------------------------------------------ */
-const pickObject = (objects, model) =>
-    objects.find((obj) => obj?.__metadata?.modelName === model) ?? null;
+import { isArabicPath } from './locale';   // helper we added earlier
 
-/* ------------------------------------------------------------------ */
-/*  main resolver                                                     */
-/* ------------------------------------------------------------------ */
 export function resolveStaticProps(urlPath, data) {
-    /* 1. identify the correct page (root of a paged path) */
+    /* ──────────────────────────────
+       Locate the page that matches the (possibly paged) URL
+    ────────────────────────────── */
     const rootUrlPath = getRootPagePath(urlPath);
-    const { __metadata, ...rest } = data.pages.find(
-        (p) => p.__metadata.urlPath === rootUrlPath
-    );
+    const { __metadata, ...rest } =
+        data.pages.find((p) => p.__metadata.urlPath === rootUrlPath);
 
-    /* 2. decide which header/footer to use               */
-    const arabic    = isArabicPath(urlPath);
+    /* ──────────────────────────────
+       Pick English + Arabic singletons
+       – take from data.props if declared there;
+         otherwise fall back to first matching object in data.objects
+    ────────────────────────────── */
+    const pickFromObjects = (model) =>
+        data.objects.find((o) => o.__metadata?.modelName === model) ?? null;
 
-    const headerEn  = data.props.header   ?? pickObject(data.objects, 'Header');
-    const headerAr  = data.props.headerAr ?? pickObject(data.objects, 'HeaderAr');
+    const headerEn = data.props.header     ?? pickFromObjects('Header');
+    const headerAr = data.props.headerAr   ?? pickFromObjects('HeaderAr');
+    const footerEn = data.props.footer     ?? pickFromObjects('Footer');
+    const footerAr = data.props.footerAr   ?? pickFromObjects('FooterAr');
 
-    const footerEn  = data.props.footer   ?? pickObject(data.objects, 'Footer');
-    const footerAr  = data.props.footerAr ?? pickObject(data.objects, 'FooterAr');
+    const useArabic = isArabicPath(urlPath);
 
-    const header    = arabic ? headerAr || headerEn : headerEn;
-    const footer    = arabic ? footerAr || footerEn : footerEn;
+    const header = useArabic ? headerAr ?? headerEn : headerEn;
+    const footer = useArabic ? footerAr ?? footerEn : footerEn;
 
-    /* 3. compose props */
+    /* ──────────────────────────────
+       Build the props that go to the page
+    ────────────────────────────── */
     const props = {
         page: {
-            __metadata: { ...__metadata, urlPath }, // keep paged url
+            __metadata: {
+                ...__metadata,
+                // keep the REAL urlPath for paginated pages
+                urlPath
+            },
             ...rest
         },
-        ...data.props,          // keep any other globals
+
+        // 1. every other global singleton
+        ...data.props,
+
+        // 2. override with the chosen language variant
         ...(header && { header }),
         ...(footer && { footer })
     };
 
-    /* 4. run the existing deep-reference resolving logic */
+    /* ──────────────────────────────
+       Walk the tree & resolve references
+    ────────────────────────────── */
     return mapDeepAsync(
         props,
         async (value, keyPath, stack) => {
@@ -63,48 +80,54 @@ export function resolveStaticProps(urlPath, data) {
     );
 }
 
-/* ------------------------------------------------------------------ */
-/*  per-model resolvers (unchanged)                                   */
-/* ------------------------------------------------------------------ */
+/* ----------------------------------------------------------------------
+   Per-model resolvers (unchanged)
+------------------------------------------------------------------------ */
 const StaticPropsResolvers = {
     PostLayout: (props, data, dbg) =>
         resolveReferences(props, ['author', 'category'], data.objects, dbg),
 
     PostFeedLayout: (props, data) => {
         const perPage = props.numOfPostsPerPage ?? 10;
-        let items = getAllNonFeaturedPostsSorted(data.objects);
-        if (!process.env.stackbitPreview) items = items.filter(isPublished);
-        const pagination = getPagedItemsForPage(props, items, perPage);
-        return {
-            ...props,
-            ...pagination,
-            items: resolveReferences(pagination.items, ['author', 'category'], data.objects)
-        };
+        let posts = getAllNonFeaturedPostsSorted(data.objects);
+        if (!process.env.stackbitPreview) posts = posts.filter(isPublished);
+
+        const pagination = getPagedItemsForPage(props, posts, perPage);
+        const items = resolveReferences(
+            pagination.items,
+            ['author', 'category'],
+            data.objects
+        );
+        return { ...props, ...pagination, items };
     },
 
     PostFeedCategoryLayout: (props, data) => {
-        const id      = props.__metadata?.id;
         const perPage = props.numOfPostsPerPage ?? 10;
-        let items     = getAllCategoryPostsSorted(data.objects, id);
-        if (!process.env.stackbitPreview) items = items.filter(isPublished);
-        const pagination = getPagedItemsForPage(props, items, perPage);
-        return {
-            ...props,
-            ...pagination,
-            items: resolveReferences(pagination.items, ['author', 'category'], data.objects)
-        };
+        const catId = props.__metadata?.id;
+        let posts = getAllCategoryPostsSorted(data.objects, catId);
+        if (!process.env.stackbitPreview) posts = posts.filter(isPublished);
+
+        const pagination = getPagedItemsForPage(props, posts, perPage);
+        const items = resolveReferences(
+            pagination.items,
+            ['author', 'category'],
+            data.objects
+        );
+        return { ...props, ...pagination, items };
     },
 
     RecentPostsSection: (props, data) => {
         let posts = getAllPostsSorted(data.objects);
         if (!process.env.stackbitPreview) posts = posts.filter(isPublished);
         posts = posts.slice(0, props.recentCount || 6);
-        return { ...props, posts: resolveReferences(posts, ['author', 'category'], data.objects) };
+
+        const recent = resolveReferences(posts, ['author', 'category'], data.objects);
+        return { ...props, posts: recent };
     },
 
-    FeaturedPostsSection: (p, d, dbg) =>
-        resolveReferences(p, ['posts.author', 'posts.category'], d.objects, dbg),
+    FeaturedPostsSection: (props, data, dbg) =>
+        resolveReferences(props, ['posts.author', 'posts.category'], data.objects, dbg),
 
-    FeaturedPeopleSection: (p, d, dbg) =>
-        resolveReferences(p, ['people'], d.objects, dbg)
+    FeaturedPeopleSection: (props, data, dbg) =>
+        resolveReferences(props, ['people'], data.objects, dbg)
 };
