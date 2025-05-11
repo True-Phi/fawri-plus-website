@@ -333,9 +333,6 @@ function ListOfLinks(props) {
 /* LinkWithSubnav (i18n-ready) + ListOfSubNavLinks                    */
 /* ------------------------------------------------------------------ */
 
-import { useRouter } from 'next/router';          // keep only one of these at top!
-import { t } from '../../../utils/locale';        // helper added earlier
-
 function LinkWithSubnav(props) {
   const { link, colors, inMobileMenu = false } = props;
   const [isSubNavOpen, setIsSubNavOpen] = useState(false);
