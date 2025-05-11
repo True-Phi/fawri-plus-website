@@ -1,35 +1,26 @@
-/* tiny helper for language switching + translations */
+/* ------------------------------------------------------------------ */
+/*  src/utils/locale.ts                                               */
+/*  — single responsibility: give me a translated string              */
+/* ------------------------------------------------------------------ */
 
-/* the two flat JSON files you created earlier */
-import en from '@/locales/en/common.json';
-import ar from '@/locales/ar/common.json';
+import en from '../locales/en/common.json';
+import ar from '../locales/ar/common.json';
 
-export const dict = { en, ar };
+export type Locale = 'en' | 'ar';
 
-export const isArabicPath = (path: string): boolean =>
-  path === '/ar' || path.startsWith('/ar/');
+/** all dictionaries in one place */
+const DICT: Record<Locale, typeof en> = { en, ar };
 
-export const toggleLocalePath = (path: string): string => {
-  /* strip query/hash – we only care about the pathname here */
-  const [pathname, search = ''] = path.split('?');
-
-  if (isArabicPath(pathname)) {
-    /* /ar         → /       */
-    /* /ar/contact → /contact */
-    const dest =
-      pathname === '/ar' ? '/' : pathname.replace(/^\/ar/, '') || '/';
-    return dest + (search ? '?' + search : '');
-  }
-
-  /* /contact → /ar/contact   |   / → /ar */
-  const dest = pathname === '/' ? '/ar' : `/ar${pathname}`;
-  return dest + (search ? '?' + search : '');
-};
-
-/* very small “t()” utility – dot-notation keys allowed */
-export const t = (locale: string, key: string): string => {
-  const parts = key.split('.');
-  let out: any = dict[locale as 'en' | 'ar'] ?? dict.en;
-  for (const p of parts) out = out?.[p];
-  return typeof out === 'string' ? out : key; // fallback to key if missing
-};
+/**
+ * Simple utility → `t(locale, 'logo')`
+ *
+ * If the key is missing in the requested locale we silently fall back
+ * to the English entry, and finally to the key itself.
+ */
+export function t<K extends keyof typeof en>(
+  locale: string | undefined,
+  key: K
+): (typeof en)[K] {
+  const dict = DICT[(locale as Locale) || 'en'] ?? DICT.en;
+  return (dict[key] ?? DICT.en[key] ?? (key as unknown)) as (typeof en)[K];
+}
