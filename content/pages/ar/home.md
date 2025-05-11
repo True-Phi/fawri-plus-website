@@ -1,6 +1,6 @@
 ---
 title: Delivery Serivce Provider in Bahrain
-slug: /ar
+slug: /ar/home
 sections:
   - type: GenericSection
     title:
