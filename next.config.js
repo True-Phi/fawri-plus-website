@@ -2,21 +2,20 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  env: {
-    stackbitPreview: process.env.STACKBIT_PREVIEW
-  },
+  /* expose the Stackbit preview flag */
+  env: { stackbitPreview: process.env.STACKBIT_PREVIEW },
 
-  /*–– NEW -––––––––––––––––––––––*/
+  /* we still need a trailing slash for the starter */
+  trailingSlash: true,
+
+  /* turn off automatic locale detection (the user clicks to switch) */
   i18n: {
     locales: ['en', 'ar'],
-    defaultLocale: 'en'
+    defaultLocale: 'en',
+    localeDetection: false
   },
-  /*––––––––––––––––––––––––––––––*/
 
-  trailingSlash: true,
-  reactStrictMode: true,
-
-  /* only for your LAN hot-reload – keep whatever IPs you need */
+  /* optional – keep your LAN IP if you really need it */
   allowedDevOrigins: ['192.168.1.84']
 };
 
