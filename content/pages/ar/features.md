@@ -189,10 +189,12 @@ sections:
         title: Proof of Delivery*
         tagline: Confirmed Drops with Every Order
         subtitle: Photo or Signature Confirmation
-        text: >
-          Gain peace of mind with proof of delivery - choose photo or signature
-          confirmation. It’s a simple way to ensure accountability, trust, and
-          professionalism on every delivery.
+        text: >+
+          <div style="text-align: left">Gain peace of mind with proof of
+          delivery - choose photo or signature confirmation. It’s a simple way
+          to ensure accountability, trust, and professionalism on every
+          delivery.</div>
+
         image:
           type: ImageBlock
           altText: Placeholder text
