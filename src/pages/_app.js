@@ -8,12 +8,11 @@ import { isArabicPath } from '../utils/locale';
 export default function MyApp({ Component, pageProps }) {
     const router = useRouter();
 
-    // Whenever the route changes, update <html lang dir="">
-    useEffect(() => {
-        const arabic = isArabicPath(router.asPath);
-        document.documentElement.lang = arabic ? 'ar' : 'en';
-        document.documentElement.dir = arabic ? 'rtl' : 'ltr';
-    }, [router.asPath]);
+    // We still set <html lang> so SEO/accessibility can see Arabic,
+    // but we *always* keep dir="ltr".
+    document.documentElement.lang = isArabicPath(router.asPath) ? 'ar' : 'en';
+    document.documentElement.dir  = 'ltr';
+  }, [router.asPath]);
 
     return <Component {...pageProps} />;
 }
