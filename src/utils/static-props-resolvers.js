@@ -9,21 +9,38 @@ import {
     mapDeepAsync
 } from './data-utils';
 
+// NEW – helper to detect /ar/…
+import { isArabicPath } from './locale';
+
 export function resolveStaticProps(urlPath, data) {
-    // get root path of paged path: /blog/page/2 => /blog
+    // root of a paged path: /blog/page/2  →  /blog
     const rootUrlPath = getRootPagePath(urlPath);
-    const { __metadata, ...rest } = data.pages.find((page) => page.__metadata.urlPath === rootUrlPath);
+    const { __metadata, ...rest } = data.pages.find(
+        (page) => page.__metadata.urlPath === rootUrlPath
+    );
+
+    // ------------------------------------------------------------------
+    // pick the correct header & footer
+    // ------------------------------------------------------------------
+    const arabic = isArabicPath(urlPath);
+    const header = arabic ? data.props.headerAr ?? data.props.header : data.props.header;
+    const footer = arabic ? data.props.footerAr ?? data.props.footer : data.props.footer;
+
     const props = {
         page: {
             __metadata: {
                 ...__metadata,
-                // override urlPath in metadata with paged path: /blog => /blog/page/2
+                // override urlPath in metadata with paged path: /blog → /blog/page/2
                 urlPath
             },
             ...rest
         },
+        header,
+        footer,
+        // preserve any other global props
         ...data.props
     };
+
     return mapDeepAsync(
         props,
         async (value, keyPath, stack) => {
@@ -37,6 +54,10 @@ export function resolveStaticProps(urlPath, data) {
         { postOrder: true }
     );
 }
+
+/* -------------------------------------------------------------------- */
+/*  Per-model resolvers (unchanged below)                               */
+/* -------------------------------------------------------------------- */
 
 const StaticPropsResolvers = {
     PostLayout: (props, data, debugContext) => {
