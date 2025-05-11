@@ -1,3 +1,9 @@
+/**
+ * Stackbit → Next static-props resolver
+ *
+ * Adds paging, reference-resolution **and** language-aware header / footer.
+ */
+
 import {
     getRootPagePath,
     resolveReferences,
@@ -9,54 +15,64 @@ import {
     mapDeepAsync
 } from './data-utils';
 
-// NEW – helper to detect /ar/…
-import { isArabicPath } from './locale';
+import { isArabicPath } from './locale';   // helper we added earlier
 
 export function resolveStaticProps(urlPath, data) {
-    // root of a paged path: /blog/page/2  →  /blog
+    /* ──────────────────────────────
+       Locate the page that matches the (possibly paged) URL
+    ────────────────────────────── */
     const rootUrlPath = getRootPagePath(urlPath);
-    const { __metadata, ...rest } = data.pages.find(
-        (page) => page.__metadata.urlPath === rootUrlPath
-    );
+    const { __metadata, ...rest } =
+        data.pages.find((p) => p.__metadata.urlPath === rootUrlPath);
 
-// ── pick the correct header & footer (only if they exist) ─────────────
-const arabic = isArabicPath(urlPath);
+    /* ──────────────────────────────
+       Pick English + Arabic singletons
+       – take from data.props if declared there;
+         otherwise fall back to first matching object in data.objects
+    ────────────────────────────── */
+    const pickFromObjects = (model) =>
+        data.objects.find((o) => o.__metadata?.modelName === model) ?? null;
 
-const headerEn   = data.props.header   ?? null;
-const headerAr   = data.props.headerAr ?? null;
-const footerEn   = data.props.footer   ?? null;
-const footerAr   = data.props.footerAr ?? null;
+    const headerEn = data.props.header     ?? pickFromObjects('Header');
+    const headerAr = data.props.headerAr   ?? pickFromObjects('HeaderAr');
+    const footerEn = data.props.footer     ?? pickFromObjects('Footer');
+    const footerAr = data.props.footerAr   ?? pickFromObjects('FooterAr');
 
-const header = arabic ? headerAr ?? headerEn : headerEn;
-const footer = arabic ? footerAr ?? footerEn : footerEn;
+    const useArabic = isArabicPath(urlPath);
 
+    const header = useArabic ? headerAr ?? headerEn : headerEn;
+    const footer = useArabic ? footerAr ?? footerEn : footerEn;
 
-const props = {
-  page: {
-    __metadata: {
-      ...__metadata,
-      // override urlPath in metadata with paged path: /blog → /blog/page/2
-      urlPath
-    },
-    ...rest
-  },
+    /* ──────────────────────────────
+       Build the props that go to the page
+    ────────────────────────────── */
+    const props = {
+        page: {
+            __metadata: {
+                ...__metadata,
+                // keep the REAL urlPath for paginated pages
+                urlPath
+            },
+            ...rest
+        },
 
-  // keep every existing global prop first
-  ...data.props,
+        // 1. every other global singleton
+        ...data.props,
 
-  // add header/footer only if they exist (avoid undefined)
-  ...(header && { header }),
-  ...(footer && { footer })
-};
+        // 2. override with the chosen language variant
+        ...(header && { header }),
+        ...(footer && { footer })
+    };
 
-
+    /* ──────────────────────────────
+       Walk the tree & resolve references
+    ────────────────────────────── */
     return mapDeepAsync(
         props,
         async (value, keyPath, stack) => {
-            const objectType = value?.__metadata?.modelName;
-            if (objectType && StaticPropsResolvers[objectType]) {
-                const resolver = StaticPropsResolvers[objectType];
-                return resolver(value, data, { keyPath, stack });
+            const model = value?.__metadata?.modelName;
+            if (model && StaticPropsResolvers[model]) {
+                return StaticPropsResolvers[model](value, data, { keyPath, stack });
             }
             return value;
         },
@@ -64,59 +80,54 @@ const props = {
     );
 }
 
-/* -------------------------------------------------------------------- */
-/*  Per-model resolvers (unchanged below)                               */
-/* -------------------------------------------------------------------- */
-
+/* ----------------------------------------------------------------------
+   Per-model resolvers (unchanged)
+------------------------------------------------------------------------ */
 const StaticPropsResolvers = {
-    PostLayout: (props, data, debugContext) => {
-        return resolveReferences(props, ['author', 'category'], data.objects, debugContext);
-    },
+    PostLayout: (props, data, dbg) =>
+        resolveReferences(props, ['author', 'category'], data.objects, dbg),
+
     PostFeedLayout: (props, data) => {
-        const numOfPostsPerPage = props.numOfPostsPerPage ?? 10;
-        let allPosts = getAllNonFeaturedPostsSorted(data.objects);
-        if (!process.env.stackbitPreview) {
-            allPosts = allPosts.filter(isPublished);
-        }
-        const paginationData = getPagedItemsForPage(props, allPosts, numOfPostsPerPage);
-        const items = resolveReferences(paginationData.items, ['author', 'category'], data.objects);
-        return {
-            ...props,
-            ...paginationData,
-            items
-        };
+        const perPage = props.numOfPostsPerPage ?? 10;
+        let posts = getAllNonFeaturedPostsSorted(data.objects);
+        if (!process.env.stackbitPreview) posts = posts.filter(isPublished);
+
+        const pagination = getPagedItemsForPage(props, posts, perPage);
+        const items = resolveReferences(
+            pagination.items,
+            ['author', 'category'],
+            data.objects
+        );
+        return { ...props, ...pagination, items };
     },
+
     PostFeedCategoryLayout: (props, data) => {
-        const categoryId = props.__metadata?.id;
-        const numOfPostsPerPage = props.numOfPostsPerPage ?? 10;
-        let allCategoryPosts = getAllCategoryPostsSorted(data.objects, categoryId);
-        if (!process.env.stackbitPreview) {
-            allCategoryPosts = allCategoryPosts.filter(isPublished);
-        }
-        const paginationData = getPagedItemsForPage(props, allCategoryPosts, numOfPostsPerPage);
-        const items = resolveReferences(paginationData.items, ['author', 'category'], data.objects);
-        return {
-            ...props,
-            ...paginationData,
-            items
-        };
+        const perPage = props.numOfPostsPerPage ?? 10;
+        const catId = props.__metadata?.id;
+        let posts = getAllCategoryPostsSorted(data.objects, catId);
+        if (!process.env.stackbitPreview) posts = posts.filter(isPublished);
+
+        const pagination = getPagedItemsForPage(props, posts, perPage);
+        const items = resolveReferences(
+            pagination.items,
+            ['author', 'category'],
+            data.objects
+        );
+        return { ...props, ...pagination, items };
     },
+
     RecentPostsSection: (props, data) => {
-        let allPosts = getAllPostsSorted(data.objects);
-        if (!process.env.stackbitPreview) {
-            allPosts = allPosts.filter(isPublished);
-        }
-        allPosts = allPosts.slice(0, props.recentCount || 6);
-        const recentPosts = resolveReferences(allPosts, ['author', 'category'], data.objects);
-        return {
-            ...props,
-            posts: recentPosts
-        };
+        let posts = getAllPostsSorted(data.objects);
+        if (!process.env.stackbitPreview) posts = posts.filter(isPublished);
+        posts = posts.slice(0, props.recentCount || 6);
+
+        const recent = resolveReferences(posts, ['author', 'category'], data.objects);
+        return { ...props, posts: recent };
     },
-    FeaturedPostsSection: (props, data, debugContext) => {
-        return resolveReferences(props, ['posts.author', 'posts.category'], data.objects, debugContext);
-    },
-    FeaturedPeopleSection: (props, data, debugContext) => {
-        return resolveReferences(props, ['people'], data.objects, debugContext);
-    }
+
+    FeaturedPostsSection: (props, data, dbg) =>
+        resolveReferences(props, ['posts.author', 'posts.category'], data.objects, dbg),
+
+    FeaturedPeopleSection: (props, data, dbg) =>
+        resolveReferences(props, ['people'], data.objects, dbg)
 };
