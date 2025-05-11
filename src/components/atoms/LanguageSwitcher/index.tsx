@@ -1,16 +1,15 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { isArabicPath, toggleLocalePath } from '../../../utils/locale';
 
 export default function LanguageSwitcher() {
-  const router = useRouter();
-  const other = router.locale === 'ar' ? 'en' : 'ar';
+  const router  = useRouter();
+  const arabic  = isArabicPath(router.asPath);
+  const nextUrl = toggleLocalePath(router.asPath);
 
   return (
-    <Link
-      href={router.asPath}
-      locale={other}
-      className="inline-flex items-center text-sm"
-    >
-      {other === 'ar' ? 'العربية' : 'English'}
+    <Link href={nextUrl} className="inline-flex items-center text-sm">
+      {arabic ? 'English' : 'العربية'}
     </Link>
   );
 }
