@@ -10,11 +10,11 @@ function Page(props) {
     const { page, site } = props;
     const { modelName } = page.__metadata;
     if (!modelName) {
-        throw new Error(page has no type, page '${props.path}');
+        throw new Error(`page has no type, page '${props.path}'`);
     }
     const PageLayout = getComponent(modelName);
     if (!PageLayout) {
-        throw new Error(no page layout matching the page model: ${modelName});
+        throw new Error(`no page layout matching the page model: ${modelName}`);
     }
     const title = seoGenerateTitle(page, site);
     const metaTags = seoGenerateMetaTags(page, site);
