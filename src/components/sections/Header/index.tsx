@@ -266,14 +266,27 @@ function MobileMenu(props) {
     );
 }
 
+// ------------------------------------------------------------------
+// Site-logo component (unchanged logic, no translation yet)
+// ------------------------------------------------------------------
 function SiteLogoLink({ title, logo, enableAnnotations }) {
-  /* NEW – choose the logo by current locale */
-  const { locale } = useRouter();
-
   return (
     <Link href="/" className="flex items-center">
-      <ImageBlock url={t(locale, 'logo')} alt={title ?? 'logo'} />
-      …
+      {logo && (
+        <ImageBlock
+          {...logo}
+          {...(enableAnnotations && { 'data-sb-field-path': 'logo' })}
+        />
+      )}
+      {title && (
+        <span
+          className="h4"
+          {...(enableAnnotations && { 'data-sb-field-path': 'title' })}
+        >
+          {title}
+        </span>
+      )}
+    </Link>
   );
 }
 
