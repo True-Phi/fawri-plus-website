@@ -1,13 +1,24 @@
+/* ------------------------------------------------------------------ */
+/*  src/components/sections/Footer/index.tsx                          */
+/* ------------------------------------------------------------------ */
+
 import * as React from 'react';
-import Markdown                from 'markdown-to-jsx';
-import classNames              from 'classnames';
+import Markdown                 from 'markdown-to-jsx';
+import classNames               from 'classnames';
+import { useRouter }            from 'next/router';
 
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 import { Social, Action, Link }               from '../../atoms';
 import ImageBlock                              from '../../blocks/ImageBlock';
-import LanguageSwitcher                        from '../../atoms/LanguageSwitcher';   // NEW 👈
+import LanguageSwitcher                        from '../../atoms/LanguageSwitcher';
 
-export default function Footer(props) {
+import { t } from '../../../utils/locale';   // tiny helper we created
+
+/* ------------------------------------------------------------------ */
+/*  Footer component                                                  */
+/* ------------------------------------------------------------------ */
+
+export default function Footer(props: any) {
   const {
     colors = 'bg-light-fg-dark',
     logo,
@@ -21,6 +32,9 @@ export default function Footer(props) {
     styles      = {},
     enableAnnotations
   } = props;
+
+  /* current locale comes from Next.js router  */
+  const { locale } = useRouter();
 
   return (
     <footer
@@ -38,10 +52,12 @@ export default function Footer(props) {
       {...(enableAnnotations && { 'data-sb-object-id': props?.__metadata?.id })}
     >
       <div className="mx-auto max-w-7xl">
-        {/* ---------------------------------------------------------------- */}
-        {/* top grid                                                         */}
-        {/* ---------------------------------------------------------------- */}
+
+        {/* -------------------------------------------------------------- */}
+        {/* top grid                                                      */}
+        {/* -------------------------------------------------------------- */}
         <div className="grid sm:grid-cols-3 lg:grid-cols-4 gap-8">
+          {/* brand column ------------------------------------------------ */}
           {(logo?.url || title || text) && (
             <div className="pb-8 sm:col-span-3 lg:col-auto">
               {(logo?.url || title) && (
@@ -49,6 +65,8 @@ export default function Footer(props) {
                   {logo && (
                     <ImageBlock
                       {...logo}
+                      /* when logo is stored in dictionary, override url   */
+                      url={t(locale as string, 'logo') as string}
                       className="inline-block w-auto"
                       {...(enableAnnotations && {
                         'data-sb-field-path': 'logo'
@@ -86,24 +104,19 @@ export default function Footer(props) {
             </div>
           )}
 
-          {primaryLinks && (
-            <FooterLinksGroup
-              {...primaryLinks}
-              {...(enableAnnotations && {
-                'data-sb-field-path': 'primaryLinks'
-              })}
-            />
-          )}
+          {/* link columns ---------------------------------------------- */}
+          {primaryLinks   && <FooterLinksGroup {...primaryLinks}
+                                {...(enableAnnotations && {
+                                  'data-sb-field-path': 'primaryLinks'
+                                })}
+                              />}
+          {secondaryLinks && <FooterLinksGroup {...secondaryLinks}
+                                {...(enableAnnotations && {
+                                  'data-sb-field-path': 'secondaryLinks'
+                                })}
+                              />}
 
-          {secondaryLinks && (
-            <FooterLinksGroup
-              {...secondaryLinks}
-              {...(enableAnnotations && {
-                'data-sb-field-path': 'secondaryLinks'
-              })}
-            />
-          )}
-
+          {/* social icons --------------------------------------------- */}
           {socialLinks.length > 0 && (
             <div className="pb-6">
               <ul
@@ -112,7 +125,7 @@ export default function Footer(props) {
                   'data-sb-field-path': 'socialLinks'
                 })}
               >
-                {socialLinks.map((link, index) => (
+                {socialLinks.map((link: any, index: number) => (
                   <li
                     key={index}
                     className="text-2xl mb-2 mr-8 lg:mr-12 last:mr-0"
@@ -130,12 +143,16 @@ export default function Footer(props) {
           )}
         </div>
 
-        {/* ---------------------------------------------------------------- */}
-        {/* bottom bar (legal + copyright + language switch)                 */}
-        {/* ---------------------------------------------------------------- */}
+        {/* -------------------------------------------------------------- */}
+        {/* bottom bar: legal | switcher | copyright                      */}
+        {/* -------------------------------------------------------------- */}
         {(copyrightText || legalLinks.length > 0) && (
-          <div className="sb-footer-bottom border-t pt-8 mt-16 flex flex-col sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
+          <div
+            className="sb-footer-bottom border-t pt-8 mt-16
+                       flex flex-col sm:flex-row sm:flex-wrap
+                       sm:items-center sm:justify-between">
 
+            {/* legal links ----------- */}
             {legalLinks.length > 0 && (
               <ul
                 className="flex flex-wrap mb-3"
@@ -143,7 +160,7 @@ export default function Footer(props) {
                   'data-sb-field-path': 'legalLinks'
                 })}
               >
-                {legalLinks.map((link, index) => (
+                {legalLinks.map((link: any, index: number) => (
                   <li key={index} className="mb-1 mr-6 last:mr-0">
                     <Action
                       {...link}
@@ -157,18 +174,15 @@ export default function Footer(props) {
               </ul>
             )}
 
-            {/* NEW – language switch (desktop) */}
+            {/* desktop language switch */}
             <div className="hidden sm:block sm:ml-auto mb-3 sm:mb-0">
               <LanguageSwitcher />
             </div>
 
+            {/* copyright ------------ */}
             {copyrightText && (
               <Markdown
-                options={{
-                  forceInline: true,
-                  forceWrapper: true,
-                  wrapper: 'p'
-                }}
+                options={{ forceInline: true, forceWrapper: true, wrapper: 'p' }}
                 className={classNames(
                   'sb-markdown',
                   'text-sm',
@@ -185,7 +199,7 @@ export default function Footer(props) {
           </div>
         )}
 
-        {/* NEW – language switch (mobile) */}
+        {/* mobile language switch */}
         <div className="block sm:hidden mt-8">
           <LanguageSwitcher />
         </div>
@@ -194,10 +208,11 @@ export default function Footer(props) {
   );
 }
 
-/* -------------------------------------------------------------------- */
-/* FooterLinksGroup – unchanged except for typings / annotations logic  */
-/* -------------------------------------------------------------------- */
-function FooterLinksGroup(props) {
+/* ------------------------------------------------------------------ */
+/*  FooterLinksGroup helper                                           */
+/* ------------------------------------------------------------------ */
+
+function FooterLinksGroup(props: any) {
   const { title, links = [] } = props;
   const fieldPath = props['data-sb-field-path'];
 
@@ -219,7 +234,7 @@ function FooterLinksGroup(props) {
           className={classNames('space-y-3', { 'mt-7': title })}
           {...(fieldPath && { 'data-sb-field-path': '.links' })}
         >
-          {links.map((link, index) => (
+          {links.map((link: any, index: number) => (
             <li key={index}>
               <Action
                 {...link}
