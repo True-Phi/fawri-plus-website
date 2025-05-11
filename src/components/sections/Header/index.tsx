@@ -9,7 +9,6 @@ import ImageBlock from '../../blocks/ImageBlock';
 import ChevronDownIcon from '../../svgs/chevron-down';
 import CloseIcon from '../../svgs/close';
 import MenuIcon from '../../svgs/menu';
-import LanguageSwitcher from '../../atoms/LanguageSwitcher';
 
 export default function Header(props) {
     const { colors = 'bg-light-fg-dark', styles = {}, enableAnnotations } = props;
@@ -72,10 +71,6 @@ function HeaderLogoLeftPrimaryLeft(props) {
                     <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
                 </ul>
             )}
-            {/* desktop language toggle */}
-            <div className="hidden lg:block ml-4">
-                <LanguageSwitcher />
-            </div>
             {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />}
         </div>
     );
@@ -103,10 +98,6 @@ function HeaderLogoLeftPrimaryCentered(props) {
                     <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
                 </ul>
             )}
-            {/* desktop language toggle */}
-            <div className="hidden lg:block ml-4">
-                <LanguageSwitcher />
-            </div>
             {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />}
         </div>
     );
@@ -134,10 +125,6 @@ function HeaderLogoLeftPrimaryRight(props) {
                     <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
                 </ul>
             )}
-            {/* desktop language toggle */}
-            <div className="hidden lg:block ml-4">
-                <LanguageSwitcher />
-            </div>
             {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />}
         </div>
     );
@@ -162,10 +149,6 @@ function HeaderLogoCenteredPrimaryLeft(props) {
                     <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
                 </ul>
             )}
-            {/* desktop language toggle */}
-            <div className="hidden lg:block ml-4">
-                <LanguageSwitcher />
-            </div>
             {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />}
         </div>
     );
@@ -186,10 +169,6 @@ function HeaderLogoCenteredPrimaryCentered(props) {
                         <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
                     </ul>
                 )}
-                {/* desktop language toggle */}
-                <div className="hidden lg:block ml-4">
-                    <LanguageSwitcher />
-                </div>
                 {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />}
             </div>
             {primaryLinks.length > 0 && (
@@ -250,10 +229,6 @@ function MobileMenu(props) {
                             <ListOfLinks links={primaryLinks} enableAnnotations={enableAnnotations} inMobileMenu />
                         </ul>
                     )}
-                    /* mobile language toggle */
-                    <div className="mt-6 pt-4 border-t">
-                        <LanguageSwitcher />
-                    </div>
                     {secondaryLinks.length > 0 && (
                         <ul {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}>
                             <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} inMobileMenu />
