@@ -60,7 +60,7 @@ export const config = defineStackbitConfig({
           ?.value;
         if (!slug) return null;
 
-        slug = slug.replace(/^\\/+/, ''); // strip leading /
+        slug = slug.replace(/^\/+/, ''); // strip leading /
 
         switch (doc.modelName) {
           case 'PostFeedLayout':
