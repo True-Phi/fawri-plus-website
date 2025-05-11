@@ -1,15 +1,12 @@
-// src/components/LanguageSwitcher.tsx
-"use client"; // Required for Next.js App Router (if you're using it)
-
+// src/components/LanguageSwitcher.js
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
 
-  const changeLanguage = (lng: string) => {
+  const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    // Set RTL for Arabic
     if (lng === "ar") {
       document.body.setAttribute("dir", "rtl");
     } else {
@@ -18,7 +15,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-2 mb-4">
       <button
         onClick={() => changeLanguage("en")}
         className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
