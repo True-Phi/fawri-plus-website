@@ -8,7 +8,7 @@ import { resolveStaticPaths } from '../utils/static-paths-resolvers'
 import {
   seoGenerateTitle,
   seoGenerateMetaTags,
-  seoGenerateMetaDescription
+  seoGenerateMetaDescription,
 } from '../utils/seo-utils'
 
 function Page(props) {
@@ -32,17 +32,9 @@ function Page(props) {
         {metaDescription && <meta name="description" content={metaDescription} />}
         {metaTags.map((tag) =>
           tag.format === 'property' ? (
-            <meta
-              key={tag.property}
-              property={tag.property}
-              content={tag.content}
-            />
+            <meta key={tag.property} property={tag.property} content={tag.content} />
           ) : (
-            <meta
-              key={tag.property}
-              name={tag.property}
-              content={tag.content}
-            />
+            <meta key={tag.property} name={tag.property} content={tag.content} />
           )
         )}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -59,5 +51,38 @@ export function getStaticPaths() {
   const locales = ['en', 'ar']
 
   const paths = basePaths.flatMap((entry) => {
-    // ensure slug is always an array
-    const slugArray = Array.isArray(entry.params?.slug
+    // ensure slug is always an array (empty for the home page)
+    const slugArray = Array.isArray(entry.params?.slug) ? entry.params.slug : []
+    return locales.map((loc) => ({
+      params: { slug: slugArray },
+      locale: loc,
+    }))
+  })
+
+  return { paths, fallback: false }
+}
+
+export async function getStaticProps({ params, locale }) {
+  const data = allContent()
+  const urlPath = '/' + (params.slug || []).join('/')
+  const props = await resolveStaticProps(urlPath, data)
+
+  // load header/footer JSON from content/data
+  const header = await import(
+    `../../content/data/header${locale === 'ar' ? 'Ar' : ''}.json`
+  )
+  const footer = await import(
+    `../../content/data/footer${locale === 'ar' ? 'Ar' : ''}.json`
+  )
+
+  return {
+    props: {
+      ...props,
+      header: header.default,
+      footer: footer.default,
+      locale,
+    },
+  }
+}
+
+export default Page
