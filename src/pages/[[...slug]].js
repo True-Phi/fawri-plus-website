@@ -1,3 +1,4 @@
+// src/pages/[[...slug]].js
 import React from 'react';
 import Head from 'next/head';
 import { allContent } from '../utils/local-content';
@@ -59,29 +60,28 @@ function Page(props) {
 
 export function getStaticPaths() {
   const data = allContent();
-  const paths = resolveStaticPaths(data);
-  // annotate each path for both locales
-  const localized = paths.flatMap((p) =>
+  const basePaths = resolveStaticPaths(data); 
+  // build both 'en' and 'ar' variants for each path
+  const paths = basePaths.flatMap(({ params }) =>
     ['en', 'ar'].map((loc) => ({
-      ...p,
+      params,
       locale: loc
     }))
   );
-  return { paths: localized, fallback: false };
+  return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params, locale }) {
   const data = allContent();
   const urlPath = '/' + (params.slug || []).join('/');
-  // original props (page + site)
   const props = await resolveStaticProps(urlPath, data);
 
-  // load header/footer JSON based on locale
+  // load locale-specific header/footer JSON
   const header = await import(
-    `../content/data/header${locale === 'ar' ? 'Ar' : ''}.json`
+    `../../content/data/header${locale === 'ar' ? 'Ar' : ''}.json`
   );
   const footer = await import(
-    `../content/data/footer${locale === 'ar' ? 'Ar' : ''}.json`
+    `../../content/data/footer${locale === 'ar' ? 'Ar' : ''}.json`
   );
 
   return {
