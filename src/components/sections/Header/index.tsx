@@ -9,7 +9,6 @@ import ImageBlock from '../../blocks/ImageBlock';
 import ChevronDownIcon from '../../svgs/chevron-down';
 import CloseIcon from '../../svgs/close';
 import MenuIcon from '../../svgs/menu';
-import LanguageSwitcher from '../../LanguageSwitcher'; // Import LanguageSwitcher
 
 export default function Header(props) {
     const { colors = 'bg-light-fg-dark', styles = {}, enableAnnotations } = props;
@@ -70,9 +69,6 @@ function HeaderLogoLeftPrimaryLeft(props) {
             {secondaryLinks.length > 0 && (
                 <ul className="hidden ml-auto gap-x-2.5 lg:flex lg:items-center" {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}>
                     <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
-                    <li>
-                        <LanguageSwitcher /> {/* Add LanguageSwitcher here */}
-                    </li>
                 </ul>
             )}
             {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />}
@@ -100,9 +96,6 @@ function HeaderLogoLeftPrimaryCentered(props) {
             {secondaryLinks.length > 0 && (
                 <ul className="hidden lg:flex lg:items-center ml-auto gap-x-2.5" {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}>
                     <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
-                    <li>
-                        <LanguageSwitcher /> {/* Add LanguageSwitcher here */}
-                    </li>
                 </ul>
             )}
             {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />}
@@ -130,9 +123,6 @@ function HeaderLogoLeftPrimaryRight(props) {
                     {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}
                 >
                     <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
-                    <li>
-                        <LanguageSwitcher /> {/* Add LanguageSwitcher here */}
-                    </li>
                 </ul>
             )}
             {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />}
@@ -157,9 +147,6 @@ function HeaderLogoCenteredPrimaryLeft(props) {
             {secondaryLinks.length > 0 && (
                 <ul className="hidden lg:flex lg:items-center ml-auto gap-x-2.5" {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}>
                     <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
-                    <li>
-                        <LanguageSwitcher /> {/* Add LanguageSwitcher here */}
-                    </li>
                 </ul>
             )}
             {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />}
@@ -180,9 +167,6 @@ function HeaderLogoCenteredPrimaryCentered(props) {
                 {secondaryLinks.length > 0 && (
                     <ul className="hidden lg:flex lg:items-center gap-x-2.5 ml-auto" {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}>
                         <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
-                        <li>
-                            <LanguageSwitcher /> {/* Add LanguageSwitcher here */}
-                        </li>
                     </ul>
                 )}
                 {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />}
@@ -248,9 +232,6 @@ function MobileMenu(props) {
                     {secondaryLinks.length > 0 && (
                         <ul {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}>
                             <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} inMobileMenu />
-                            <li className="py-4">
-                                <LanguageSwitcher /> {/* Add LanguageSwitcher to mobile menu */}
-                            </li>
                         </ul>
                     )}
                 </div>
