@@ -45,7 +45,7 @@
         },
         {
             "type": "Button",
-            "label": "Arabic Header ",
+            "label": "English Header",
             "altText": "",
             "url": "/",
             "showIcon": false,
