@@ -165,12 +165,10 @@
     .sb-carousel-tab-title {
         @apply cursor-pointer opacity-40 max-w-xs;
         display: -webkit-box;
-        line-height: 1.5;
-        max-height: 1.5em;
-        overflow-y: hidden;
-        text-overflow: ellipsis;
+        line-clamp: 1;
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
+        overflow: hidden;
     }
     .sb-carousel-tab-title-active {
         @apply opacity-100;
@@ -296,7 +294,7 @@
 
 @layer utilities {
     .underline-line-through {
-        text-decoration-line: underline line-through
+        text-decoration-line: underline line-through;
     }
     .sb-animate-slide-left {
         animation-name: slideLeft;
@@ -306,10 +304,10 @@
     }
     @keyframes slideLeft {
         from {
-            transform: translate3d(0,0,0)
+            transform: translate3d(0, 0, 0);
         }
         to {
-            transform: translate3d(-50%,0,0)
+            transform: translate3d(-50%, 0, 0);
         }
     }
     .sb-animate-slide-right {
@@ -320,10 +318,10 @@
     }
     @keyframes slideRight {
         from {
-            transform: translate3d(-50%,0,0)
+            transform: translate3d(-50%, 0, 0);
         }
         to {
-            transform: translate3d(0,0,0)
+            transform: translate3d(0, 0, 0);
         }
     }
 
@@ -338,5 +336,12 @@
         font-family: "Inter", "Roboto Slab", sans-serif;
         text-align: left;
         direction: ltr;
+    }
+
+    /* Force LTR for header and footer */
+    header,
+    footer {
+        direction: ltr !important;
+        text-align: left !important;
     }
 }
