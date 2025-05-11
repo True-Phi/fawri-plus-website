@@ -1,0 +1,109 @@
+{
+    "type": "Footer",
+    "logo": {
+        "type": "ImageBlock",
+        "url": "/images/logo-white.svg",
+        "altText": "Logo light"
+    },
+    "text": "A description of your brand",
+    "primaryLinks": {
+        "type": "FooterLinksGroup",
+        "title": "Product",
+        "links": [
+            {
+                "type": "Link",
+                "label": "Features",
+                "altText": "Features page",
+                "url": "/features",
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary"
+            },
+            {
+                "type": "Link",
+                "label": "Pricing",
+                "url": "/pricing",
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary"
+            },
+            {
+                "type": "Link",
+                "label": "Documentation",
+                "url": "/",
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary"
+            }
+        ]
+    },
+    "secondaryLinks": {
+        "type": "FooterLinksGroup",
+        "title": "Company",
+        "links": [
+            {
+                "type": "Link",
+                "label": "Careers",
+                "altText": "careers page",
+                "url": "/careers",
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary"
+            },
+            {
+                "type": "Link",
+                "label": "Blog",
+                "url": "/blog",
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary"
+            }
+        ]
+    },
+    "socialLinks": [
+        {
+            "type": "Social",
+            "altText": "GitHub link",
+            "url": "https://github.com/netlify",
+            "icon": "github"
+        },
+        {
+            "type": "Social",
+            "altText": "Twitter link",
+            "url": "https://twitter.com/netlify",
+            "icon": "twitter"
+        },
+        {
+            "type": "Social",
+            "altText": "LinkedIn link",
+            "url": "https://www.linkedin.com/company/netlify",
+            "icon": "linkedin"
+        },
+        {
+            "type": "Social",
+            "altText": "Email link",
+            "url": "/",
+            "icon": "mail"
+        }
+    ],
+    "legalLinks": [
+        {
+            "type": "Link",
+            "label": "Terms",
+            "url": "/",
+            "icon": "arrowRight",
+            "iconPosition": "right",
+            "style": "secondary"
+        },
+        {
+            "type": "Link",
+            "label": "Privacy",
+            "url": "/",
+            "icon": "arrowRight",
+            "iconPosition": "right",
+            "style": "secondary"
+        }
+    ],
+    "copyrightText": "Powered by [Netlify](https://www.netlify.com/)",
+    "colors": "bg-dark-fg-light"
+}
