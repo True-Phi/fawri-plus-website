@@ -31,6 +31,14 @@ export function getComponent(key: string): ComponentType {
  *     return <Section {...section} />;
  */
 const components = {
+    /* ── site-wide chrome ─────────────────────────────── */
+    Header:   dynamic(() => import('./sections/Header')),
+    Footer:   dynamic(() => import('./sections/Footer')),
+    // The Arabic variants use exactly the same JSX, so we point them to
+    // the same files:
+    HeaderAr: dynamic(() => import('./sections/Header')),   // ← NEW
+    FooterAr: dynamic(() => import('./sections/Footer')),   // ← NEW
+    /* ──────────────────────────────────────────────────── */
     AutoCompletePosts: dynamic(() => import('./blocks/SearchBlock/AutoCompletePosts')),
     CarouselSection: dynamic(() => import('./sections/CarouselSection')),
     CheckboxFormControl: dynamic(() => import('./blocks/FormBlock/CheckboxFormControl')),
