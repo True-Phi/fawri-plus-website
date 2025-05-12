@@ -5,7 +5,7 @@ sections:
   - type: GenericSection
     title:
       type: TitleBlock
-      text: Your Reliable Delivery Partner
+      text: شريكك
       color: text-light
       styles:
         self:
