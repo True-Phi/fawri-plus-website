@@ -11,39 +11,49 @@ import {
 } from '../utils/seo-utils';
 
 function Page(props) {
-  const { page, site } = props;
+  // props now contains: page, header, footer, favicon, titleSuffix, etc.
+  const { page, header, footer, ...site } = props;
   const { modelName } = page.__metadata;
   if (!modelName) {
-    throw new Error(`page has no type, page '${props.path}'`);
+    throw new Error(`page has no type, page '${page.__metadata.urlPath}'`);
   }
   const PageLayout = getComponent(modelName);
   if (!PageLayout) {
     throw new Error(`no page layout matching the page model: ${modelName}`);
   }
+
+  // SEO
   const title = seoGenerateTitle(page, site);
   const metaTags = seoGenerateMetaTags(page, site);
   const metaDescription = seoGenerateMetaDescription(page, site);
+
   return (
     <>
       <Head>
         <title>{title}</title>
-        {metaDescription && <meta name="description" content={metaDescription} />}
-        {metaTags.map((metaTag) => {
-          if (metaTag.format === 'property') {
-            return (
-              <meta
-                key={metaTag.property}
-                property={metaTag.property}
-                content={metaTag.content}
-              />
-            );
-          }
-          return <meta key={metaTag.property} name={metaTag.property} content={metaTag.content} />;
-        })}
+        {metaDescription && (
+          <meta name="description" content={metaDescription} />
+        )}
+        {metaTags.map((mt) =>
+          mt.format === 'property' ? (
+            <meta
+              key={mt.property}
+              property={mt.property}
+              content={mt.content}
+            />
+          ) : (
+            <meta
+              key={mt.property}
+              name={mt.property}
+              content={mt.content}
+            />
+          )
+        )}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {site.favicon && <link rel="icon" href={site.favicon} />}
       </Head>
-      <PageLayout page={page} site={site} />
+      {/* pass header/footer (and any other globals) as part of site */}
+      <PageLayout page={page} header={header} footer={footer} site={site} />
     </>
   );
 }
@@ -56,18 +66,14 @@ export function getStaticPaths() {
 
 export async function getStaticProps({ params, locale, defaultLocale }) {
   const data = allContent();
-
-  // reconstruct the slug ('' for the root, or 'pricing', etc.)
   const parts = params.slug || [];
   const slug = parts.join('/');
 
-  // if default locale, leave off the prefix; otherwise prefix with "/ar"
   let urlPath;
   if (!slug) {
-    // the home page: "/" or "/ar"
+    // home page
     urlPath = locale === defaultLocale ? '/' : `/${locale}`;
   } else {
-    // any other page: "/pricing" or "/ar/pricing"
     urlPath =
       locale === defaultLocale ? `/${slug}` : `/${locale}/${slug}`;
   }
