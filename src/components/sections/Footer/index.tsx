@@ -18,8 +18,10 @@ export default function Footer(props) {
         legalLinks = [],
         copyrightText,
         styles = {},
-        enableAnnotations
+        enableAnnotations,
+        type
     } = props;
+
     return (
         <footer
             className={classNames(
