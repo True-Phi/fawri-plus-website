@@ -11,9 +11,11 @@ import { FeaturedItemsSection } from './FeaturedItemsSection';
 import { FeaturedPeopleSection } from './FeaturedPeopleSection';
 import { FeaturedPostsSection } from './FeaturedPostsSection';
 import { Footer } from './Footer';
+import { FooterAr } from './FooterAr'; // Add this
 import { FormBlock } from './FormBlock';
 import { GenericSection } from './GenericSection';
 import { Header } from './Header';
+import { HeaderAr } from './HeaderAr'; // Add this
 import { ImageBlock } from './ImageBlock';
 import { ImageGallerySection } from './ImageGallerySection';
 import { Link } from './Link';
@@ -57,9 +59,11 @@ export const allModels = {
     FeaturedPeopleSection,
     FeaturedPostsSection,
     Footer,
+    FooterAr, // Add this
     FormBlock,
     GenericSection,
     Header,
+    HeaderAr, // Add this
     ImageBlock,
     ImageGallerySection,
     Link,

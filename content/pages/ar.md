@@ -5,7 +5,7 @@ sections:
   - type: GenericSection
     title:
       type: TitleBlock
-      text: Your Reliable Delivery Partner
+      text: شريكك
       color: text-light
       styles:
         self:
@@ -40,7 +40,7 @@ sections:
   - type: FeaturedItemsSection
     title:
       type: TitleBlock
-      text: Why Choose Fawri+ عربي
+      text: لماذا نختار فوري بلس
       color: text-dark
       styles:
         self:

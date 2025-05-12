@@ -1,8 +1,10 @@
 {
     "favicon": "/images/Asset 148large.jpg",
     "footer": "content/data/footer.json",
+    "footerAr":  "content/data/footerAr.json",
     "titleSuffix": "Fawri+ Delivery",
     "type": "Config",
     "header": "content/data/header.json",
+    "headerAr":  "content/data/headerAr.json",
     "defaultSocialImage": "/images/logo-website-social-seo.png"
 }

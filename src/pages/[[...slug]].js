@@ -5,6 +5,7 @@ import { getComponent } from '../components/components-registry';
 import { resolveStaticProps } from '../utils/static-props-resolvers';
 import { resolveStaticPaths } from '../utils/static-paths-resolvers';
 import { seoGenerateTitle, seoGenerateMetaTags, seoGenerateMetaDescription } from '../utils/seo-utils';
+import { isArabicPath } from '../utils/locale';          // ← NEW
 
 function Page(props) {
     const { page, site } = props;
@@ -48,7 +49,17 @@ export function getStaticPaths() {
 export async function getStaticProps({ params }) {
     const data = allContent();
     const urlPath = '/' + (params.slug || []).join('/');
-    const props = await resolveStaticProps(urlPath, data);
+    const props   = await resolveStaticProps(urlPath, data);
+    
+    /* ----------  ADD THIS  ---------- */
+    const ar = isArabicPath(urlPath);
+    props.site = {
+        ...props.site,
+        header: ar ? props.site.headerAr  : props.site.header,
+        footer: ar ? props.site.footerAr  : props.site.footer
+    };
+    /* -------------------------------- */
+    
     return { props };
 }
 
