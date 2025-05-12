@@ -23,25 +23,28 @@ export function resolveStaticProps(urlPath, data) {
     ────────────────────────────── */
     const rootUrlPath = getRootPagePath(urlPath);
     const { __metadata, ...rest } =
-        data.pages.find((p) => p.__metadata.urlPath === rootUrlPath);
+        data.pages.find((p) => p.__metadata.urlPath === rootUrlPath) || {};
 
     /* ──────────────────────────────
        Pick English + Arabic singletons
-       – take from data.props if declared there;
+       – take from data.site (resolved from site.json) if available;
          otherwise fall back to first matching object in data.objects
     ────────────────────────────── */
     const pickFromObjects = (model) =>
         data.objects.find((o) => o.__metadata?.modelName === model) ?? null;
 
-    const headerEn = data.props.header     ?? pickFromObjects('Header');
-    const headerAr = data.props.headerAr   ?? pickFromObjects('HeaderAr');
-    const footerEn = data.props.footer     ?? pickFromObjects('Footer');
-    const footerAr = data.props.footerAr   ?? pickFromObjects('FooterAr');
+    // Use data.site to access the resolved header/footer from site.json
+    const headerEn = data.site?.header || pickFromObjects('Header');
+    const headerAr = data.site?.headerAr || pickFromObjects('HeaderAr');
+    const footerEn = data.site?.footer || pickFromObjects('Footer');
+    const footerAr = data.site?.footerAr || pickFromObjects('FooterAr');
 
+    // Determine if the current page is Arabic based on the URL path
     const useArabic = isArabicPath(urlPath);
 
-    const header = useArabic ? headerAr ?? headerEn : headerEn;
-    const footer = useArabic ? footerAr ?? footerEn : footerEn;
+    // Select the appropriate header and footer based on the language
+    const header = useArabic ? (headerAr || headerEn) : headerEn;
+    const footer = useArabic ? (footerAr || footerEn) : footerEn;
 
     /* ──────────────────────────────
        Build the props that go to the page
@@ -55,11 +58,8 @@ export function resolveStaticProps(urlPath, data) {
             },
             ...rest
         },
-
-        // 1. every other global singleton
-        ...data.props,
-
-        // 2. override with the chosen language variant
+        site: data.site, // Include the full site data for reference
+        // Override with the chosen language variant
         ...(header && { header }),
         ...(footer && { footer })
     };
