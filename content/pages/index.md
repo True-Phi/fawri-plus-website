@@ -222,7 +222,7 @@ sections:
           - pl-3
           - pb-3
           - pr-3
-slug: soon
+slug: /
 seo:
   type: Seo
   socialImage: /images/logo-website-social-seo.png
