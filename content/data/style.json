@@ -4,8 +4,10 @@
     "neutral": "#E8E8EB",
     "neutralAlt": "#DCDCDC",
     "primary": "#272626",
-    "fontBody": "sans",
-    "fontHeadlines": "sans",
+    "fontBody": "Inter, sans-serif",
+    "fontHeadlines": "Inter, sans-serif",
+    "fontBodyAr": "Tajawal, sans-serif",
+    "fontHeadlinesAr": "Tajawal, sans-serif",
     "h1": {
         "size": "6xl",
         "weight": "normal",
