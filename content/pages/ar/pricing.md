@@ -14,7 +14,7 @@ sections:
           - pb-3
           - pr-3
   - title:
-      text: خطط الدفع والاشتراكات الدورية
+      text: خطط الدفع والاشتراكات الدورية عربي
       color: text-dark
       styles:
         self:
