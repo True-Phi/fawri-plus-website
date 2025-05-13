@@ -20,9 +20,7 @@ sections:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: >-
-      Our competitive pricing is designed to suit individuals and businesses
-      with any on-demand delivery requirements
+    subtitle: ''
     plans:
       - title: Pay As You Go
         price: 0.900 BHD
