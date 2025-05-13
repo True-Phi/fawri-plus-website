@@ -25,8 +25,9 @@ sections:
       - title: ادفع كما يحلو لك
         price: 0.900 BHD
         details: 1 Single Order
-        description: |
-          Perfect for individuals or businesses needing a single delivery
+        description: |+
+          ##### ابتداءً من دينار واحد فقط و بدون رسوم تسجيل!
+
         features:
           - Real-Time Order Tracking
           - Free 2nd Delivery Attempt
