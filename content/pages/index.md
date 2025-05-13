@@ -227,4 +227,5 @@ seo:
   type: Seo
   socialImage: /images/logo-website-social-seo.png
   metaTags: []
+isDraft: false
 ---
