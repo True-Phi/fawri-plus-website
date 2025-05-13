@@ -20,7 +20,7 @@ sections:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: ''
+    subtitle: الاسعار جدا مغرية ومنافسة للسوق البحريني
     plans:
       - title: Pay As You Go
         price: 0.900 BHD
