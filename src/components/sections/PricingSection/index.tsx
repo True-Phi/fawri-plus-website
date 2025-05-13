@@ -10,7 +10,10 @@ import ImageBlock from '../../blocks/ImageBlock';
 import { Action, Badge } from '../../atoms';
 
 export default function PricingSection(props) {
-    const { elementId, colors, backgroundImage, badge, title, subtitle, plans = [], styles = {}, enableAnnotations } = props;
+    const { elementId, colors, backgroundImage, badge, title, subtitle, plans = [], styles = {}, enableAnnotations, lang } = props;
+
+    // Determine if the content is Arabic based on lang prop
+    const isArabic = lang === 'ar';
 
     return (
         <Section
@@ -26,6 +29,7 @@ export default function PricingSection(props) {
                 {title && (
                     <TitleBlock
                         {...title}
+                        lang={lang} // Pass lang to TitleBlock
                         className={classNames('w-full', 'max-w-sectionBody', { 'mt-4': badge?.label })}
                         {...(enableAnnotations && { 'data-sb-field-path': '.title' })}
                     />
@@ -42,6 +46,7 @@ export default function PricingSection(props) {
                                 'mt-4': badge?.label || title?.text
                             }
                         )}
+                        lang={isArabic ? 'ar' : 'en'} // Set lang attribute on subtitle
                         {...(enableAnnotations && { 'data-sb-field-path': '.subtitle' })}
                     >
                         {subtitle}
@@ -65,7 +70,7 @@ export default function PricingSection(props) {
                                     key={index}
                                     className="px-5 basis-full max-w-full sm:basis-5/6 sm:max-w-[83.33333%] md:basis-2/3 md:max-w-[66.66667%] lg:basis-1/3 lg:max-w-[33.33333%]"
                                 >
-                                    <PricingPlan {...plan} hasSectionTitle={!!title?.text} {...(enableAnnotations && { 'data-sb-field-path': `.${index}` })} />
+                                    <PricingPlan {...plan} hasSectionTitle={!!title?.text} lang={lang} {...(enableAnnotations && { 'data-sb-field-path': `.${index}` })} />
                                 </div>
                             ))}
                         </div>
@@ -88,10 +93,14 @@ function PricingPlan(props) {
         actions = [],
         colors = 'bg-light-fg-dark',
         styles = {},
-        hasSectionTitle
+        hasSectionTitle,
+        lang // Add lang prop
     } = props;
     const fieldPath = props['data-sb-field-path'];
     const TitleTag = hasSectionTitle ? 'h3' : 'h2';
+
+    // Determine if the content is Arabic based on lang prop
+    const isArabic = lang === 'ar';
 
     return (
         <div
@@ -131,6 +140,7 @@ function PricingPlan(props) {
                     {title && (
                         <TitleTag
                             className="text-xl font-normal normal-case tracking-normal no-underline"
+                            lang={isArabic ? 'ar' : 'en'} // Set lang attribute on title
                             {...(fieldPath && { 'data-sb-field-path': '.title' })}
                         >
                             {title}
