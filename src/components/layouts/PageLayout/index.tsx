@@ -4,7 +4,7 @@ import { getBaseLayoutComponent } from '../../../utils/base-layout';
 import { getComponent } from '../../components-registry';
 
 export default function PageLayout(props) {
-    const { page, site } = props;
+    const { page, site, lang } = props; // Add lang to props
     const BaseLayout = getBaseLayoutComponent(page.baseLayout, site.baseLayout);
     const { enableAnnotations = true } = site;
     const { title, sections = [] } = page;
@@ -29,6 +29,7 @@ export default function PageLayout(props) {
                                     key={index}
                                     {...section}
                                     enableAnnotations={enableAnnotations}
+                                    lang={lang} // Pass lang to each section
                                     {...(enableAnnotations && { 'data-sb-field-path': `sections.${index}` })}
                                 />
                             );
