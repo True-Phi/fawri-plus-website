@@ -5,7 +5,7 @@ sections:
   - type: GenericSection
     title:
       type: TitleBlock
-      text: Coming Soon!      قريباً
+      text: Coming Soon!
       color: text-light
       styles:
         self:
