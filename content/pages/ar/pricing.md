@@ -14,7 +14,7 @@ sections:
           - pb-3
           - pr-3
   - title:
-      text: Pricing Plans عربي
+      text: خطط الدفع والاشتراكات الدورية
       color: text-dark
       styles:
         self:
