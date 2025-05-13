@@ -1,6 +1,6 @@
 ---
 type: PageLayout
-title: Delivery Serivce Provider in Bahrain
+title: 'Coming Soon! - Delivery Serivce Provider in Bahrain '
 sections:
   - type: GenericSection
     title:
