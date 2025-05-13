@@ -20,7 +20,7 @@ sections:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: الاسعار جدا مغرية ومنافسة للسوق البحريني
+    subtitle: الاسعار جدا مغرية ومنافسة للسوق البحريني عربي
     plans:
       - title: ادفع كما يحلو لك
         price: 0.900 BHD
