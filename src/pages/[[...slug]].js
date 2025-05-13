@@ -5,10 +5,10 @@ import { getComponent } from '../components/components-registry';
 import { resolveStaticProps } from '../utils/static-props-resolvers';
 import { resolveStaticPaths } from '../utils/static-paths-resolvers';
 import { seoGenerateTitle, seoGenerateMetaTags, seoGenerateMetaDescription } from '../utils/seo-utils';
-import { isArabicPath } from '../utils/locale';          // ← NEW
+import { isArabicPath } from '../utils/locale';
 
 function Page(props) {
-    const { page, site } = props;
+    const { page, site, lang } = props; // Add lang to props
     const { modelName } = page.__metadata;
     if (!modelName) {
         throw new Error(`page has no type, page '${props.path}'`);
@@ -27,7 +27,6 @@ function Page(props) {
                 {metaDescription && <meta name="description" content={metaDescription} />}
                 {metaTags.map((metaTag) => {
                     if (metaTag.format === 'property') {
-                        // OpenGraph meta tags (og:*) should be have the format <meta property="og:…" content="…">
                         return <meta key={metaTag.property} property={metaTag.property} content={metaTag.content} />;
                     }
                     return <meta key={metaTag.property} name={metaTag.property} content={metaTag.content} />;
@@ -35,7 +34,7 @@ function Page(props) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 {site.favicon && <link rel="icon" href={site.favicon} />}
             </Head>
-            <PageLayout page={page} site={site} />
+            <PageLayout page={page} site={site} lang={lang} /> {/* Pass lang to PageLayout */}
         </>
     );
 }
@@ -49,17 +48,16 @@ export function getStaticPaths() {
 export async function getStaticProps({ params }) {
     const data = allContent();
     const urlPath = '/' + (params.slug || []).join('/');
-    const props   = await resolveStaticProps(urlPath, data);
-    
-    /* ----------  ADD THIS  ---------- */
+    const props = await resolveStaticProps(urlPath, data);
+
     const ar = isArabicPath(urlPath);
     props.site = {
         ...props.site,
-        header: ar ? props.site.headerAr  : props.site.header,
-        footer: ar ? props.site.footerAr  : props.site.footer
+        header: ar ? props.site.headerAr : props.site.header,
+        footer: ar ? props.site.footerAr : props.site.footer
     };
-    /* -------------------------------- */
-    
+    props.lang = ar ? 'ar' : 'en'; // Add lang to props
+
     return { props };
 }
 

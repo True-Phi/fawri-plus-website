@@ -15,7 +15,7 @@ export default function LanguageSwitcher() {
       onClick={handleClick}
       aria-label={arabic ? 'Switch to English' : 'التبديل إلى العربية'}
     >
-      {arabic ? 'EN' : 'ع'}
+      {arabic ? 'EN' : 'العربية'}
     </button>
   );
 }
