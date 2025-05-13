@@ -22,7 +22,7 @@ sections:
       type: TitleBlock
     subtitle: الاسعار جدا مغرية ومنافسة للسوق البحريني
     plans:
-      - title: Pay As You Go
+      - title: ادفع كما يحلو لك
         price: 0.900 BHD
         details: 1 Single Order
         description: |
