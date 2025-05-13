@@ -10,7 +10,7 @@ sections:
       styles:
         self:
           textAlign: right
-    subtitle: قريباً
+    subtitle: ''
     text: ''
     actions: []
     colors: bg-light-fg-dark
