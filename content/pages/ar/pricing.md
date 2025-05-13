@@ -14,21 +14,20 @@ sections:
           - pb-3
           - pr-3
   - title:
-      text: Pricing Plans عربي
+      text: خطط الدفع والاشتراكات الدورية عربي
       color: text-dark
       styles:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: >-
-      Our competitive pricing is designed to suit individuals and businesses
-      with any on-demand delivery requirements
+    subtitle: الاسعار جدا مغرية ومنافسة للسوق البحريني عربي
     plans:
-      - title: Pay As You Go
+      - title: ادفع كما يحلو لك
         price: 0.900 BHD
         details: 1 Single Order
-        description: |
-          Perfect for individuals or businesses needing a single delivery
+        description: |+
+          ##### ابتداءً من دينار واحد فقط و بدون رسوم تسجيل!
+
         features:
           - Real-Time Order Tracking
           - Free 2nd Delivery Attempt
@@ -109,4 +108,5 @@ sections:
           - pb-3
           - pr-3
 type: PageLayout
+isDraft: true
 ---
