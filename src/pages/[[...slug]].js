@@ -8,7 +8,7 @@ import { seoGenerateTitle, seoGenerateMetaTags, seoGenerateMetaDescription } fro
 import { isArabicPath } from '../utils/locale';
 
 function Page(props) {
-    const { page, site, lang } = props; // Add lang to props
+    const { page, site, lang } = props;
     const { modelName } = page.__metadata;
     if (!modelName) {
         throw new Error(`page has no type, page '${props.path}'`);
@@ -20,6 +20,7 @@ function Page(props) {
     const title = seoGenerateTitle(page, site);
     const metaTags = seoGenerateMetaTags(page, site);
     const metaDescription = seoGenerateMetaDescription(page, site);
+
     return (
         <>
             <Head>
@@ -35,14 +36,18 @@ function Page(props) {
                 {site.favicon && <link rel="icon" href={site.favicon} />}
                 {/* Google Tag Manager Script */}
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J882P4PPYW"></script>
-                <script>
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', 'G-J882P4PPYW');
-                </script>
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', 'G-J882P4PPYW');
+                        `,
+                    }}
+                />
             </Head>
-            <PageLayout page={page} site={site} lang={lang} /> {/* Pass lang to PageLayout */}
+            <PageLayout page={page} site={site} lang={lang} />
         </>
     );
 }
@@ -64,7 +69,7 @@ export async function getStaticProps({ params }) {
         header: ar ? props.site.headerAr : props.site.header,
         footer: ar ? props.site.footerAr : props.site.footer
     };
-    props.lang = ar ? 'ar' : 'en'; // Add lang to props
+    props.lang = ar ? 'ar' : 'en';
 
     return { props };
 }
