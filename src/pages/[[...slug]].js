@@ -33,6 +33,14 @@ function Page(props) {
                 })}
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 {site.favicon && <link rel="icon" href={site.favicon} />}
+                {/* Google Tag Manager Script */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-J882P4PPYW"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-J882P4PPYW');
+                </script>
             </Head>
             <PageLayout page={page} site={site} lang={lang} /> {/* Pass lang to PageLayout */}
         </>
