@@ -1,6 +1,6 @@
 ---
 title: Fawri+ | Delivery Serivce Provider in Bahrain
-slug: /home
+slug: /
 sections:
   - type: GenericSection
     title:
