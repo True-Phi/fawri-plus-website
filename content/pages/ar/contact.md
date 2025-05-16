@@ -109,5 +109,5 @@ sections:
           - pb-3
           - pr-3
 slug: ar/contact
-isDraft: true
+isDraft: false
 ---
