@@ -1,5 +1,5 @@
 ---
-title: شركة
+title: خد
 slug: /ar
 sections:
   - type: GenericSection
