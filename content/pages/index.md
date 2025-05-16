@@ -11,7 +11,8 @@ sections:
         self:
           textAlign: right
     subtitle: ewsfsdf
-    text: ''
+    text: |
+      dfgdfgdfg
     actions: []
     colors: bg-light-fg-dark
     styles:
