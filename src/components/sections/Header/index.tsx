@@ -250,7 +250,7 @@ function MobileMenu(props) {
                             <ListOfLinks links={primaryLinks} enableAnnotations={enableAnnotations} inMobileMenu />
                         </ul>
                     )}
-                    {/* mobile language toggle */}
+
                     <div className="mt-6 pt-4 border-t">
                         <LanguageSwitcher />
                     </div>
