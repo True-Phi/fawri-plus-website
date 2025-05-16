@@ -4,15 +4,6 @@
         "title": "Services",
         "links": [
             {
-                "label": "Pricing",
-                "url": "/pricing",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link",
-                "altText": "Pricing page"
-            },
-            {
                 "label": "Features",
                 "altText": "Features page",
                 "url": "/features",
@@ -20,6 +11,15 @@
                 "iconPosition": "right",
                 "style": "secondary",
                 "type": "Link"
+            },
+            {
+                "label": "Pricing",
+                "url": "/pricing",
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "type": "Link",
+                "altText": "Pricing page"
             },
             {
                 "label": "Order Now",
