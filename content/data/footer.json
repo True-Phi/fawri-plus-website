@@ -92,7 +92,8 @@
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
-            "type": "Link"
+            "type": "Link",
+            "altText": "Privacy page"
         }
     ],
     "copyrightText": "Fawri+ © 2025 All Rights Reserved\n",
