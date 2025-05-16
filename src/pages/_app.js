@@ -12,5 +12,18 @@ export default function MyApp({ Component, pageProps }) {
     document.documentElement.dir  = 'ltr';
   }, [router.asPath]);
 
+  useEffect(() => {
+    // Track Meta Pixel PageView on route change (client-side)
+    const handleRouteChange = () => {
+      if (typeof window.fbq === 'function') {
+        window.fbq('track', 'PageView');
+      }
+    };
+    router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
+
   return <Component {...pageProps} />;
 }
