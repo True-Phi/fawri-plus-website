@@ -47,7 +47,7 @@
             },
             {
                 "type": "Link",
-                "label": "See Tutorials",
+                "label": "FAQ",
                 "altText": "",
                 "url": "/faq",
                 "showIcon": false,
