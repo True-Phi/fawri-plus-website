@@ -12,7 +12,7 @@ import MenuIcon from '../../svgs/menu';
 import LanguageSwitcher from '../../atoms/LanguageSwitcher';
 
 export default function Header(props) {
-    const { colors = 'bg-light-fg-dark', styles = {}, enableAnnotations } = props;
+    const { colors = 'bg-light-fg-dark', styles = {}, enableAnnotations, lang } = props; // Add lang to props
     return (
         <header
             className={classNames(
@@ -31,35 +31,35 @@ export default function Header(props) {
                 <Link href="#main" className="sr-only">
                     Skip to main content
                 </Link>
-                <HeaderVariants {...props} />
+                <HeaderVariants {...props} lang={lang} /> {/* Pass lang to HeaderVariants */}
             </div>
         </header>
     );
 }
 
 function HeaderVariants(props) {
-    const { variant = 'logo-left-primary-nav-left', ...rest } = props;
+    const { variant = 'logo-left-primary-nav-left', lang, ...rest } = props; // Add lang to props
     switch (variant) {
         case 'logo-left-primary-nav-centered':
-            return <HeaderLogoLeftPrimaryCentered {...rest} />;
+            return <HeaderLogoLeftPrimaryCentered {...rest} lang={lang} />;
         case 'logo-left-primary-nav-right':
-            return <HeaderLogoLeftPrimaryRight {...rest} />;
+            return <HeaderLogoLeftPrimaryRight {...rest} lang={lang} />;
         case 'logo-centered-primary-nav-left':
-            return <HeaderLogoCenteredPrimaryLeft {...rest} />;
+            return <HeaderLogoCenteredPrimaryLeft {...rest} lang={lang} />;
         case 'logo-centered-primary-nav-centered':
-            return <HeaderLogoCenteredPrimaryCentered {...rest} />;
+            return <HeaderLogoCenteredPrimaryCentered {...rest} lang={lang} />;
         default:
-            return <HeaderLogoLeftPrimaryLeft {...rest} />;
+            return <HeaderLogoLeftPrimaryLeft {...rest} lang={lang} />;
     }
 }
 
 function HeaderLogoLeftPrimaryLeft(props) {
-    const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', enableAnnotations } = props;
+    const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', enableAnnotations, lang } = props; // Add lang to props
     return (
         <div className="relative flex items-center">
             {(title || logo?.url) && (
                 <div className="mr-10">
-                    <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
+                    <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} lang={lang} /> {/* Pass lang to SiteLogoLink */}
                 </div>
             )}
             {primaryLinks.length > 0 && (
@@ -82,12 +82,12 @@ function HeaderLogoLeftPrimaryLeft(props) {
 }
 
 function HeaderLogoLeftPrimaryCentered(props) {
-    const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', enableAnnotations } = props;
+    const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', enableAnnotations, lang } = props; // Add lang to props
     return (
         <div className="relative flex items-center">
             {(title || logo?.url) && (
                 <div className="mr-10">
-                    <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
+                    <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} lang={lang} /> {/* Pass lang to SiteLogoLink */}
                 </div>
             )}
             {primaryLinks.length > 0 && (
@@ -113,12 +113,12 @@ function HeaderLogoLeftPrimaryCentered(props) {
 }
 
 function HeaderLogoLeftPrimaryRight(props) {
-    const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', enableAnnotations } = props;
+    const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', enableAnnotations, lang } = props; // Add lang to props
     return (
         <div className="relative flex items-center">
             {(title || logo?.url) && (
                 <div className="mr-10">
-                    <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
+                    <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} lang={lang} /> {/* Pass lang to SiteLogoLink */}
                 </div>
             )}
             {primaryLinks.length > 0 && (
@@ -144,12 +144,12 @@ function HeaderLogoLeftPrimaryRight(props) {
 }
 
 function HeaderLogoCenteredPrimaryLeft(props) {
-    const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', enableAnnotations } = props;
+    const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', enableAnnotations, lang } = props; // Add lang to props
     return (
         <div className="relative flex items-center">
             {(title || logo?.url) && (
                 <div className="mr-10 lg:mr-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2">
-                    <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
+                    <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} lang={lang} /> {/* Pass lang to SiteLogoLink */}
                 </div>
             )}
             {primaryLinks.length > 0 && (
@@ -172,13 +172,13 @@ function HeaderLogoCenteredPrimaryLeft(props) {
 }
 
 function HeaderLogoCenteredPrimaryCentered(props) {
-    const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', enableAnnotations } = props;
+    const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', enableAnnotations, lang } = props; // Add lang to props
     return (
         <>
             <div className="relative flex items-center">
                 {(title || logo?.url) && (
                     <div className="mr-10 lg:mr-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2">
-                        <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
+                        <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} lang={lang} /> {/* Pass lang to SiteLogoLink */}
                     </div>
                 )}
                 {secondaryLinks.length > 0 && (
@@ -205,7 +205,7 @@ function HeaderLogoCenteredPrimaryCentered(props) {
 }
 
 function MobileMenu(props) {
-    const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', styles = {}, enableAnnotations } = props;
+    const { title, logo, primaryLinks = [], secondaryLinks = [], colors = 'bg-light-fg-dark', styles = {}, enableAnnotations, lang } = props; // Add lang to props
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const router = useRouter();
 
@@ -240,7 +240,7 @@ function MobileMenu(props) {
             <div className={classNames(colors, 'fixed', 'inset-0', styles?.self?.padding ?? 'p-4', 'overflow-y-auto', 'z-10', isMenuOpen ? 'block' : 'hidden')}>
                 <div className="flex flex-col min-h-full">
                     <div className="flex items-center justify-between mb-10">
-                        {(title || logo?.url) && <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />}
+                        {(title || logo?.url) && <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} lang={lang} />} {/* Pass lang to SiteLogoLink */}
                         <button aria-label="Close Menu" title="Close Menu" className="p-2 -mr-1 focus:outline-none" onClick={closeMobileMenu}>
                             <CloseIcon className="w-6 h-6 fill-current" />
                         </button>
@@ -250,7 +250,7 @@ function MobileMenu(props) {
                             <ListOfLinks links={primaryLinks} enableAnnotations={enableAnnotations} inMobileMenu />
                         </ul>
                     )}
-                    /* mobile language toggle */
+                    {/* mobile language toggle */}
                     <div className="mt-6 pt-4 border-t">
                         <LanguageSwitcher />
                     </div>
@@ -265,9 +265,9 @@ function MobileMenu(props) {
     );
 }
 
-function SiteLogoLink({ title, logo, enableAnnotations }) {
+function SiteLogoLink({ title, logo, enableAnnotations, lang }) { // Add lang to props
     return (
-        <Link href="/" className="flex items-center">
+        <Link href={lang === 'ar' ? '/ar' : '/'} className="flex items-center"> {/* Dynamic href based on lang */}
             {logo && <ImageBlock {...logo} {...(enableAnnotations && { 'data-sb-field-path': 'logo' })} />}
             {title && (
                 <span className="h4" {...(enableAnnotations && { 'data-sb-field-path': 'title' })}>
