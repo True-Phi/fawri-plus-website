@@ -1,6 +1,6 @@
 ---
 type: PageLayout
-title: 'Contact Us '
+title: تواصل معنا
 sections:
   - type: DividerSection
     title: Divider
