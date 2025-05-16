@@ -86,6 +86,7 @@ sections:
       backgroundPosition: center
       backgroundRepeat: no-repeat
       opacity: 100
+      url: /images/design 3 dark.png
   - type: GenericSection
     title:
       type: TitleBlock
