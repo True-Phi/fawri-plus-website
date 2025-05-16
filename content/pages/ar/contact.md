@@ -18,7 +18,7 @@ sections:
       type: TitleBlock
       text: Let's talk a little عربي
       color: text-dark
-    subtitle: سيسي
+    subtitle: عربي
     text: >+
       Your suggestions, feedback, and questions are important to us. We will
       gladly respond to any inquiries you may have.
