@@ -46,7 +46,7 @@
         {
             "type": "Link",
             "label": "FAQ",
-            "altText": "",
+            "altText": "FAQ page",
             "url": "/faq",
             "showIcon": false,
             "icon": "arrowRight",
