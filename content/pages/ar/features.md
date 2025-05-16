@@ -1,6 +1,6 @@
 ---
 type: PageLayout
-title: Features
+title: المميزات
 sections:
   - type: DividerSection
     title: Divider
