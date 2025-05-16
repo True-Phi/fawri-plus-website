@@ -1,5 +1,5 @@
 ---
-title: Delivery Serivce Provider in Bahrain
+title: شركة
 slug: /ar
 sections:
   - type: GenericSection
