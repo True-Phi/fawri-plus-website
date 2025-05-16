@@ -1,5 +1,5 @@
 ---
-title: Pricing
+title: الاسعار
 slug: ar/pricing
 sections:
   - type: DividerSection
