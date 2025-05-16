@@ -1,5 +1,5 @@
 ---
-title: خد
+title: فوري+ للتوصيل
 slug: /ar
 sections:
   - type: GenericSection
