@@ -37,15 +37,6 @@
         "title": "Helpful Links",
         "links": [
             {
-                "label": "Contact Us",
-                "altText": "Contact Us page",
-                "url": "/contact",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
-            },
-            {
                 "type": "Link",
                 "label": "FAQ",
                 "altText": "FAQ page",
@@ -55,6 +46,15 @@
                 "iconPosition": "right",
                 "style": "secondary",
                 "elementId": ""
+            },
+            {
+                "label": "Contact Us",
+                "altText": "Contact Us page",
+                "url": "/contact",
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "type": "Link"
             }
         ],
         "type": "FooterLinksGroup"
