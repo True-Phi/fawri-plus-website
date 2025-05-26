@@ -70,8 +70,9 @@ sections:
       - type: FeaturedItem
         title: فوري بلس
         subtitle: فوري بلس
-        text: |
-          فوري بلس هي الافضل
+        text: |+
+          <div style="text-align: right">فوري بلس هي الافضل</div>
+
         image:
           type: ImageBlock
           altText: Featured icon three
