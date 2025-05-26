@@ -1,6 +1,7 @@
 ---
 type: PageLayout
 title: الشروط والاحكام
+pageCssClasses: rtl-block
 sections: []
 slug: ar/terms
 isDraft: false
