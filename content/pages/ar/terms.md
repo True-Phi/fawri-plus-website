@@ -3,7 +3,7 @@ type: PageLayout
 title: الشروط والاحكام
 sections: []
 slug: ar/terms
-isDraft: false
+isDraft: true
 seo:
   type: Seo
   metaTitle: Landing Page
