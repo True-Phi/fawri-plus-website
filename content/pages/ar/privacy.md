@@ -3,7 +3,7 @@ type: PageLayout
 title: الخصوصية
 sections: []
 slug: ar/privacy
-isDraft: false
+isDraft: true
 seo:
   type: Seo
   metaTitle: Landing Page
