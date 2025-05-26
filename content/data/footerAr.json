@@ -38,7 +38,7 @@
         "links": [
             {
                 "label": "تواصل معنا",
-                "altText": "Contact Us page",
+                "altText": "تواصل معنا",
                 "url": "/contact",
                 "icon": "arrowRight",
                 "iconPosition": "right",
