@@ -25,7 +25,7 @@
         },
         {
             "label": "الأسئلة الشائعة",
-            "url": "/pricing",
+            "url": "/ar/faq",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
