@@ -48,7 +48,7 @@
             {
                 "type": "Link",
                 "label": "الأسئلة الشائعة",
-                "altText": "",
+                "altText": "الأسئلة الشائعة",
                 "url": "/ar/faq",
                 "showIcon": false,
                 "icon": "arrowRight",
