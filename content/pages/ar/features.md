@@ -1,6 +1,6 @@
 ---
 type: PageLayout
-title: Features
+title: المميزات
 sections:
   - type: DividerSection
     title: Divider
@@ -310,5 +310,5 @@ sections:
           - pb-3
           - pr-3
 slug: ar/features
-isDraft: true
+isDraft: false
 ---

@@ -1,11 +1,11 @@
 ---
-title: Delivery Serivce Provider in Bahrain
+title: فوري+ | خدمات التوصيل الافضل في البحرين
 slug: /ar
 sections:
   - type: GenericSection
     title:
       type: TitleBlock
-      text: شريكك
+      text: شريكك في النجاح
       color: text-light
       styles:
         self:
@@ -45,7 +45,7 @@ sections:
       styles:
         self:
           textAlign: center
-    subtitle: You will love it!!
+    subtitle: فوري بلس هي الأفضل
     items:
       - type: FeaturedItem
         title: Unbeatable Pricing
@@ -67,11 +67,11 @@ sections:
             justifyContent: center
             textAlign: left
       - type: FeaturedItem
-        title: Reliable Deliveries
-        subtitle: Free 2nd Attempt
-        text: >
-          We’ll make a second delivery attempt at no extra cost if your first
-          attempt fails, ensuring your customers get their orders promptly.
+        title: فوري بلس
+        subtitle: فوري بلس
+        text: |+
+          <div style="text-align: right">فوري بلس هي الافضل</div>
+
         image:
           type: ImageBlock
           altText: Featured icon three
@@ -226,5 +226,5 @@ type: PageLayout
 seo:
   type: Seo
   socialImage: /images/logo-website-social-seo.png
-isDraft: true
+isDraft: false
 ---

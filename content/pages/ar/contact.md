@@ -1,6 +1,6 @@
 ---
 type: PageLayout
-title: 'Contact Us '
+title: تواصل معنا
 sections:
   - type: DividerSection
     title: Divider
@@ -18,13 +18,9 @@ sections:
       type: TitleBlock
       text: Let's talk a little عربي
       color: text-dark
-    subtitle: We’re happy to discuss your options with Fawri+
-    text: >+
-      Your suggestions, feedback, and questions are important to us. We will
-      gladly respond to any inquiries you may have.
-
-
-
+    subtitle: عربي
+    text: |
+      غربي
     actions:
       - type: Link
         altText: Message on WhatsApp
@@ -109,5 +105,5 @@ sections:
           - pb-3
           - pr-3
 slug: ar/contact
-isDraft: true
+isDraft: false
 ---

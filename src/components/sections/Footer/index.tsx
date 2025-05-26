@@ -18,7 +18,8 @@ export default function Footer(props) {
         legalLinks = [],
         copyrightText,
         styles = {},
-        enableAnnotations
+        enableAnnotations,
+        lang // Add lang to props
     } = props;
     return (
         <footer
@@ -36,7 +37,7 @@ export default function Footer(props) {
                     {(logo?.url || title || text) && (
                         <div className="pb-8 sm:col-span-3 lg:col-auto">
                             {(logo?.url || title) && (
-                                <Link href="/" className="flex flex-col items-start">
+                                <Link href={lang === 'ar' ? '/ar' : '/'} className="flex flex-col items-start"> {/* Dynamic href based on lang */}
                                     {logo && (
                                         <ImageBlock {...logo} className="inline-block w-auto" {...(enableAnnotations && { 'data-sb-field-path': 'logo' })} />
                                     )}

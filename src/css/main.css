@@ -23,15 +23,7 @@
         font-family: "Roboto Slab", serif; /* Default to Roboto Slab for English headlines */
         line-height: 1.2;
     }
-
-    /* Apply Tajawal font for Arabic content */
-    [lang="ar"],
-    .arabic-text {
-        font-family: "Tajawal", sans-serif !important;
-        direction: rtl; /* Ensure RTL for Arabic text */
-        text-align: right; /* Align Arabic text to the right */
-    }
-
+    
     /* Ensure headlines in Arabic use Tajawal as well */
     [lang="ar"] h1,
     [lang="ar"] .h1,
@@ -367,5 +359,13 @@
         to {
             transform: translate3d(0,0,0)
         }
+    }
+    
+    /* === Always use Tajawal for Arabic text, anywhere on the page === */
+    [lang="ar"],
+    [lang="ar"] *,
+    .arabic-text,
+    .arabic-text * {
+        font-family: "Tajawal", sans-serif !important;
     }
 }

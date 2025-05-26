@@ -1,5 +1,5 @@
 ---
-title: Pricing
+title: الاسعار
 slug: ar/pricing
 sections:
   - type: DividerSection
@@ -108,5 +108,5 @@ sections:
           - pb-3
           - pr-3
 type: PageLayout
-isDraft: true
+isDraft: false
 ---
