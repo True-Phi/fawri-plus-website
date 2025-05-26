@@ -15,7 +15,7 @@
             {
                 "label": "المميزات",
                 "altText": "Features page",
-                "url": "/features",
+                "url": "/ar/features",
                 "icon": "arrowRight",
                 "iconPosition": "right",
                 "style": "secondary",
