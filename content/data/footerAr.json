@@ -39,7 +39,7 @@
             {
                 "label": "تواصل معنا",
                 "altText": "تواصل معنا",
-                "url": "/contact",
+                "url": "/ar/contact",
                 "icon": "arrowRight",
                 "iconPosition": "right",
                 "style": "secondary",
