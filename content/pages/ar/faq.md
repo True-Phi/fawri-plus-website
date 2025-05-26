@@ -3,7 +3,7 @@ type: PageLayout
 title: الأسئلة الشائعة
 sections: []
 slug: ar/faq
-isDraft: false
+isDraft: true
 seo:
   type: Seo
   metaTitle: Landing Page
