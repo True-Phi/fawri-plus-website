@@ -23,7 +23,7 @@
         },
         {
             "type": "Link",
-            "label": "Features",
+            "label": "الاسعار",
             "altText": "Features page",
             "url": "/features",
             "showIcon": false,
