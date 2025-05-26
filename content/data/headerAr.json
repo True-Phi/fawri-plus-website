@@ -46,7 +46,7 @@
         {
             "type": "Link",
             "label": "المميزات",
-            "altText": "Contact Us page",
+            "altText": "المميزات",
             "url": "/contact",
             "showIcon": false,
             "icon": "arrowRight",
