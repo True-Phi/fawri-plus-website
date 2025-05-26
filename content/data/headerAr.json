@@ -46,7 +46,7 @@
         {
             "type": "Link",
             "label": "الرئيسية",
-            "altText": "",
+            "altText": "الرئيسية",
             "url": "/ar",
             "showIcon": false,
             "icon": "arrowRight",
