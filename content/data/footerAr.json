@@ -5,7 +5,7 @@
         "links": [
             {
                 "label": "الأسعار",
-                "url": "/pricing",
+                "url": "/ar/pricing",
                 "icon": "arrowRight",
                 "iconPosition": "right",
                 "style": "secondary",
