@@ -14,6 +14,17 @@
     "primaryLinks": [
         {
             "type": "Link",
+            "label": "Home",
+            "altText": "Home",
+            "url": "/",
+            "showIcon": false,
+            "icon": "arrowRight",
+            "iconPosition": "right",
+            "style": "secondary",
+            "elementId": ""
+        },
+        {
+            "type": "Link",
             "label": "Features",
             "altText": "Features page",
             "url": "/features",
