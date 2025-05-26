@@ -1,49 +1,60 @@
 {
-    "text": "Your Reliable Delivery Partner\n",
+    "text": "شريكك المعتمد في التوصيل\n",
     "primaryLinks": {
-        "title": "Services",
+        "title": "الخدمات",
         "links": [
             {
-                "label": "Pricing",
-                "url": "/pricing",
+                "label": "الأسعار",
+                "url": "/ar/pricing",
                 "icon": "arrowRight",
                 "iconPosition": "right",
                 "style": "secondary",
                 "type": "Link",
-                "altText": "Pricing page"
+                "altText": "الأسعار"
             },
             {
-                "label": "Features",
-                "altText": "Features page",
-                "url": "/features",
+                "label": "المميزات",
+                "altText": "المميزات",
+                "url": "/ar/features",
                 "icon": "arrowRight",
                 "iconPosition": "right",
                 "style": "secondary",
                 "type": "Link"
             },
             {
-                "label": "Order Now",
-                "url": "https://store.fawri-plus.com",
+                "label": "أطلب الآن",
+                "url": "https://store.fawri-plus.com/ar",
                 "icon": "arrowRight",
                 "iconPosition": "right",
                 "style": "secondary",
                 "type": "Link",
-                "altText": "Order Now"
+                "altText": "اطلب الان"
             }
         ],
         "type": "FooterLinksGroup"
     },
     "secondaryLinks": {
-        "title": "Helpful Links",
+        "title": "روابط مهمة",
         "links": [
             {
-                "label": "Contact Us",
-                "altText": "Contact Us page",
-                "url": "/contact",
+                "label": "تواصل معنا",
+                "altText": "تواصل معنا",
+                "url": "/ar/contact",
                 "icon": "arrowRight",
                 "iconPosition": "right",
                 "style": "secondary",
                 "type": "Link"
+            },
+            {
+                "type": "Link",
+                "label": "الأسئلة الشائعة",
+                "altText": "الأسئلة الشائعة",
+                "url": "/ar/faq",
+                "showIcon": false,
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "elementId": ""
             }
         ],
         "type": "FooterLinksGroup"
@@ -51,27 +62,27 @@
     "socialLinks": [
         {
             "type": "Social",
-            "altText": "WhatsApp link",
+            "altText": "رابط الواتس اب",
             "url": "https://wa.me/97366761322",
             "icon": "whatsapp",
             "elementId": ""
         },
         {
             "type": "Social",
-            "altText": "Instagram link",
+            "altText": "رابط الانستغرام",
             "url": "https://www.instagram.com/fawri_plus/",
             "icon": "instagram",
             "elementId": ""
         },
         {
             "type": "Social",
-            "altText": "Facebook link",
+            "altText": "رابط الفيسبوك",
             "url": "https://facebook.com/fawriplus",
             "icon": "facebook",
             "elementId": ""
         },
         {
-            "altText": "Email link",
+            "altText": "ارسال بريد الكتروني",
             "url": "https://mailto:info@fawri-plus.com",
             "icon": "mail",
             "type": "Social"
@@ -79,28 +90,30 @@
     ],
     "legalLinks": [
         {
-            "label": "Terms",
-            "url": "/",
+            "label": "الشروط والأحكام",
+            "url": "/ar/terms",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
-            "type": "Link"
+            "type": "Link",
+            "altText": "الشروط والأحكام"
         },
         {
-            "label": "Privacy",
-            "url": "/",
+            "label": "الخصوصية",
+            "url": "/ar/privacy",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
-            "type": "Link"
+            "type": "Link",
+            "altText": "الخصوصية"
         }
     ],
-    "copyrightText": "Fawri+ © 2025 All Rights Reserved\n",
+    "copyrightText": "فوري بلس © 2025 جميع الحقوق محفوظة\n",
     "colors": "bg-dark-fg-light",
     "type": "FooterAr",
     "logo": {
         "type": "ImageBlock",
-        "url": "/images/website footer - logo white - black bg.png",
+        "url": "/images/website - footer - logo ar white - black bg.png",
         "altText": "Logo white",
         "elementId": "",
         "styles": {

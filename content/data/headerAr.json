@@ -13,19 +13,30 @@
     },
     "primaryLinks": [
         {
-            "label": "الاسعار",
-            "url": "/pricing",
+            "type": "Link",
+            "label": "تواصل معنا",
+            "altText": "تواصل معنا",
+            "url": "/ar/contact",
+            "showIcon": false,
+            "icon": "arrowRight",
+            "iconPosition": "right",
+            "style": "secondary",
+            "elementId": ""
+        },
+        {
+            "label": "الأسئلة الشائعة",
+            "url": "/ar/faq",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
             "type": "Link",
-            "altText": "Pricing page"
+            "altText": "الأسئلة الشائعة"
         },
         {
             "type": "Link",
-            "label": "Features",
-            "altText": "Features page",
-            "url": "/features",
+            "label": "الأسعار",
+            "altText": "الأسعار",
+            "url": "/ar/pricing",
             "showIcon": false,
             "icon": "arrowRight",
             "iconPosition": "right",
@@ -34,9 +45,20 @@
         },
         {
             "type": "Link",
-            "label": "Contact Us",
-            "altText": "Contact Us page",
-            "url": "/contact",
+            "label": "المميزات",
+            "altText": "المميزات",
+            "url": "/ar/features",
+            "showIcon": false,
+            "icon": "arrowRight",
+            "iconPosition": "right",
+            "style": "secondary",
+            "elementId": ""
+        },
+        {
+            "type": "Link",
+            "label": "الرئيسية",
+            "altText": "الرئيسية",
+            "url": "/ar",
             "showIcon": false,
             "icon": "arrowRight",
             "iconPosition": "right",
@@ -46,9 +68,9 @@
     ],
     "secondaryLinks": [
         {
-            "label": "Order Now",
-            "altText": "Order Now",
-            "url": "https://store.fawri-plus.com",
+            "label": "اطلب الآن",
+            "altText": "اطلب الان",
+            "url": "https://store.fawri-plus.com/ar",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
