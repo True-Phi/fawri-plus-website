@@ -44,6 +44,17 @@
                 "iconPosition": "right",
                 "style": "secondary",
                 "type": "Link"
+            },
+            {
+                "type": "Link",
+                "label": "See Tutorials",
+                "altText": "",
+                "url": "/ar/faq",
+                "showIcon": false,
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "primary",
+                "elementId": ""
             }
         ],
         "type": "FooterLinksGroup"
