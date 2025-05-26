@@ -1,7 +1,6 @@
 ---
 type: PageLayout
 title: تواصل معنا
-pageCssClasses: rtl-block 
 sections:
   - type: DividerSection
     title: Divider
