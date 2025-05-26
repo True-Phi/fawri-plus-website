@@ -36,7 +36,7 @@
             "type": "Link",
             "label": "الاسعار",
             "altText": "Features page",
-            "url": "/features",
+            "url": "/ar/pricing",
             "showIcon": false,
             "icon": "arrowRight",
             "iconPosition": "right",
