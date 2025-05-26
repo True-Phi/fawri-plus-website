@@ -69,9 +69,8 @@ sections:
       - type: FeaturedItem
         title: فوري بلس
         subtitle: فوري بلس
-        text: >
-          We’ll make a second delivery attempt at no extra cost if your first
-          attempt fails, ensuring your customers get their orders promptly.
+        text: |
+          فوري بلس هي الافضل
         image:
           type: ImageBlock
           altText: Featured icon three
