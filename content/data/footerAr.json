@@ -51,7 +51,7 @@
     "socialLinks": [
         {
             "type": "Social",
-            "altText": "WhatsApp link",
+            "altText": "رابط الواتس اب",
             "url": "https://wa.me/97366761322",
             "icon": "whatsapp",
             "elementId": ""
