@@ -1,6 +1,7 @@
 ---
 type: PageLayout
 title: الخصوصية
+pageCssClasses: rtl-block
 sections: []
 slug: ar/privacy
 isDraft: false
