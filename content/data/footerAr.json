@@ -13,7 +13,7 @@
                 "altText": "Pricing page"
             },
             {
-                "label": "Features",
+                "label": "المميزات",
                 "altText": "Features page",
                 "url": "/features",
                 "icon": "arrowRight",
