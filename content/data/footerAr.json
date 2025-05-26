@@ -28,7 +28,7 @@
                 "iconPosition": "right",
                 "style": "secondary",
                 "type": "Link",
-                "altText": "Order Now"
+                "altText": "أطلب الآن"
             }
         ],
         "type": "FooterLinksGroup"
