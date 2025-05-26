@@ -6,7 +6,7 @@ sections:
   - type: GenericSection
     title:
       type: TitleBlock
-      text: شريكك
+      text: شريكك في النجاح
       color: text-light
       styles:
         self:
