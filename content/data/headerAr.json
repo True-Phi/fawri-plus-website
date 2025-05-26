@@ -15,7 +15,7 @@
         {
             "type": "Link",
             "label": "تواصل معنا",
-            "altText": "",
+            "altText": "تواصل معنا",
             "url": "/",
             "showIcon": false,
             "icon": "arrowRight",
