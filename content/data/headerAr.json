@@ -16,7 +16,7 @@
             "type": "Link",
             "label": "تواصل معنا",
             "altText": "تواصل معنا",
-            "url": "/",
+            "url": "/ar/contact",
             "showIcon": false,
             "icon": "arrowRight",
             "iconPosition": "right",
