@@ -67,7 +67,7 @@ sections:
             justifyContent: center
             textAlign: left
       - type: FeaturedItem
-        title: Reliable Deliveries
+        title: فوري بلس
         subtitle: Free 2nd Attempt
         text: >
           We’ll make a second delivery attempt at no extra cost if your first
