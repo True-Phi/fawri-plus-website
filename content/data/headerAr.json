@@ -47,7 +47,7 @@
             "type": "Link",
             "label": "المميزات",
             "altText": "المميزات",
-            "url": "/contact",
+            "url": "/ar/features",
             "showIcon": false,
             "icon": "arrowRight",
             "iconPosition": "right",
