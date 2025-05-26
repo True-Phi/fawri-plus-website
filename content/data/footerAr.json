@@ -65,7 +65,7 @@
         },
         {
             "type": "Social",
-            "altText": "Facebook link",
+            "altText": "رابط الفيسبوك",
             "url": "https://facebook.com/fawriplus",
             "icon": "facebook",
             "elementId": ""
