@@ -1,6 +1,7 @@
 ---
 title: الاسعار
 slug: ar/pricing
+pageCssClasses: rtl-block
 sections:
   - type: DividerSection
     title: Divider
