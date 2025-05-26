@@ -28,15 +28,6 @@
     [lang="ar"],
     .arabic-text {
         font-family: "Tajawal", sans-serif !important;
-        direction: rtl; /* Ensure RTL for Arabic text */
-        text-align: right; /* Align Arabic text to the right */
-    }
-    
-    /* -- Keep header & footer LTR even on Arabic pages -- */
-    header,
-    footer {
-        direction: ltr !important;
-        text-align: left !important;
     }
     
     /* Ensure headlines in Arabic use Tajawal as well */
