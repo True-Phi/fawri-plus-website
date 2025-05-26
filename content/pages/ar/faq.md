@@ -1,7 +1,6 @@
 ---
 type: PageLayout
 title: الأسئلة الشائعة
-pageCssClasses: rtl-block 
 sections: []
 slug: ar/faq
 isDraft: false
