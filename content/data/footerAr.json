@@ -71,7 +71,7 @@
             "elementId": ""
         },
         {
-            "altText": "Email link",
+            "altText": "ارسال بريد الكتروني",
             "url": "https://mailto:info@fawri-plus.com",
             "icon": "mail",
             "type": "Social"
