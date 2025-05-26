@@ -34,7 +34,7 @@
         },
         {
             "type": "Link",
-            "label": "الاسعار",
+            "label": "الأسعار",
             "altText": "Features page",
             "url": "/ar/pricing",
             "showIcon": false,
