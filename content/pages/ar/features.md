@@ -1,7 +1,7 @@
 ---
 type: PageLayout
-pageCssClasses: rtl-block 
 title: المميزات
+pageCssClasses: rtl-block 
 sections:
   - type: DividerSection
     title: Divider
