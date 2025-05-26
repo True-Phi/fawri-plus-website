@@ -68,7 +68,7 @@ sections:
             textAlign: left
       - type: FeaturedItem
         title: فوري بلس
-        subtitle: Free 2nd Attempt
+        subtitle: فوري بلس
         text: >
           We’ll make a second delivery attempt at no extra cost if your first
           attempt fails, ensuring your customers get their orders promptly.
