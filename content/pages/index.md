@@ -10,7 +10,7 @@ sections:
       styles:
         self:
           textAlign: right
-    subtitle: ewsfsdf
+    subtitle: ''
     text: |
       dfgdfgdfg
     actions: []
