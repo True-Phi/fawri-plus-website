@@ -80,7 +80,7 @@
     "legalLinks": [
         {
             "label": "Terms",
-            "url": "/",
+            "url": "/ar/terms",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
