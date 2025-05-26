@@ -1,7 +1,6 @@
 ---
 title: فوري+ | خدمات التوصيل الافضل في البحرين
 slug: /ar
-pageCssClasses: rtl-block
 sections:
   - type: GenericSection
     title:
