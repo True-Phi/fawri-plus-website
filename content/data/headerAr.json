@@ -45,7 +45,7 @@
         },
         {
             "type": "Link",
-            "label": "See Tutorials",
+            "label": "الرئيسية",
             "altText": "",
             "url": "/ar",
             "showIcon": false,
