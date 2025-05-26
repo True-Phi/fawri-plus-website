@@ -47,7 +47,7 @@
             },
             {
                 "type": "Link",
-                "label": "See Tutorials",
+                "label": "الأسئلة الشائعة",
                 "altText": "",
                 "url": "/ar/faq",
                 "showIcon": false,
