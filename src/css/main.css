@@ -23,12 +23,6 @@
         font-family: "Roboto Slab", serif; /* Default to Roboto Slab for English headlines */
         line-height: 1.2;
     }
-
-    /* Apply Tajawal font for Arabic content */
-    [lang="ar"],
-    .arabic-text {
-        font-family: "Tajawal", sans-serif !important;
-    }
     
     /* Ensure headlines in Arabic use Tajawal as well */
     [lang="ar"] h1,
