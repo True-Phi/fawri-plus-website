@@ -366,7 +366,5 @@
     .arabic-text,
     .arabic-text * {
         font-family: "Tajawal", sans-serif !important;
-        direction: rtl !important;
-        text-align: right !important;
     }
 }
