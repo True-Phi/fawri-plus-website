@@ -34,7 +34,7 @@
         },
         {
             "type": "Link",
-            "label": "Contact Ushg",
+            "label": "المميزات",
             "altText": "Contact Us page",
             "url": "/contact",
             "showIcon": false,
