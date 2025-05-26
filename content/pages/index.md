@@ -5,7 +5,7 @@ sections:
   - type: GenericSection
     title:
       type: TitleBlock
-      text: Coming Soon!!
+      text: Your Reliable Delivery Partner
       color: text-light
       styles:
         self:
