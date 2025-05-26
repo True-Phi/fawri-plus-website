@@ -47,6 +47,17 @@
             },
             {
                 "type": "Link",
+                "label": "See Tutorials",
+                "altText": "",
+                "url": "/ar/faq",
+                "showIcon": false,
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "elementId": ""
+            },
+            {
+                "type": "Link",
                 "label": "الأسئلة الشائعة",
                 "altText": "الأسئلة الشائعة",
                 "url": "/ar/faq",
