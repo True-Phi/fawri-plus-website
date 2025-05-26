@@ -45,7 +45,7 @@ sections:
       styles:
         self:
           textAlign: center
-    subtitle: You will love it!!
+    subtitle: فوري بلس هي الأفضل
     items:
       - type: FeaturedItem
         title: Unbeatable Pricing
