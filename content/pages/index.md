@@ -1,35 +1,316 @@
 ---
-type: PageLayout
-title: 'Coming Soon! - Delivery Serivce Provider in Bahrain '
+title: Fawri+ | Delivery Serivce Provider in Bahrain
+slug: /
 sections:
   - type: GenericSection
     title:
       type: TitleBlock
-      text: Coming Soon!
+      text: Your Reliable Delivery Partner
       color: text-light
       styles:
         self:
           textAlign: right
-    subtitle: ''
-    text: ''
+    subtitle: ewsfsdf
+    text: |
+      dfgdfgdfg
     actions: []
-    colors: bg-light-fg-dark
+    colors: bg-dark-fg-light
+    styles:
+      self:
+        alignItems: center
+        flexDirection: row-reverse
     backgroundImage:
       type: BackgroundImage
-      url: /images/design 3 dark.png
       altText: Fawri+ Delivery Van
       backgroundSize: auto
       backgroundPosition: center
       backgroundRepeat: no-repeat
       opacity: 100
+      url: /images/design 3 dark.png
+  - type: DividerSection
+    title: Divider
+    elementId: ''
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        padding:
+          - pt-3
+          - pl-3
+          - pb-3
+          - pr-3
+  - type: GenericSection
+    title:
+      type: TitleBlock
+      text: Generic section with a video
+      color: text-light
+      styles:
+        self:
+          textAlign: left
+    subtitle: Section with a video subtitle dfsfsd fsdf sdf sdf sdf sdfs
+    text: |-
+      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
+      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
+      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
+      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+    actions: []
+    media:
+      type: VideoBlock
+      title: Title of the video
+      url: /images/placeholder-video.mp4
+      autoplay: true
+      loop: true
+      muted: true
+      controls: false
+      aspectRatio: '16:9'
+      styles:
+        self:
+          padding:
+            - pt-2
+            - pb-2
+            - pl-2
+            - pr-2
+          borderColor: border-dark
+          borderStyle: solid
+          borderWidth: 1
+          borderRadius: large
+    colors: bg-dark-fg-light
+    styles:
+      self:
+        flexDirection: row
+        justifyContent: center
+      subtitle:
+        textAlign: left
+    backgroundImage:
+      type: BackgroundImage
+      altText: altText of the image
+      backgroundSize: auto
+      backgroundPosition: center
+      backgroundRepeat: no-repeat
+      opacity: 100
+      url: /images/design 3 dark.png
+  - type: GenericSection
+    title:
+      type: TitleBlock
+      text: Social Media Management
+      color: text-dark
+    subtitle: Increase your reach
+    text: >
+      A service that helps businesses to manage their social media accounts and
+      posts.
+    actions:
+      - type: Button
+        label: Get started
+        url: /
+        icon: arrowRight
+        iconPosition: right
+        style: secondary
+      - type: Link
+        label: See Tutorials
+        url: /
+        showIcon: true
+        icon: arrowRight
+        iconPosition: right
+        style: primary
+    media:
+      type: ImageBlock
+      url: /images/hero2.svg
+      altText: Fun feature preview
+    badge:
+      type: Badge
+      label: This is a badge
+      color: text-primary
+    colors: bg-light-fg-dark
     styles:
       self:
         alignItems: center
-        flexDirection: row-reverse
-slug: /
+  - type: FeaturedItemsSection
+    title:
+      type: TitleBlock
+      text: Why Choose Fawri+
+      color: text-dark
+      styles:
+        self:
+          textAlign: center
+    subtitle: You will love it!!
+    items:
+      - type: FeaturedItem
+        title: Unbeatable Pricing
+        subtitle: 'Lowest Rates, Fixed Price'
+        text: >
+          We offer the most competitive delivery rates in Bahrain. No hidden
+          commissions. Fixed price for all distances across the country.
+        actions: []
+        colors: bg-neutralAlt-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: row
+            justifyContent: center
+            textAlign: left
+      - type: FeaturedItem
+        title: Reliable Deliveries
+        subtitle: Free 2nd Attempt
+        text: >
+          We’ll make a second delivery attempt at no extra cost if your first
+          attempt fails, ensuring your customers get their orders promptly.
+        image:
+          type: ImageBlock
+          altText: Featured icon three
+          elementId: ''
+        actions: []
+        colors: bg-neutralAlt-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: row
+      - type: FeaturedItem
+        title: Real-Time Tracking
+        subtitle: Stay Updated on Your Order
+        text: >
+          Track your deliveries in real-time with our easy-to-use tracking
+          system, keeping you informed every step of the way.
+        image:
+          type: ImageBlock
+          altText: Placeholder text
+          elementId: ''
+          styles:
+            self:
+              borderRadius: x-large
+        actions: []
+        colors: bg-neutralAlt-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: row
+            justifyContent: center
+            textAlign: left
+      - type: FeaturedItem
+        title: Simple Ordering
+        subtitle: Seamless Ordering via WhatsApp
+        text: >
+          Easily place, manage and pay your orders via WhatsApp, with quick
+          communication for a hassle-free experience.
+        image:
+          type: ImageBlock
+          altText: Featured icon two
+          elementId: ''
+        actions: []
+        colors: bg-neutralAlt-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: row
+            textAlign: left
+            justifyContent: center
+      - type: FeaturedItem
+        title: Loyalty Rewards
+        subtitle: 'Order More, Save More'
+        text: >
+          Our loyalty program offers bonus deliveries, discounted rates, and
+          exclusive perks to reward your ongoing trust and support.
+        image:
+          type: ImageBlock
+          altText: Placeholder text
+          elementId: ''
+          styles:
+            self:
+              borderRadius: x-large
+        actions: []
+        colors: bg-neutralAlt-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: row
+            justifyContent: center
+            textAlign: left
+      - type: FeaturedItem
+        title: PLUS
+        subtitle: Tailored Add-On Services
+        text: >
+          Choose from add-ons like proof of delivery, buy-on-behalf, or chilled
+          transport, designed to suit your business needs.
+        image:
+          type: ImageBlock
+          altText: Placeholder text
+          elementId: ''
+          styles:
+            self:
+              borderRadius: x-large
+        actions: []
+        colors: bg-neutralAlt-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: row
+            justifyContent: center
+            textAlign: left
+    actions:
+      - type: Button
+        label: Order Now
+        altText: Order Now
+        url: 'https://store.fawri-plus.com'
+        showIcon: false
+        icon: arrowRight
+        iconPosition: right
+        style: primary
+        elementId: ''
+    elementId: ''
+    variant: three-col-grid
+    colors: bg-neutral-fg-dark
+    styles:
+      self:
+        padding:
+          - pb-16
+          - pt-16
+          - pl-16
+          - pr-16
+        justifyContent: center
+      subtitle:
+        textAlign: center
+  - type: DividerSection
+    title: Divider
+    elementId: ''
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        padding:
+          - pt-3
+          - pl-3
+          - pb-3
+          - pr-3
+type: PageLayout
 seo:
   type: Seo
   socialImage: /images/logo-website-social-seo.png
-  metaTags: []
 isDraft: false
 ---

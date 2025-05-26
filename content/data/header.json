@@ -13,6 +13,17 @@
     },
     "primaryLinks": [
         {
+            "type": "Link",
+            "label": "Features",
+            "altText": "Features page",
+            "url": "/features",
+            "showIcon": false,
+            "icon": "arrowRight",
+            "iconPosition": "right",
+            "style": "secondary",
+            "elementId": ""
+        },
+        {
             "label": "Pricing",
             "url": "/pricing",
             "icon": "arrowRight",
@@ -23,9 +34,9 @@
         },
         {
             "type": "Link",
-            "label": "Features",
-            "altText": "Features page",
-            "url": "/features",
+            "label": "FAQ",
+            "altText": "FAQ page",
+            "url": "/faq",
             "showIcon": false,
             "icon": "arrowRight",
             "iconPosition": "right",

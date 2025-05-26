@@ -4,15 +4,6 @@
         "title": "Services",
         "links": [
             {
-                "label": "Pricing",
-                "url": "/pricing",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link",
-                "altText": "Pricing page"
-            },
-            {
                 "label": "Features",
                 "altText": "Features page",
                 "url": "/features",
@@ -20,6 +11,15 @@
                 "iconPosition": "right",
                 "style": "secondary",
                 "type": "Link"
+            },
+            {
+                "label": "Pricing",
+                "url": "/pricing",
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "type": "Link",
+                "altText": "Pricing page"
             },
             {
                 "label": "Order Now",
@@ -36,6 +36,17 @@
     "secondaryLinks": {
         "title": "Helpful Links",
         "links": [
+            {
+                "type": "Link",
+                "label": "FAQ",
+                "altText": "FAQ page",
+                "url": "/faq",
+                "showIcon": false,
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "elementId": ""
+            },
             {
                 "label": "Contact Us",
                 "altText": "Contact Us page",
@@ -79,20 +90,22 @@
     ],
     "legalLinks": [
         {
-            "label": "Terms",
-            "url": "/",
+            "label": "Terms and Conditions",
+            "url": "/terms",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
-            "type": "Link"
+            "type": "Link",
+            "altText": "Terms page"
         },
         {
-            "label": "Privacy",
-            "url": "/",
+            "label": "Privacy Policy",
+            "url": "/privacy",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
-            "type": "Link"
+            "type": "Link",
+            "altText": "Privacy page"
         }
     ],
     "copyrightText": "Fawri+ © 2025 All Rights Reserved\n",
