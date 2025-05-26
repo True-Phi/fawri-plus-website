@@ -1,5 +1,6 @@
 ---
 type: PageLayout
+pageCssClasses: rtl-block 
 title: المميزات
 sections:
   - type: DividerSection
