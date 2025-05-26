@@ -55,17 +55,6 @@
                 "iconPosition": "right",
                 "style": "secondary",
                 "elementId": ""
-            },
-            {
-                "type": "Link",
-                "label": "الأسئلة الشائعة",
-                "altText": "الأسئلة الشائعة",
-                "url": "/ar/faq",
-                "showIcon": false,
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "primary",
-                "elementId": ""
             }
         ],
         "type": "FooterLinksGroup"
