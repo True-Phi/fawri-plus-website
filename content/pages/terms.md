@@ -3,7 +3,7 @@ type: PageLayout
 title: Terms
 sections: []
 slug: terms
-isDraft: false
+isDraft: true
 seo:
   type: Seo
   metaTitle: Landing Page
