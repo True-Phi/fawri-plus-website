@@ -360,11 +360,19 @@
             transform: translate3d(0,0,0)
         }
     }
+    
     /* === Always use Tajawal for Arabic text, anywhere on the page === */
     [lang="ar"],
     [lang="ar"] *,
     .arabic-text,
     .arabic-text * {
         font-family: "Tajawal", sans-serif !important;
+    }
+
+    /* Switch a block to RTL + right-align when you add class="rtl-block" */
+    .rtl-block,
+    .rtl-block * {
+        direction: rtl !important;
+        text-align: right !important;
     }
 }
