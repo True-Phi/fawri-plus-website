@@ -25,6 +25,13 @@ function Page(props) {
         <>
             <Head>
                 <title>{title}</title>
+    
+                {/* Facebook domain-verification */}
+                <meta
+                    name="facebook-domain-verification"
+                    content="n2vpk2x4whmuq4btnsl8wvhmku9rll"
+                />
+        
                 {metaDescription && <meta name="description" content={metaDescription} />}
                 {metaTags.map((metaTag) => {
                     if (metaTag.format === 'property') {
