@@ -70,7 +70,6 @@ sections:
           - Feature four
         image:
           type: ImageBlock
-          url: /images/abstract-feature1.svg
           altText: Pricing plan 1
         actions:
           - type: Button
