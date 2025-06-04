@@ -63,7 +63,7 @@ sections:
         description: |
           Perfect for small busiensses
         features:
-          - Feature one
+          - Everything in Pay As You Go
           - Feature two
           - Feature three
           - Feature four
