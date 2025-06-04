@@ -58,7 +58,7 @@ sections:
         type: PricingPlan
       - type: PricingPlan
         title: Subscription
-        price: Free
+        price: '42.50'
         details: No credit card required
         description: >-
           Sed ut perspiciatis unde omnis, iste natus error sit voluptatem
