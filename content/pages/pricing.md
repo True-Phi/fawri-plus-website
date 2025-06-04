@@ -65,7 +65,6 @@ sections:
         features:
           - Everything in Pay As You Go
           - Dedictated Account Manager
-          - Feature four
         image:
           type: ImageBlock
           altText: Pricing plan 1
