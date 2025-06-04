@@ -64,7 +64,7 @@ sections:
           Perfect for small busiensses
         features:
           - Everything in Pay As You Go
-          - Feature two
+          - Dedictated Account Manager
           - Feature three
           - Feature four
         image:
