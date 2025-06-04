@@ -58,7 +58,7 @@ sections:
         type: PricingPlan
       - type: PricingPlan
         title: Subscription
-        price: '42.50'
+        price: 42.500 BHD
         details: 50 Orders included
         description: |
           Perfect for small busiensses
