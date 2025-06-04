@@ -56,6 +56,34 @@ sections:
               - pr-6
             borderRadius: large
         type: PricingPlan
+      - type: PricingPlan
+        title: Subscription
+        price: 42.500 BHD
+        details: 50 Orders included
+        description: |
+          Perfect for small busiensses
+        features:
+          - Everything in Pay As You Go
+          - Dedictated Account Manager
+        image:
+          type: ImageBlock
+          altText: Pricing plan 1
+        actions:
+          - type: Button
+            label: Try for free
+            url: /
+            icon: arrowRight
+            iconPosition: right
+            style: secondary
+        colors: bg-neutral-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-6
+              - pb-10
+              - pl-6
+              - pr-6
+            borderRadius: large
       - title: Customised
         price: Custom
         details: 100+ Orders per Week
@@ -109,5 +137,5 @@ sections:
           - pb-3
           - pr-3
 type: PageLayout
-isDraft: true
+isDraft: false
 ---
