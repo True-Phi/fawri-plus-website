@@ -59,7 +59,7 @@ sections:
       - type: PricingPlan
         title: Subscription
         price: '42.50'
-        details: No credit card required
+        details: 50 Orders included
         description: >-
           Sed ut perspiciatis unde omnis, iste natus error sit voluptatem
           accusantium doloremque.
