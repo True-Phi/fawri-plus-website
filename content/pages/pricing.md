@@ -60,9 +60,8 @@ sections:
         title: Subscription
         price: '42.50'
         details: 50 Orders included
-        description: >-
-          Sed ut perspiciatis unde omnis, iste natus error sit voluptatem
-          accusantium doloremque.
+        description: |
+          Perfect for small busiensses
         features:
           - Feature one
           - Feature two
