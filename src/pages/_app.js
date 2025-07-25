@@ -7,30 +7,24 @@ export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    // Keep LTR but still tag Arabic pages for SEO
     document.documentElement.lang = isArabicPath(router.asPath) ? 'ar' : 'en';
     document.documentElement.dir = 'ltr';
   }, [router.asPath]);
 
   useEffect(() => {
-    // Track Meta Pixel PageView on route change (client-side)
     const handleRouteChange = () => {
-      if (typeof window.fbq === 'function') {
-        window.fbq('track', 'PageView');
-      }
+      if (typeof window.fbq === 'function') window.fbq('track', 'PageView');
     };
     router.events.on('routeChangeComplete', handleRouteChange);
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
-    };
+    return () => router.events.off('routeChangeComplete', handleRouteChange);
   }, [router.events]);
 
   useEffect(() => {
-    // Inject Respond.io chat widget
+    // Respond.io Webchat widget
     if (!document.getElementById('respondio__widget')) {
       const s = document.createElement('script');
       s.id = 'respondio__widget';
-      s.src = 'https://cdn.respond.io/webchat/widget/widget.js?cld=3b9e6b2b2872360cb02656a30b84da7';
+      s.src = 'https://cdn.respond.io/webchat/widget/widget.js?cId=488433472fe744548c04ee1d71ba5ba';
       s.async = true;
       document.body.appendChild(s);
     }
