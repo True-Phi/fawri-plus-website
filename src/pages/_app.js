@@ -9,7 +9,7 @@ export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
     // Keep LTR but still tag Arabic pages for SEO
     document.documentElement.lang = isArabicPath(router.asPath) ? 'ar' : 'en';
-    document.documentElement.dir  = 'ltr';
+    document.documentElement.dir = 'ltr';
   }, [router.asPath]);
 
   useEffect(() => {
@@ -24,6 +24,17 @@ export default function MyApp({ Component, pageProps }) {
       router.events.off('routeChangeComplete', handleRouteChange);
     };
   }, [router.events]);
+
+  useEffect(() => {
+    // Inject Respond.io chat widget
+    if (!document.getElementById('respondio__widget')) {
+      const s = document.createElement('script');
+      s.id = 'respondio__widget';
+      s.src = 'https://cdn.respond.io/webchat/widget/widget.js?cld=3b9e6b2b2872360cb02656a30b84da7';
+      s.async = true;
+      document.body.appendChild(s);
+    }
+  }, []);
 
   return <Component {...pageProps} />;
 }
